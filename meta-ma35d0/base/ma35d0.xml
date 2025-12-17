@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="2"/>
+  <remote fetch="https://github.com/OpenNuvoton" name="nuvoton"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt"/>
+  <project remote="nuvoton" name="yocto-5.0" revision="master" path="sources"/>
+  <project remote="yocto" revision="aee2a47dd999c89811647260db4170e821c04733" name="poky" path="sources/poky"/>
+  <project remote="oe" revision="b8d1a14f7f3b76457c36752202ea7ae5881b6654" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="qt" revision="eb828418264a49b8d00035cb3d7b12fcea3be801" name="meta-qt5" upstream="scarthgap" path="sources/meta-qt5"/>
+
+</manifest>

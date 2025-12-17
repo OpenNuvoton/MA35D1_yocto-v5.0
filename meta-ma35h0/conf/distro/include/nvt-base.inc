@@ -1,0 +1,18 @@
+# ma35h0 DISTRO for the FrameBuffer graphical backend.
+MAINTAINER = "Nuvoton <www.nuvoton.com>"
+DISTRO = "nvt-ma35h0"
+DISTRO_NAME = "Nuvoton Release Distro"
+DISTRO_CODENAME = "scarthgap"
+DISTRO_VERSION = "5.0-scarthgap"
+SDK_VENDOR = "-pokysdk"
+SDK_VERSION := "${DISTRO_VERSION}"
+TARGET_VENDOR = "-poky"
+TARGET_FPU = "hard"
+BUILD_64BIT_KERNEL = "1"
+require conf/multilib.conf
+MULTILIBS ?= "multilib:lib64"
+DEFAULTTUNE:virtclass-multilib-lib64 = "armv8a"
+PREFERRED_PROVIDER:udev = "systemd"
+PREFERRED_PROVIDER:udev-utils = "systemd"
+INIT_MANAGER = "systemd"
+DISTRO_FEATURES ?= "alsa vc8000"
