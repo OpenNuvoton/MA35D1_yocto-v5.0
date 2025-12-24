@@ -8,7 +8,7 @@
 ## 1. For MA35D1 (numaker-som-ma35d16a81):
 ### 1.1. Initialize Yocto repository:
 ```console
-repo init -u https://github.com/OpenNuvoton/yocto-5.0.git -m meta-ma35d1/base/ma35d1.xml
+repo init -u https://github.com/OpenNuvoton/MA35D1_yocto-v5.0.git -m meta-ma35d1/base/ma35d1.xml
 ```
 ```console
 repo sync
@@ -25,7 +25,7 @@ bitbake core-image-minimal
 ## 2. For MA35H0 (numaker-hmi-ma35h04f70):
 ### 2.1. Initialize Yocto repository:
 ```console
-repo init -u https://github.com/OpenNuvoton/yocto-5.0.git -m meta-ma35h0/base/ma35h0.xml
+repo init -u https://github.com/OpenNuvoton/MA35D1_yocto-v5.0.git -m meta-ma35h0/base/ma35h0.xml
 ```
 ```console
 repo sync
@@ -42,7 +42,7 @@ bitbake core-image-minimal
 ## 3. For MA35D0 (numaker-iot-ma35d03f80):
 ### 3.1. Initialize Yocto repository:
 ```console
-repo init -u https://github.com/OpenNuvoton/yocto-5.0.git -m meta-ma35d0/base/ma35d0.xml
+repo init -u https://github.com/OpenNuvoton/MA35D1_yocto-v5.0.git -m meta-ma35d0/base/ma35d0.xml
 ```
 ```console
 repo sync
