@@ -31,6 +31,8 @@ PV = "${SRCBRANCH}+git${SRCPV}"
 S = "${WORKDIR}/git"
 B = "${WORKDIR}/build"
 
+SRC_URI += "${@bb.utils.contains('DISTRO_FEATURES', 'rt-patch', ' file://patch-6.6.93-rt55.patch', '', d)}"
+
 DEFAULT_PREFERENCE = "1"
 DEPENDS += "util-linux-native libyaml-native openssl-native"
 # =========================================================================
