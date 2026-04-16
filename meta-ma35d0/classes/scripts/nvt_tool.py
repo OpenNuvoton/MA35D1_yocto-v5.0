@@ -229,7 +229,7 @@ def main():
             cmd = ["dd", f"if={args.deploy_dir}/enc_bl2-ma35d0-sdcard.bin", f"of={SDCARD}", "conv=notrunc", f"seek=384", f"bs=512"]
             subprocess.run(cmd, check=True)
 
-        cmd = ["dd", f"if={args.deploy_dir}/u-boot-initial-env.bin-sdcard", f"of={SDCARD}", "conv=notrunc", f"seek=512", f"bs=512"]
+        cmd = ["dd", f"if={args.deploy_dir}/u-boot-initial-env.bin-sdcard", f"of={SDCARD}", "conv=notrunc", f"seek=640", f"bs=512"]
         subprocess.run(cmd, check=True)
         cmd = ["dd", f"if={args.deploy_dir}/fip.bin-sdcard", f"of={SDCARD}", "conv=notrunc", f"seek=1536", f"bs=512"]
         subprocess.run(cmd, check=True)
