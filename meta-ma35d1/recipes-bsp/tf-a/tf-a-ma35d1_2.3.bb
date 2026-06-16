@@ -61,6 +61,11 @@ do_compile() {
             TFA_OPT="${TFA_OPT} MA35D1_SCPBL2_BASE=${TFA_SCP_BASE}"
         fi
     fi
+
+    if [ "${DDR_AUTO_DETECT}" = "yes"; then
+        TFA_OPT="${TFA_OPT} DDR_AUTO_DETECT=1"
+    fi
+
     if ${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'true', 'false', d)}; then
         TFA_OPT="${TFA_OPT} NEED_BL32=yes"
         if echo ${TFA_DTB} | grep -q "custom"; then
