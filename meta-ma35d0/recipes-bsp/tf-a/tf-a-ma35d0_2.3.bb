@@ -5,8 +5,14 @@ LIC_FILES_CHKSUM = "file://license.rst;md5=1dd070c98a281d18d9eefd938729b031"
 FILESEXTRAPATHS:prepend_ma35d0 := "${THISDIR}/tf-a-ma35d0:"
 
 SRC_URI = "git://github.com/OpenNuvoton/MA35D1_arm-trusted-firmware-v2.3.git;branch=master;protocol=https"
-SRC_URI += "file://${TFA_DDR_HEADER} \
-            file://0001-Add-no-warn-rwx-segments.patch"
+SRC_URI += "file://${TFA_DDR_HEADER}"
+# NOTE: 0001-Add-no-warn-rwx-segments.patch removed (2026-08-02).
+# The --no-warn-rwx-segments linker fix it applied is now merged directly
+# into the upstream master branch (as part of make_helpers/build_macros.mk),
+# with an improved version that auto-detects linker support instead of
+# unconditionally passing the flag. Re-applying this patch on top of the
+# updated upstream source now fails ("Hunk #1 FAILED at 473") because the
+# target lines it expects to modify no longer exist in their original form.
 
 SECTION = "bootloaders"
 SRCREV = "${TFA_SRCREV}"
