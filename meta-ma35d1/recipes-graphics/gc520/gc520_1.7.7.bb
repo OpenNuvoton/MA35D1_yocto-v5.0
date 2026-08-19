@@ -4,11 +4,10 @@ SECTION = "libs"
 LICENSE = "CLOSED"
 
 RV = "1.7-7"
-
 SRC_URI += " \
     file://libdirectfb_gal.so \
     file://libGAL.so \
-    file://galcore.ko_${KERNEL_VERSION} \
+    file://galcore.ko_6.6.93 \
     "
 do_package_qa[noexec] = "1"
 do_install() {
@@ -17,12 +16,12 @@ do_install() {
     install -m 0755 ${WORKDIR}/libdirectfb_gal.so ${D}/${libdir}/directfb-${RV}/gfxdrivers/libdirectfb_gal.so
     install -m 0755 ${WORKDIR}/libGAL.so ${D}/${libdir}/libGAL.so
 
-    install -d ${D}/${base_libdir}/modules/${KERNEL_VERSION}
-    install -m 0644 ${WORKDIR}/galcore.ko_${KERNEL_VERSION} \
-		${D}/${base_libdir}/modules/${KERNEL_VERSION}/galcore.ko
+    install -d ${D}/${base_libdir}/modules/6.6.93
+    install -m 0644 ${WORKDIR}/galcore.ko_6.6.93 \
+		${D}/${base_libdir}/modules/6.6.93/galcore.ko
 }
 
 FILES:SOLIBSDEV = ""
-FILES:${PN} = "${libdir}/directfb-${RV}/gfxdrivers/libdirectfb_gal.so ${libdir}/libGAL.so ${base_libdir}/modules/${KERNEL_VERSION}/galcore.ko"
+FILES:${PN} = "${libdir}/directfb-${RV}/gfxdrivers/libdirectfb_gal.so ${libdir}/libGAL.so ${base_libdir}/modules/6.6.93/galcore.ko"
 PACKAGE:ARCH = "${MACHINE_ARCH}"
 COMPATIBLE:MACHINE = "(ma35d1)"
