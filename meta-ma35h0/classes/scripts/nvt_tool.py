@@ -34,7 +34,7 @@ from datetime import datetime
 SDCARD = ""
 BOOT_SPACE = 32768
 IMAGE_ROOTFS_ALIGNMENT = 4096
-BOOT_SPACE_ALIGNED = BOOT_SPACE - 1
+BOOT_SPACE_ALIGNED = BOOT_SPACE
 
 def main():
     parser = argparse.ArgumentParser(description="Generate image for MA35 platform.")
