@@ -14,8 +14,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 MA35D1_KERNEL_LOADADDR = "0x80080000"
 KERNEL_EXTRA_ARGS += "LOADADDR=${MA35D1_KERNEL_LOADADDR}"
 
-#KERNEL_SRC ?= "git://github.com/OpenNuvoton/MA35D1_linux-6.6.y.git;branch=master;protocol=https"
-KERNEL_SRC ?= "git://github.com/schung1218/linux-6.18.y.git;branch=master;protocol=https"
+KERNEL_SRC ?= "git://github.com/OpenNuvoton/MA35D1_linux-6.18.y.git;branch=master;protocol=https"
 SRC_URI = "${KERNEL_SRC}"
 SRCREV = "${KERNEL_SRCREV}"
 
