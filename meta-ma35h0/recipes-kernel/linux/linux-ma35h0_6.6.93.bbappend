@@ -4,4 +4,5 @@ PATCHTOOL = "git"
 
 SRC_URI += "file://0001-net-stmmac-add-Nuvoton-platform-support.patch \
             file://0002-rpmsg-char-fix-TOCTOU-race-in-rpmsg_eptdev_poll.patch \
+            file://0003-drm-etnaviv-assert-deassert-reset-controller-around-gpu-init.patch \
             "
