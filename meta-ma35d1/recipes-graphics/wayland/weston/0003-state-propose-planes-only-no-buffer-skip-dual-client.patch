@@ -1,0 +1,65 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: yclu4 <yclu4@nuvoton.com>
+Date: Thu, 24 Sep 2026 10:00:00 +0800
+Subject: [PATCH] state-propose: skip no-buffer views instead of aborting
+ PLANES_ONLY
+
+Upstream-Status: Inappropriate [BSP-specific: GC520 2D/direct-KMS-scanout hack, not upstreamable as-is]
+
+Re-diffed against Weston 13.0.1 (was written and hand-tested against
+10.0.5 for Buildroot). Only carries forward one of that patch's two
+fixes - see rationale below.
+
+Fix carried forward - skip no-buffer views instead of aborting PLANES_ONLY
+kiosk-shell creates a solid-colour background surface with no wl_buffer
+(weston_solid_color_surface). drm_output_propose_state() sets
+force_renderer=true for any view with !weston_view_has_valid_buffer(),
+and in PLANES_ONLY mode renderer_ok is false, so 'if (!ps &&
+!renderer_ok) goto err_region;' aborts the entire state proposal for
+the whole output. A no-buffer view is invisible and contributes no
+pixels; skip it with continue (matching the existing totally_occluded
+handling immediately above) so real client surfaces can still be
+promoted to hardware planes. This bug is unchanged between 10.0.5 and
+13.0.1.
+
+Fix dropped (superseded by upstream refactor) - the original patch's
+second fix worked around drm_output_try_view_on_plane()'s overlay-vs-
+primary guard (view_matches_entire_output && !scanout_has_view_assigned)
+aborting the *entire* PLANES_ONLY proposal via 'availability =
+NO_PLANES_ACCEPTED; goto out;' when two fullscreen clients were both
+present. In 13.0.1 this same guard has been refactored to a plain
+'continue' that only skips the overlay *candidate* for the current
+view, while the PRIMARY/scanout plane candidate for that same view
+(and the overlay candidate for the next view once scanout is taken) are
+still considered - i.e. upstream already fixed the dual-fullscreen-
+client case as a side effect of the per-view candidate-list rework.
+Re-applying the old fix on top of this would be redundant.
+---
+--- a/libweston/backend-drm/state-propose.c
++++ b/libweston/backend-drm/state-propose.c
+@@ -747,9 +747,23 @@
+ 		}
+ 
+ 		if (!weston_view_has_valid_buffer(ev)) {
+-			drm_debug(b, "\t\t\t\t[view] not assigning view %p to plane "
++			/* A view with no buffer at all (e.g. kiosk-shell's
++			 * solid-colour background surface, created directly
++			 * via weston_solid_color_surface without a wl_buffer)
++			 * cannot go on a plane AND has nothing to render - it
++			 * is entirely invisible. In PLANES_ONLY mode
++			 * renderer_ok is false, so force_renderer=true here
++			 * would abort the whole state proposal (see the
++			 * '!ps && !renderer_ok' check below) and prevent real
++			 * client surfaces from being promoted to hardware
++			 * planes. Instead, skip the view silently: it
++			 * occupies no pixels and does not need to block plane
++			 * assignment for other views. */
++			drm_debug(b, "\t\t\t\t[view] ignoring view %p "
+ 			             "(no buffer available)\n", ev);
+-			force_renderer = true;
++			pixman_region32_fini(&surface_overlap);
++			pixman_region32_fini(&clipped_view);
++			continue;
+ 		}
+ 
+ 		/* We can support this with the 'CRTC background colour' property,
