@@ -3,7 +3,7 @@
 #@DESCRIPTION: Configuration for all ma35h0 boards (EV, DK, ...)
 #@NEEDED_BSPLAYERS: layers/meta-openembedded/meta-oe layers/meta-openembedded/meta-python
 
-MACHINEOVERRIDES = "ma35h0"
+MACHINEOVERRIDES ?= "ma35h0"
 # =========================================================================
 # Chip architecture
 # =========================================================================
