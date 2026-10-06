@@ -68,7 +68,7 @@ do_compile() {
         fi
     fi
 
-    if [ "${DDR_AUTO_DETECT}" = "yes"; then
+    if [ "${DDR_AUTO_DETECT}" = "yes" ]; then
         TFA_OPT="${TFA_OPT} DDR_AUTO_DETECT=1"
     fi
 
