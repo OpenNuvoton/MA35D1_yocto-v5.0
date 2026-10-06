@@ -1,9 +1,10 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-#SRC_URI+="file://linuxfb_doubleubffer.patch"
+PACKAGECONFIG:append = " examples tslib linuxfb fontconfig"
+PACKAGECONFIG:append = "${@bb.utils.contains('DISTRO_FEATURES', 'directfb', ' directfb', '', d)}"
 
-PACKAGECONFIG:append = " examples directfb tslib linuxfb fontconfig gles2"
-
+# gles2 (egl) only for distros with opengl enabled (e.g. weston)
+PACKAGECONFIG:append = "${@bb.utils.contains('DISTRO_FEATURES', 'opengl', ' gles2', '', d)}"
 
 INSANE_SKIP:${PN}-src += "buildpaths"
 INSANE_SKIP:${PN}-examples += "buildpaths"
