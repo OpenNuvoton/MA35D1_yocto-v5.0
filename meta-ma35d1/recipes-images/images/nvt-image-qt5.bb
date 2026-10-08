@@ -19,7 +19,7 @@ IMAGE_INSTALL:append = "\
     ttf-dejavu-serif-condensed \
     ttf-dejavu-common \
     qt5-env \
-    directfb-env \
+    ${@bb.utils.contains('DISTRO_FEATURES', 'directfb', 'directfb-env', 'kernel-module-etnaviv', d)} \
     v4l-utils \
     gstreamer1.0-plugins-base \
     gstreamer1.0-plugins-good \
@@ -30,6 +30,10 @@ IMAGE_INSTALL:append = "\
 
 # Define to null ROOTFS_MAXSIZE to avoid partition size restriction
 IMAGE_ROOTFS_MAXSIZE = ""
+
+# Boot straight into Weston (graphical.target) instead of the default
+# multi-user.target
+SYSTEMD_DEFAULT_TARGET:nvt-ma35d1-weston = "graphical.target"
 
 #
 # Multimedia part addons
