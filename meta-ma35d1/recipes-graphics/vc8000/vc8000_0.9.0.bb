@@ -33,7 +33,7 @@ addtask do_install after do_compile
 FILES_SOLIBSDEV = ""
 FILES:${PN} = "${base_libdir}/modules/${MODULE_VERISON}/ma35d1-vc8000.ko ${bindir}/vc8000-h264"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-COMPATIBLE_MACHINE = "(ma35d1)"
+COMPATIBLE_MACHINE = "${@bb.utils.contains('DISTRO_FEATURES', 'vc8000', '(ma35d1)', 'null-disable-without-vc8000-distro-feature', d)}"
 
 INSANE_SKIP:${PN} = " \
            dev-so \

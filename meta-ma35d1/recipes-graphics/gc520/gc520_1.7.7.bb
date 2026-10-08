@@ -24,4 +24,4 @@ do_install() {
 FILES:SOLIBSDEV = ""
 FILES:${PN} = "${libdir}/directfb-${RV}/gfxdrivers/libdirectfb_gal.so ${libdir}/libGAL.so ${base_libdir}/modules/6.6.93/galcore.ko"
 PACKAGE:ARCH = "${MACHINE_ARCH}"
-COMPATIBLE:MACHINE = "(ma35d1)"
+COMPATIBLE_MACHINE = "${@bb.utils.contains('DISTRO_FEATURES', 'gc520', '(ma35d1)', 'null-disable-without-gc520-distro-feature', d)}"
