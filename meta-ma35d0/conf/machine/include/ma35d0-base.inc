@@ -15,7 +15,16 @@ include conf/machine/include/arm/armv8a/tune-cortexa35.inc
 # =========================================================================
 PREFERRED_PROVIDER_virtual/kernel = "linux-ma35d0"
 PREFERRED_PROVIDER_kernel = "linux-ma35d0"
-MODULE_VERISON = "6.6.93"
+
+# Default Linux kernel version (weak default "?=").
+# Each machine .conf (or local.conf) can override it with:
+#   KERNEL_VERSION = "<version>"
+#
+# Supported values (must match a linux-ma35d0 recipe version):
+#   - 6.6.93 : fixed release 6.6.93
+#   - 6.12.y : 6.12 stable branch (latest 6.12.x)
+#   - 6.18.y : 6.18 stable branch (latest 6.18.x)
+KERNEL_VERSION ?= "6.18.y"
 
 # =========================================================================
 # u-boot
