@@ -26,6 +26,7 @@ DEPENDS += " \
     python3-six-native \
     python3-pycryptodome-native \
     python3-py-native \
+    python3-pkcs11 \
     jq-native \
 "
 
