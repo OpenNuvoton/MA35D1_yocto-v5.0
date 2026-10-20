@@ -1,0 +1,77 @@
+{
+	"image":
+	[
+            {
+                    "offset": "0x0",
+		    "file": "MBR.sdcard.bin",
+		    "type": 0
+            },
+	    {
+		    "offset": "0x400",
+		    "file": "header.bin",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x20000",
+		    "file": "bl2-ma35d1.dtb",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x30000",
+		    "file": "bl2-ma35d1.bin",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x50000",
+		    "file": "u-boot-initial-env.bin-sdcard",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0xC0000",
+		    "file": "fip.bin-sdcard",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x300000",
+		    "file": "Image.fit",
+		    "type": 0
+	    },
+
+	    {
+		    "offset": "0x600",
+		    "file": "header-1.bin",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x2420000",
+		    "file": "bl2-ma35d1.dtb",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x2430000",
+		    "file": "bl2-ma35d1.bin",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x2450000",
+		    "file": "u-boot-initial-env.bin-sdcard",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x24C0000",
+		    "file": "fip.bin-sdcard",
+		    "type": 0
+	    },
+	    {
+		    "offset": "0x2700000",
+		    "file": "Image.fit",
+		    "type": 0
+	    },
+
+            {
+		    "offset": "0x2000000",
+		    "file": "rootfs.ext4-sdcard",
+		    "type": 0
+	    }
+	]
+}

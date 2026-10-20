@@ -93,4 +93,22 @@ IMAGE_TYPEDEP:spinand = "ubi"
 IMAGE_TYPEDEP:spinor = "jffs2"
 IMAGE_TYPEDEP:sdcard = "ext4"
 
+# =========================================================================
+# Anti-Rollback & A/B Boot
+# =========================================================================
+# "1" enables OTP anti-rollback (BL2/BL31 version counter) protection and
+# dual-slot (A/B) signed-FIT kernel boot on sdcard/nand/spinand. Requires
+# SECURE_BOOT = "yes" (enforced in image_types_nvt.bbclass / nvt_tool.py).
+MA35_ANTI_ROLLBACK_AB_BOOT ?= "0"
+
+# Anti-rollback version counters; bump on release to block older images.
+# NOTE: OTP fuse bits can only be programmed (0->1), never reset.
+MA35_ARB_LINUX_VER ?= "0"
+MA35_ARB_BL2_VER ?= "0"
+MA35_ARB_BL31_VER ?= "0"
+
+# CONFIG_MTDPARTS_DEFAULT body (after "mtdparts=<dev>:") used when AB-boot
+# is enabled, adding a redundant uboot/uboot-env/device-tree/kernel slot B.
+MA35_UBOOT_MTDPARTS_AB ?= "3m(uboot),768k(uboot-env),256k(device-tree),24m(kernel),3m(uboot_b),768k(uboot-env_b),256k(device-tree_b),24m(kernel_b),100m(rootfs)"
+
 

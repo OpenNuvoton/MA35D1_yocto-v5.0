@@ -61,6 +61,9 @@ do_compile() {
     if [ "${SECURE_BOOT}" = "yes" ]; then
         TFA_OPT="${TFA_OPT} FIP_DE_AES=1"
     fi
+    if [ "${MA35_ANTI_ROLLBACK_AB_BOOT}" = "1" ]; then
+        TFA_OPT="${TFA_OPT} OTP_ANTI_ROLLBACK=1 MA35_ANTI_ROLLBACK_AB_BOOT=1 MA35_BL2_VERSION=${MA35_ARB_BL2_VER} MA35_BL31_VERSION=${MA35_ARB_BL31_VER}"
+    fi
     if [ "${TFA_LOAD_SCP}" = "yes" ]; then
         TFA_OPT="${TFA_OPT} NEED_SCP_BL2=yes"
         if [ "${TFA_SCP_M4}" = "no" ]; then

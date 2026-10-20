@@ -24,6 +24,23 @@ B = "${WORKDIR}/build"
 S = "${WORKDIR}/git"
 LOCALVERSION ?= "-${SRCBRANCH}"
 
+# When MA35_ANTI_ROLLBACK_AB_BOOT is enabled, override the built-in
+# CONFIG_MTDPARTS_DEFAULT body with the A/B layout (MA35_UBOOT_MTDPARTS_AB),
+# keeping the defconfig's "mtdparts=<dev>:" prefix. Must run after
+# do_configure and before do_compile.
+do_compile:prepend() {
+    if [ "${MA35_ANTI_ROLLBACK_AB_BOOT}" = "1" ]; then
+        for config in ${UBOOT_MACHINE}; do
+            cfg_file="${B}/${config}/.config"
+            mtdparts_body='${MA35_UBOOT_MTDPARTS_AB}'
+            if [ -f "$cfg_file" ] && grep -q '^CONFIG_MTDPARTS_DEFAULT="mtdparts=[^:]*:' "$cfg_file"; then
+                sed -i "s|^\(CONFIG_MTDPARTS_DEFAULT=\"mtdparts=[^:]*:\).*\"|\1${mtdparts_body}\"|" "$cfg_file"
+                bbnote "ma35d1-anti-rollback: overrode CONFIG_MTDPARTS_DEFAULT in $cfg_file"
+            fi
+        done
+    fi
+}
+
 do_deploy:append() {
     if [ -n "${UBOOT_CONFIG}" ]
     then
@@ -36,6 +53,17 @@ do_deploy:append() {
                     if [ -n "${UBOOT_INITIAL_ENV}" ]; then
                         ln -sf ${UBOOT_INITIAL_ENV}-${MACHINE}-${type}-${PV}-${PR} u-boot-env-${type}
                         cp ${B}/${config}/u-boot-initial-env.bin-${type} ${DEPLOY_DIR_IMAGE}/u-boot-initial-env.bin-${type}
+                    fi
+
+                    # Deploy u-boot-nodtb.bin/dtb so nvt_tool.py can embed
+                    # the FIT verification pubkey and reassemble u-boot.bin.
+                    if [ "${MA35_ANTI_ROLLBACK_AB_BOOT}" = "1" ]; then
+                        if [ -f "${B}/${config}/u-boot-nodtb.bin" ]; then
+                            cp ${B}/${config}/u-boot-nodtb.bin ${DEPLOY_DIR_IMAGE}/u-boot-nodtb.bin-${type}
+                        fi
+                        if [ -f "${B}/${config}/u-boot.dtb" ]; then
+                            cp ${B}/${config}/u-boot.dtb ${DEPLOY_DIR_IMAGE}/u-boot.dtb-${type}
+                        fi
                     fi
                 fi
 
@@ -62,6 +90,10 @@ do_compile:append() {
                 if [ $j -eq $i ]
                 then
                     if [ -n "${UBOOT_INITIAL_ENV}" ]; then
+			# AB-boot needs fitboot=1 to enable signed-FIT boot.
+			if [ "${MA35_ANTI_ROLLBACK_AB_BOOT}" = "1" ]; then
+				sed -i "s/^fitboot=0/fitboot=1/1" ${B}/${config}/u-boot-initial-env-${type}
+			fi
 			if [ "$(grep "CONFIG_SYS_REDUNDAND_ENVIRONMENT=y" ${B}/${config}/.config)" ]; then
 				ENVOPT="-r -s 0x10000 -o"
 			else

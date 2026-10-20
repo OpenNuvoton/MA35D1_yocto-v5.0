@@ -35,10 +35,17 @@ BBCLASSEXTEND = "native nativesdk"
 SRC_URI += " file://header-nand.json \
              file://header-sdcard.json \
              file://header-spinand.json \
+             file://header-nand-1.json \
+             file://header-sdcard-1.json \
+             file://header-spinand-1.json \
              file://pack-nand.json \
              file://pack-sdcard.json \
              file://pack-spinand.json \
+             file://ab-pack-nand.json \
+             file://ab-pack-sdcard.json \
+             file://ab-pack-spinand.json \
              file://enc_fip.json \
+             file://Image.its \
            "
 
 do_compile(){
@@ -56,10 +63,17 @@ do_install(){
     cp ${WORKDIR}/header-nand.json  ${D}${datadir}/nuwriter/
     cp ${WORKDIR}/header-sdcard.json  ${D}${datadir}/nuwriter/
     cp ${WORKDIR}/header-spinand.json  ${D}${datadir}/nuwriter/
+    cp ${WORKDIR}/header-nand-1.json  ${D}${datadir}/nuwriter/
+    cp ${WORKDIR}/header-sdcard-1.json  ${D}${datadir}/nuwriter/
+    cp ${WORKDIR}/header-spinand-1.json  ${D}${datadir}/nuwriter/
     cp ${WORKDIR}/pack-nand.json  ${D}${datadir}/nuwriter/
     cp ${WORKDIR}/pack-spinand.json  ${D}${datadir}/nuwriter/
     cp ${WORKDIR}/pack-sdcard.json  ${D}${datadir}/nuwriter/
+    cp ${WORKDIR}/ab-pack-nand.json  ${D}${datadir}/nuwriter/
+    cp ${WORKDIR}/ab-pack-spinand.json  ${D}${datadir}/nuwriter/
+    cp ${WORKDIR}/ab-pack-sdcard.json  ${D}${datadir}/nuwriter/
     cp ${WORKDIR}/enc_fip.json  ${D}${datadir}/nuwriter/
+    cp ${WORKDIR}/Image.its  ${D}${datadir}/nuwriter/
    
     cp ${S}/ddrimg/* ${D}${datadir}/nuwriter/ddrimg/ 
     cp ${S}/xusb.bin ${D}${datadir}/nuwriter/

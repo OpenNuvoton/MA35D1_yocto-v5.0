@@ -26,6 +26,7 @@ SRC_URI += " \
     file://dts-reserve \
     file://ampipi.sh \
     file://cfg80211.config \
+    file://anti-rollback-ab-boot.config \
     "
 PV = "${SRCBRANCH}+git${SRCPV}"
 S = "${WORKDIR}/git"
@@ -68,6 +69,10 @@ do_configure:prepend() {
 
     if ${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'true', 'false', d)}; then
         cat ${WORKDIR}/optee.config >> ${WORKDIR}/defconfig
+    fi
+
+    if [ "${MA35_ANTI_ROLLBACK_AB_BOOT}" = "1" ]; then
+        cat ${WORKDIR}/anti-rollback-ab-boot.config >> ${WORKDIR}/defconfig
     fi
 }
 

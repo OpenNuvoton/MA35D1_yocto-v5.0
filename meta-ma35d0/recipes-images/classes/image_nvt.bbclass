@@ -5,6 +5,9 @@ do_image_nand[depends] = "virtual/trusted-firmware-a:do_deploy \
                           python3-nuwriter-native:do_install \
                           jq-native:do_populate_sysroot \
                           mtd-utils-native:do_populate_sysroot \
+                          u-boot-tools-native:do_populate_sysroot \
+                          dtc-native:do_populate_sysroot \
+                          openssl-native:do_populate_sysroot \
                          "
 
 do_image_spinand[depends] = "virtual/trusted-firmware-a:do_deploy \
@@ -14,6 +17,9 @@ do_image_spinand[depends] = "virtual/trusted-firmware-a:do_deploy \
                              python3-nuwriter-native:do_install \
                              jq-native:do_populate_sysroot \
                              mtd-utils-native:do_populate_sysroot \
+                             u-boot-tools-native:do_populate_sysroot \
+                             dtc-native:do_populate_sysroot \
+                             openssl-native:do_populate_sysroot \
                              ${@bb.utils.contains('IMAGE_FSTYPES', 'nand', '${IMAGE_BASENAME}:do_image_nand', '', d)} \
                             "
 
@@ -24,6 +30,8 @@ do_image_spinor[depends] = "virtual/trusted-firmware-a:do_deploy \
                              python3-nuwriter-native:do_install \
                              jq-native:do_populate_sysroot \
                              mtd-utils-native:do_populate_sysroot \
+                             u-boot-tools-native:do_populate_sysroot \
+                             dtc-native:do_populate_sysroot \
                              ${@bb.utils.contains('IMAGE_FSTYPES', 'nand', '${IMAGE_BASENAME}:do_image_nand', '', d)} \
                              ${@bb.utils.contains('IMAGE_FSTYPES', 'spinand', '${IMAGE_BASENAME}:do_image_spinand', '', d)} \
                             "
@@ -35,6 +43,9 @@ do_image_sdcard[depends] = "parted-native:do_populate_sysroot \
                             virtual/bootloader:do_deploy \
                             python3-nuwriter-native:do_install \
                             jq-native:do_populate_sysroot \
+                            u-boot-tools-native:do_populate_sysroot \
+                            dtc-native:do_populate_sysroot \
+                            openssl-native:do_populate_sysroot \
                             ${@bb.utils.contains('IMAGE_FSTYPES', 'nand', '${IMAGE_BASENAME}:do_image_nand', '', d)} \
                             ${@bb.utils.contains('IMAGE_FSTYPES', 'spinand', '${IMAGE_BASENAME}:do_image_spinand', '', d)} \
                             ${@bb.utils.contains('IMAGE_FSTYPES', 'spinor', '${IMAGE_BASENAME}:do_image_spinor', '', d)} \

@@ -3,7 +3,7 @@
 	[
             {
                     "offset": "0x0",
-		    "file": "MBR.scdard.bin",
+		    "file": "MBR.sdcard.bin",
 		    "type": 0
             },
 	    {

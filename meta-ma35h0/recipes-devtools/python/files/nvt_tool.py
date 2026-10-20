@@ -152,7 +152,7 @@ def main():
             part_end = part_start + args.sd_rootfs_size
             subprocess.run(f"parted -s {SDCARD} unit KiB mkpart primary {part_start} {part_end}", shell=True, check=True)
             subprocess.run(f"parted {SDCARD} print", shell=True, check=True)
-            mbr_bin = deploy_path("MBR.scdard.bin")
+            mbr_bin = deploy_path("MBR.sdcard.bin")
             subprocess.run(f"dd if=/dev/zero of={mbr_bin} bs=1 count=0 seek=512", shell=True, check=True)
             subprocess.run(f"dd if={SDCARD} of={mbr_bin} conv=notrunc seek=0 count=1 bs=512", shell=True, check=True)
             if os.path.exists(f"rootfs.ext4-sdcard"):

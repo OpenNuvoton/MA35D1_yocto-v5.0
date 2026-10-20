@@ -1,9 +1,16 @@
 inherit image_types
 inherit image_nvt
 
-DEPENDS = " python3-nuwriter-native"
+DEPENDS = " python3-nuwriter-native dtc-native u-boot-tools-native"
 include image_nvt.inc
 NUWRITER_DIR="${RECIPE_SYSROOT_NATIVE}${datadir}/nuwriter"
+
+# AB-boot's FIT key trust requires an authenticated U-Boot; enforce SECURE_BOOT=yes.
+python () {
+    if d.getVar("MA35_ANTI_ROLLBACK_AB_BOOT") == "1" and d.getVar("SECURE_BOOT") != "yes":
+        bb.fatal("MA35_ANTI_ROLLBACK_AB_BOOT = \"1\" requires SECURE_BOOT = \"yes\" "
+                 "(machine '%s' has SECURE_BOOT = \"%s\")" % (d.getVar("MACHINE"), d.getVar("SECURE_BOOT")))
+}
 
 nvt_generate_image() {
     if ${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'true', 'false', d)}; then
@@ -27,6 +34,8 @@ nvt_generate_image() {
         --nuwriter_dir "${NUWRITER_DIR}" \
         --ubinize_args "${UBINIZE_ARGS}" \
         --sd_rootfs_size "${ROOTFS_SIZE}" \
+        --anti_rollback_ab_boot "${MA35_ANTI_ROLLBACK_AB_BOOT}" \
+        --linux_arb_ver "${MA35_ARB_LINUX_VER}" \
         --image "$1"
 }
 
