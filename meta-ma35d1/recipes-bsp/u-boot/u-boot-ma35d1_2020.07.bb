@@ -94,6 +94,10 @@ do_compile:append() {
 			# AB-boot needs fitboot=1 to enable signed-FIT boot.
 			if [ "${MA35_ANTI_ROLLBACK_AB_BOOT}" = "1" ]; then
 				sed -i "s/^fitboot=0/fitboot=1/1" ${B}/${config}/u-boot-initial-env-${type}
+				if [ "${MA35_PID_DDR_OPTEE_MEM_FIXUP}" = "1" ]; then
+					sed -i 's/^optee_rmem=.*/optee_rmem=1/' ${B}/${config}/u-boot-initial-env-${type}
+					sed -i 's/^memargs=.*/memargs=/' ${B}/${config}/u-boot-initial-env-${type}
+				fi
 			fi
 			if [ "$(grep "CONFIG_SYS_REDUNDAND_ENVIRONMENT=y" ${B}/${config}/.config)" ]; then
 				ENVOPT="-r -s 0x10000 -o"

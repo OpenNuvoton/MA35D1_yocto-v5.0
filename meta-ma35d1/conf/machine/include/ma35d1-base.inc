@@ -101,9 +101,14 @@ IMAGE_TYPEDEP:sdcard = "ext4"
 # Anti-Rollback & A/B Boot
 # =========================================================================
 # "1" enables OTP anti-rollback (BL2/BL31 version counter) protection and
-# dual-slot (A/B) signed-FIT kernel boot on sdcard/nand/spinand. Requires
-# SECURE_BOOT = "yes" (enforced in image_types_nvt.bbclass / nvt_tool.py).
+# dual-slot (A/B) signed-FIT kernel boot on sdcard/nand/spinand.
+# Requires SECURE_BOOT = "yes".
 MA35_ANTI_ROLLBACK_AB_BOOT ?= "0"
+
+# "1" (only with AB boot) makes U-Boot fix up /memory by DDR PID and add an
+# OP-TEE no-map reserved-memory node (optee_rmem=1, memargs cleared).
+# Requires DDR_AUTO_DETECT = "yes".
+MA35_PID_DDR_OPTEE_MEM_FIXUP ?= "0"
 
 # Anti-rollback version counters; bump on release to block older images.
 # NOTE: OTP fuse bits can only be programmed (0->1), never reset.
