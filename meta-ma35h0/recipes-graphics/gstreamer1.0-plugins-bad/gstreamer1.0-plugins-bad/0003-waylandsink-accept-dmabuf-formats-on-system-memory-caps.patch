@@ -9,6 +9,8 @@ well, and accept them in set_caps(). show_frame() already decides per buffer
 (dmabuf memory -> linux-dmabuf wl_buffer), so zero-copy needs no other change.
 Non-dmabuf buffers in such a format still fail (no shm NV12).
 
+Upstream-Status: Inappropriate [BSP-specific: needed for the V4L2 stateless decoder on this BSP]
+
 ---
 --- a/ext/wayland/gstwaylandsink.c	2026-10-16 10:49:52.561521453 +0800
 +++ b/ext/wayland/gstwaylandsink.c	2026-10-16 10:49:52.563190482 +0800
