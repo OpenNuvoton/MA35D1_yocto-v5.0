@@ -15,6 +15,11 @@ PACKAGECONFIG[ivi-shell] = ",,"
 do_install:append() {
     sed -i -e "/^\[core\]/a shell=kiosk-shell.so" ${D}${sysconfdir}/xdg/weston/weston.ini
 
+    # 16 bpp scanout on every connector (CMA / display-controller bandwidth)
+    for o in DPI-1 HDMI-A-1 DSI-1 LVDS-1; do
+        printf '\n[output]\nname=%s\ngbm-format=rgb565\n' "$o" >> ${D}${sysconfdir}/xdg/weston/weston.ini
+    done
+
     # Ship both shell configs under /etc/xdg/weston/ so switching shells
     # on-target is always a simple cp:
     #   cp /etc/xdg/weston/weston-kiosk.ini /etc/xdg/weston/weston.ini
