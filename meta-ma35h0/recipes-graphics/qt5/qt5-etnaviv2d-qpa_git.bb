@@ -15,7 +15,8 @@ DEPENDS = "qtbase libetna2d wayland"
 # src/wayland-protocols/, so there is no wayland-scanner codegen step.
 
 SRC_URI = "git://github.com/OpenNuvoton/MA35D1_Graphics.git;protocol=https;branch=master"
-SRCREV = "132e7c81c305bfe9cd5d65c83bb03ffc49cc9594"
+SRCREV = "4249587129a8e396da2b6cc5886b524a6b5bb66a"
+PV = "1.1+git${SRCPV}"
 S = "${WORKDIR}/git/qt/etnaviv2d-qpa"
 inherit qmake5
 

@@ -1,4 +1,4 @@
-SUMMARY = "GC520 2D HAL (Vivante GC520, Nuvoton MA35H0) - libetna2d"
+SUMMARY = "GC520 2D HAL (Vivante GC520, Nuvoton MA35D1) - libetna2d"
 DESCRIPTION = "Userspace HAL for the Vivante GC520 2D GPU: an opaque C API \
 wrapping the GC520 Drawing Engine's bitblt / stretchblt / \
 premultiplied-alpha-blend commands on top of libdrm_etnaviv, plus KMS \
@@ -8,7 +8,8 @@ LICENSE = "CLOSED"
 DEPENDS = "libdrm"
 
 SRC_URI = "git://github.com/OpenNuvoton/MA35D1_Graphics.git;protocol=https;branch=master"
-SRCREV = "132e7c81c305bfe9cd5d65c83bb03ffc49cc9594"
+SRCREV = "4249587129a8e396da2b6cc5886b524a6b5bb66a"
+PV = "1.1+git${SRCPV}"
 S = "${WORKDIR}/git/drm/libetna2d"
 
 EXTRA_OEMAKE = " \
