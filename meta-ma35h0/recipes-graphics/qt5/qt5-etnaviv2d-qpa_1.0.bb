@@ -45,3 +45,26 @@ do_install:append() {
     install -d ${D}${bindir}
     install -m 0755 ${B}/etnaviv2d_benchmark/etnaviv2d_benchmark ${D}${bindir}/etnaviv2d_benchmark
 }
+
+# Optional demos. Enable with
+#   PACKAGECONFIG:append:pn-qt5-etnaviv2d-qpa = " demos"
+PACKAGECONFIG ??= ""
+PACKAGECONFIG[demos] = ""
+
+do_compile:append() {
+    if ${@bb.utils.contains('PACKAGECONFIG', 'demos', 'true', 'false', d)}; then
+        install -d ${B}/demos
+        cd ${B}/demos
+        ${OE_QMAKE_QMAKE} -makefile -o Makefile ${S}/../demos/demos.pro \
+            || die "qmake failed for demos"
+        oe_runmake -C ${B}/demos
+    fi
+}
+
+do_install:append() {
+    if ${@bb.utils.contains('PACKAGECONFIG', 'demos', 'true', 'false', d)}; then
+        install -d ${D}${bindir}
+        install -m 0755 ${B}/demos/cockpit/cockpit ${D}${bindir}/cockpit
+        install -m 0755 ${B}/demos/dashboard/dashboard ${D}${bindir}/dashboard
+    fi
+}
