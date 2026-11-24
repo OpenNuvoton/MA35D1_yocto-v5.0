@@ -27,8 +27,8 @@ nvt_generate_image() {
         --secure_boot "${SECURE_BOOT}" \
         --aes_key "${AES_KEY}" \
         --ecdsa_key "${ECDSA_KEY}" \
-        --tfa_load_m4 "${TFA_LOAD_M4}" \
-        --tfa_m4_bin "${TFA_M4_BIN}" \
+        --tfa_load_m4 "${TFA_LOAD_SCP}" \
+        --tfa_m4_bin "${TFA_SCP_BIN}" \
         --tfa_load_optee "${TFA_LOAD_OPTEE}" \
         --tfa_platform "${TFA_PLATFORM}" \
         --nuwriter_dir "${NUWRITER_DIR}" \
