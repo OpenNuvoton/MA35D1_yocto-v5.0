@@ -1,0 +1,649 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:5f642347-07ea-4654-bd0f-27cdc9822275",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2006-1058",
+        "name": "CVE-2006-1058"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2006-5050",
+        "name": "CVE-2006-5050"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-2716",
+        "name": "CVE-2011-2716"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-5325",
+        "name": "CVE-2011-5325"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-1813",
+        "name": "CVE-2013-1813"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-9645",
+        "name": "CVE-2014-9645"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-9261",
+        "name": "CVE-2015-9261"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-2147",
+        "name": "CVE-2016-2147"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-2148",
+        "name": "CVE-2016-2148"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-6301",
+        "name": "CVE-2016-6301"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15873",
+        "name": "CVE-2017-15873"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15874",
+        "name": "CVE-2017-15874"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16544",
+        "name": "CVE-2017-16544"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000500",
+        "name": "CVE-2018-1000500"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000517",
+        "name": "CVE-2018-1000517"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20679",
+        "name": "CVE-2018-20679"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-5747",
+        "name": "CVE-2019-5747"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-28831",
+        "name": "CVE-2021-28831"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42373",
+        "name": "CVE-2021-42373"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42374",
+        "name": "CVE-2021-42374"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42375",
+        "name": "CVE-2021-42375"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42376",
+        "name": "CVE-2021-42376"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42377",
+        "name": "CVE-2021-42377"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42378",
+        "name": "CVE-2021-42378"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42379",
+        "name": "CVE-2021-42379"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42380",
+        "name": "CVE-2021-42380"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42381",
+        "name": "CVE-2021-42381"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42382",
+        "name": "CVE-2021-42382"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42383",
+        "name": "CVE-2021-42383"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42384",
+        "name": "CVE-2021-42384"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42385",
+        "name": "CVE-2021-42385"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-42386",
+        "name": "CVE-2021-42386"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-28391",
+        "name": "CVE-2022-28391"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-30065",
+        "name": "CVE-2022-30065"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-48174",
+        "name": "CVE-2022-48174"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-39810",
+        "name": "CVE-2023-39810"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+        "name": "CVE-2023-42363"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+        "name": "CVE-2023-42364"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+        "name": "CVE-2023-42365"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+        "name": "CVE-2023-42366"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-46394",
+        "name": "CVE-2025-46394"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-60876",
+        "name": "CVE-2025-60876"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-38752",
+        "name": "CVE-2026-38752"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-38753",
+        "name": "CVE-2026-38753"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-38754",
+        "name": "CVE-2026-38754"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-38755",
+        "name": "CVE-2026-38755"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/busybox@1.36.1?layer=meta&scan_sha256=d59639f05f814ab08a7e877838fd32a9287b90c3cc0a4c8a8181caeb8533060e"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

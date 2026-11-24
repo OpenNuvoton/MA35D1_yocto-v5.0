@@ -1,0 +1,25 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:4f494eaa-956b-458b-be7e-cb097c513a51",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-2524",
+        "name": "CVE-2014-2524"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/readline-native@8.2?layer=meta&scan_sha256=aa6911434ecb011b25d2ebad7a3c8a4119b12f86ba73a8fa0ba3983f675d54c5"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

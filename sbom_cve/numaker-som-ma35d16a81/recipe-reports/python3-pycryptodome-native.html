@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>python3-pycryptodome-native - Yocto CVE Check</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f6f8; color: #17202a; font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1800px; margin: auto; padding: 1.25rem; }
+header, .table-wrap { background: white; border: 1px solid #c9ced6; border-radius: 10px; }
+header { padding: 1rem 1.25rem; margin-bottom: 1rem; }
+h1 { margin: .25rem 0; font-size: 1.6rem; }
+a { color: #075985; }
+.meta, footer { color: #475569; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: .6rem; margin-top: 1rem; }
+.card { display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+        border: 1px solid #c9ced6; border-left: 5px solid #64748b; border-radius: 8px; padding: .6rem .8rem; }
+.card strong { font-size: 1.3rem; }
+.card.patched { border-left-color: #1565c0; }
+.card.unpatched { border-left-color: #c62828; }
+.card.ignored { border-left-color: #b45309; }
+.card.not-affected { border-left-color: #1f8a4c; }
+.card.affected { border-left-color: #c62828; }
+.card.fixed { border-left-color: #1565c0; }
+.card.under-investigation { border-left-color: #b45309; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .75rem 0; }
+input, select { font: inherit; padding: .45rem .6rem; border: 1px solid #94a3b8; border-radius: 6px; background: white; }
+input { flex: 1 1 16rem; min-width: 0; }
+.table-wrap { overflow: auto; max-height: 75vh; }
+table { width: 100%; border-spacing: 0; font-size: .9rem; }
+th { position: sticky; top: 0; background: #27364a; color: white; text-align: left; white-space: nowrap; }
+th, td { padding: .55rem .7rem; }
+td { vertical-align: top; border-top: 1px solid #e2e8f0; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eef4ff; }
+.cve { white-space: nowrap; font-family: monospace; font-weight: bold; }
+.cvss { white-space: nowrap; }
+.summary { min-width: 22rem; max-width: 58rem; white-space: pre-line; overflow-wrap: anywhere; }
+.notes { min-width: 12rem; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         font-weight: 600; background: #e2e8f0; color: #334155; }
+.badge.patched { background: #dbeafe; color: #1e40af; }
+.badge.fixed { background: #dbeafe; color: #1e40af; }
+.badge.not-affected { background: #dcfce7; color: #166534; }
+.badge.affected { background: #fee2e2; color: #991b1b; }
+.badge.under-investigation { background: #fef3c7; color: #92400e; }
+.badge.unpatched, .badge.high { background: #fee2e2; color: #991b1b; }
+.badge.ignored, .badge.medium { background: #fef3c7; color: #92400e; }
+.badge.critical { background: #7f1d1d; color: white; }
+.badge.low { background: #dcfce7; color: #166534; }
+footer { margin-top: .75rem; font-size: .85rem; }
+[hidden] { display: none !important; }
+@media print {
+  body { background: white; }
+  main { max-width: none; padding: 0; }
+  .toolbar { display: none; }
+  .table-wrap { max-height: none; overflow: visible; }
+  th { position: static; }
+  .summary, .notes { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<a href="index.html">All recipes</a>
+<h1>python3-pycryptodome-native - Yocto CVE Check</h1>
+<div class="meta">Recipe version (PV): <strong>3.20.0</strong> &middot;
+Layer: meta<br>
+Products: pycryptodome (CVE records: No)<br>
+Source: <code>build/tmp-glibc/deploy/cve/python3-pycryptodome-native_cve.json</code><br>
+Source file last modified: <time datetime="2026-11-23T11:02:05+08:00">2026-11-23T11:02:05+08:00</time></div>
+<h2>Vulnerability triage (VEX categories)</h2><p class="meta">Automated recipe-level triage based on Yocto evidence, not a verified product VEX. Under Investigation means evidence is insufficient; Affected is a conservative screening result.</p><div class="cards"><div class="card not-affected"><span>Not Affected</span><strong>0</strong></div><div class="card affected"><span>Affected</span><strong>0</strong></div><div class="card fixed"><span>Fixed</span><strong>0</strong></div><div class="card under-investigation"><span>Under Investigation</span><strong>0</strong></div></div>
+<h2>Yocto scan summary</h2>
+<div class="cards"><div class="card total"><span>Total</span><strong>0</strong></div><div class="card patched"><span>Patched</span><strong>0</strong></div><div class="card unpatched"><span>Unpatched</span><strong>0</strong></div><div class="card ignored"><span>Ignored</span><strong>0</strong></div></div>
+</header><div class="table-wrap"><table><thead><tr><th scope="col">CVE ID</th><th scope="col">CVSS</th><th scope="col">Severity</th><th scope="col">VEX triage and reason</th><th scope="col">Yocto status</th><th scope="col">Summary</th><th scope="col">Yocto notes and vector</th></tr></thead><tbody>
+<tr><td colspan="7">No CVE entries in this source report. This does not establish that the recipe is free of vulnerabilities.</td></tr>
+</tbody></table></div>
+<p id="no-results" hidden>No matches for the current filters.</p>
+<footer>Automated Yocto cve-check output, not a manual product assessment. The source JSON does not provide publication dates, verified fixes, or the effective CVE_VERSION. Severity uses CVSS v4 when available, otherwise v3. Zero scores are omitted because Yocto can use zero for missing metrics; v2-only records have no severity label here.</footer>
+</main>
+
+</body>
+</html>

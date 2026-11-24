@@ -1,0 +1,39 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:872c9202-0484-44fb-86df-2d7d8766c58a",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-2977",
+        "name": "CVE-2014-2977"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/directfb@1.7.7?layer=meta-oe&scan_sha256=d4dc911d83aaf3b4f5e051e175cd95cc263c9deee1e519ba084d4c4b47c8d179"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-2978",
+        "name": "CVE-2014-2978"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/directfb@1.7.7?layer=meta-oe&scan_sha256=d4dc911d83aaf3b4f5e051e175cd95cc263c9deee1e519ba084d4c4b47c8d179"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

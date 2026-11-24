@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yocto Recipe CVE Reports</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f6f8; color: #17202a; font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1800px; margin: auto; padding: 1.25rem; }
+header, .table-wrap { background: white; border: 1px solid #c9ced6; border-radius: 10px; }
+header { padding: 1rem 1.25rem; margin-bottom: 1rem; }
+h1 { margin: .25rem 0; font-size: 1.6rem; }
+a { color: #075985; }
+.meta, footer { color: #475569; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: .6rem; margin-top: 1rem; }
+.card { display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+        border: 1px solid #c9ced6; border-left: 5px solid #64748b; border-radius: 8px; padding: .6rem .8rem; }
+.card strong { font-size: 1.3rem; }
+.card.patched { border-left-color: #1565c0; }
+.card.unpatched { border-left-color: #c62828; }
+.card.ignored { border-left-color: #b45309; }
+.card.not-affected { border-left-color: #1f8a4c; }
+.card.affected { border-left-color: #c62828; }
+.card.fixed { border-left-color: #1565c0; }
+.card.under-investigation { border-left-color: #b45309; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .75rem 0; }
+input, select { font: inherit; padding: .45rem .6rem; border: 1px solid #94a3b8; border-radius: 6px; background: white; }
+input { flex: 1 1 16rem; min-width: 0; }
+.table-wrap { overflow: auto; max-height: 75vh; }
+table { width: 100%; border-spacing: 0; font-size: .9rem; }
+th { position: sticky; top: 0; background: #27364a; color: white; text-align: left; white-space: nowrap; }
+th, td { padding: .55rem .7rem; }
+td { vertical-align: top; border-top: 1px solid #e2e8f0; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eef4ff; }
+.cve { white-space: nowrap; font-family: monospace; font-weight: bold; }
+.cvss { white-space: nowrap; }
+.summary { min-width: 22rem; max-width: 58rem; white-space: pre-line; overflow-wrap: anywhere; }
+.notes { min-width: 12rem; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         font-weight: 600; background: #e2e8f0; color: #334155; }
+.badge.patched { background: #dbeafe; color: #1e40af; }
+.badge.fixed { background: #dbeafe; color: #1e40af; }
+.badge.not-affected { background: #dcfce7; color: #166534; }
+.badge.affected { background: #fee2e2; color: #991b1b; }
+.badge.under-investigation { background: #fef3c7; color: #92400e; }
+.badge.unpatched, .badge.high { background: #fee2e2; color: #991b1b; }
+.badge.ignored, .badge.medium { background: #fef3c7; color: #92400e; }
+.badge.critical { background: #7f1d1d; color: white; }
+.badge.low { background: #dcfce7; color: #166534; }
+footer { margin-top: .75rem; font-size: .85rem; }
+[hidden] { display: none !important; }
+@media print {
+  body { background: white; }
+  main { max-width: none; padding: 0; }
+  .toolbar { display: none; }
+  .table-wrap { max-height: none; overflow: visible; }
+  th { position: static; }
+  .summary, .notes { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<header><h1>Yocto Recipe CVE Reports</h1>
+<div class="meta">CVE source: <code>build/tmp-glibc/deploy/cve/*_cve.json</code>.
+This inventory can include build-only recipes and reports retained from earlier runs.
+This is not the installed rootfs inventory.</div>
+<h2>Vulnerability triage (VEX categories)</h2><p class="meta">Automated recipe-level triage based on Yocto evidence, not a verified product VEX. Under Investigation means evidence is insufficient; Affected is a conservative screening result.</p><div class="cards"><div class="card not-affected"><span>Not Affected</span><strong>18,727</strong></div><div class="card affected"><span>Affected</span><strong>954</strong></div><div class="card fixed"><span>Fixed</span><strong>69</strong></div><div class="card under-investigation"><span>Under Investigation</span><strong>18</strong></div></div>
+<h2>Yocto scan summary</h2>
+<div class="cards"><div class="card recipes"><span>Recipes</span><strong>245</strong></div><div class="card patched"><span>Patched</span><strong>18,757</strong></div><div class="card unpatched"><span>Unpatched</span><strong>954</strong></div><div class="card ignored"><span>Ignored</span><strong>57</strong></div></div>
+</header><div class="toolbar">
+<input id="search" type="search" placeholder="Search recipe, version, or layer" aria-label="Search recipe, version, or layer">
+<select id="filter" aria-label="Filter recipes"><option value="">All recipes</option><option value="review">Has Under Investigation entries</option><option value="open">Has Unpatched entries</option><option value="clear">No Unpatched entries</option></select>
+
+<span id="count" aria-live="polite">245 / 245 shown</span>
+</div><div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col">Version</th><th scope="col">Layer</th><th scope="col">Total</th><th scope="col">Not Affected</th><th scope="col">Affected</th><th scope="col">Fixed</th><th scope="col">Under Investigation</th><th scope="col">Patched</th><th scope="col">Unpatched</th><th scope="col">Ignored</th></tr></thead><tbody>
+<tr data-filter="clear"><td><a href="acl-native.html">acl-native</a></td><td>2.3.2</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="acl.html">acl</a></td><td>2.3.2</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="alsa-lib.html">alsa-lib</a></td><td>1.2.11</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="alsa-state.html">alsa-state</a></td><td>0.2.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="alsa-topology-conf.html">alsa-topology-conf</a></td><td>1.2.5.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="alsa-ucm-conf.html">alsa-ucm-conf</a></td><td>1.2.11</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="alsa-utils.html">alsa-utils</a></td><td>1.2.11</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="attr-native.html">attr-native</a></td><td>2.5.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="attr.html">attr</a></td><td>2.5.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="autoconf-archive-native.html">autoconf-archive-native</a></td><td>2023.02.20</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="autoconf-native.html">autoconf-native</a></td><td>2.72e</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="automake-native.html">automake-native</a></td><td>1.16.5</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="base-files.html">base-files</a></td><td>3.0.14</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="base-passwd.html">base-passwd</a></td><td>3.6.3</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="bash-completion.html">bash-completion</a></td><td>2.12.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="bash.html">bash</a></td><td>5.2.21</td><td>meta</td><td>18</td><td>18</td><td>0</td><td>0</td><td>0</td><td>18</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="bc-native.html">bc-native</a></td><td>1.07.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="binutils-cross-aarch64.html">binutils-cross-aarch64</a></td><td>2.42</td><td>meta</td><td>288</td><td>272</td><td>16</td><td>0</td><td>0</td><td>271</td><td>16</td><td>1</td></tr>
+<tr data-filter="open"><td><a href="bison-native.html">bison-native</a></td><td>3.8.2</td><td>meta</td><td>4</td><td>2</td><td>2</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="busybox.html">busybox</a></td><td>1.36.1</td><td>meta</td><td>46</td><td>37</td><td>3</td><td>6</td><td>0</td><td>43</td><td>3</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="bzip2-native.html">bzip2-native</a></td><td>1.0.8</td><td>meta</td><td>11</td><td>11</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="bzip2.html">bzip2</a></td><td>1.0.8</td><td>meta</td><td>11</td><td>11</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="ca-certificates-native.html">ca-certificates-native</a></td><td>20211016</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="ca-certificates.html">ca-certificates</a></td><td>20211016</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="cargo-native.html">cargo-native</a></td><td>1.75.0</td><td>meta</td><td>16</td><td>7</td><td>9</td><td>0</td><td>0</td><td>7</td><td>9</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="cmake-native.html">cmake-native</a></td><td>3.28.3</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr data-filter="open review"><td><a href="coreutils.html">coreutils</a></td><td>9.4</td><td>meta</td><td>56</td><td>34</td><td>20</td><td>1</td><td>1</td><td>35</td><td>20</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="cross-localedef-native.html">cross-localedef-native</a></td><td>2.39+git</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open review"><td><a href="curl-native.html">curl-native</a></td><td>8.7.1</td><td>meta</td><td>218</td><td>178</td><td>35</td><td>4</td><td>1</td><td>182</td><td>35</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="cve-update-nvd2-native.html">cve-update-nvd2-native</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="dbus.html">dbus</a></td><td>1.14.10</td><td>meta</td><td>26</td><td>26</td><td>0</td><td>0</td><td>0</td><td>26</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="debianutils-native.html">debianutils-native</a></td><td>5.16</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="depmodwrapper-cross.html">depmodwrapper-cross</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="directfb.html">directfb</a></td><td>1.7.7</td><td>meta-oe</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="docbook-xml-dtd4-native.html">docbook-xml-dtd4-native</a></td><td>4.5</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="docbook-xsl-stylesheets-native.html">docbook-xsl-stylesheets-native</a></td><td>1.79.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="dtc-native.html">dtc-native</a></td><td>1.7.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="dwarfsrcfiles-native.html">dwarfsrcfiles-native</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="e2fsprogs-native.html">e2fsprogs-native</a></td><td>1.47.0</td><td>meta</td><td>6</td><td>6</td><td>0</td><td>0</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="e2fsprogs.html">e2fsprogs</a></td><td>1.47.0</td><td>meta</td><td>6</td><td>6</td><td>0</td><td>0</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="elfutils-native.html">elfutils-native</a></td><td>0.191</td><td>meta</td><td>33</td><td>33</td><td>0</td><td>0</td><td>0</td><td>33</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="expat-native.html">expat-native</a></td><td>2.6.4</td><td>meta</td><td>68</td><td>41</td><td>27</td><td>0</td><td>0</td><td>41</td><td>27</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="expat.html">expat</a></td><td>2.6.4</td><td>meta</td><td>68</td><td>41</td><td>27</td><td>0</td><td>0</td><td>41</td><td>27</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="file-native.html">file-native</a></td><td>5.45</td><td>meta</td><td>31</td><td>31</td><td>0</td><td>0</td><td>0</td><td>31</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="findutils.html">findutils</a></td><td>4.9.0</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="flac.html">flac</a></td><td>1.4.3</td><td>meta</td><td>8</td><td>8</td><td>0</td><td>0</td><td>0</td><td>8</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="flex-native.html">flex-native</a></td><td>2.6.4</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="freetype.html">freetype</a></td><td>2.13.2</td><td>meta</td><td>95</td><td>94</td><td>1</td><td>0</td><td>0</td><td>94</td><td>1</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="gawk.html">gawk</a></td><td>5.3.0</td><td>meta</td><td>5</td><td>1</td><td>4</td><td>0</td><td>0</td><td>1</td><td>4</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gcc-arm-none-eabi-native.html">gcc-arm-none-eabi-native</a></td><td>7</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gcc-cross-aarch64.html">gcc-cross-aarch64</a></td><td>13.3.0</td><td>meta</td><td>16</td><td>15</td><td>0</td><td>1</td><td>0</td><td>15</td><td>0</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="gcc-runtime.html">gcc-runtime</a></td><td>13.3.0</td><td>meta</td><td>16</td><td>15</td><td>0</td><td>1</td><td>0</td><td>15</td><td>0</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="gcc-source-13.3.0.html">gcc-source-13.3.0</a></td><td>13.3.0</td><td>meta</td><td>16</td><td>15</td><td>0</td><td>1</td><td>0</td><td>15</td><td>0</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="gdbm-native.html">gdbm-native</a></td><td>1.23</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gdbm.html">gdbm</a></td><td>1.23</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gettext-minimal-native.html">gettext-minimal-native</a></td><td>0.22.5</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gettext-native.html">gettext-native</a></td><td>0.22.5</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="git-native.html">git-native</a></td><td>2.44.1</td><td>meta</td><td>41</td><td>40</td><td>1</td><td>0</td><td>0</td><td>40</td><td>1</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="glib-2.0-native.html">glib-2.0-native</a></td><td>1_2.78.6</td><td>meta</td><td>33</td><td>20</td><td>12</td><td>1</td><td>0</td><td>21</td><td>12</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="glib-2.0.html">glib-2.0</a></td><td>1_2.78.6</td><td>meta</td><td>33</td><td>20</td><td>12</td><td>1</td><td>0</td><td>21</td><td>12</td><td>0</td></tr>
+<tr data-filter="open review"><td><a href="glibc.html">glibc</a></td><td>2.39+git</td><td>meta</td><td>164</td><td>143</td><td>12</td><td>5</td><td>4</td><td>148</td><td>12</td><td>4</td></tr>
+<tr data-filter="clear"><td><a href="gmp-native.html">gmp-native</a></td><td>6.3.0</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gmp.html">gmp</a></td><td>6.3.0</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gnu-config-native.html">gnu-config-native</a></td><td>20240101+git</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="gnutls-native.html">gnutls-native</a></td><td>3.8.4</td><td>meta</td><td>74</td><td>65</td><td>9</td><td>0</td><td>0</td><td>65</td><td>9</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gperf-native.html">gperf-native</a></td><td>3.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="gtk-doc-native.html">gtk-doc-native</a></td><td>1.33.2</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="jq-native.html">jq-native</a></td><td>1.7.1</td><td>meta-oe</td><td>24</td><td>7</td><td>17</td><td>0</td><td>0</td><td>7</td><td>17</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="kbd.html">kbd</a></td><td>2.6.4</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="kern-tools-native.html">kern-tools-native</a></td><td>0.3+git</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="kmod-native.html">kmod-native</a></td><td>31</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="kmod.html">kmod</a></td><td>31</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="ldconfig-native.html">ldconfig-native</a></td><td>2.12.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open review"><td><a href="libarchive-native.html">libarchive-native</a></td><td>3.7.4</td><td>meta</td><td>83</td><td>67</td><td>13</td><td>2</td><td>1</td><td>69</td><td>13</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="libbsd-native.html">libbsd-native</a></td><td>0.12.1</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libcap-native.html">libcap-native</a></td><td>2.69</td><td>meta</td><td>4</td><td>3</td><td>1</td><td>0</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libcap-ng-native.html">libcap-ng-native</a></td><td>0.8.5</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libcap-ng.html">libcap-ng</a></td><td>0.8.5</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libcap.html">libcap</a></td><td>2.69</td><td>meta</td><td>4</td><td>3</td><td>1</td><td>0</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libedit-native.html">libedit-native</a></td><td>20230828-3.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libedit.html">libedit</a></td><td>20230828-3.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libffi-native.html">libffi-native</a></td><td>3.4.6</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libffi.html">libffi</a></td><td>3.4.6</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libgcc-initial.html">libgcc-initial</a></td><td>13.3.0</td><td>meta</td><td>16</td><td>15</td><td>0</td><td>1</td><td>0</td><td>15</td><td>0</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="libgcc.html">libgcc</a></td><td>13.3.0</td><td>meta</td><td>16</td><td>15</td><td>0</td><td>1</td><td>0</td><td>15</td><td>0</td><td>1</td></tr>
+<tr data-filter="open"><td><a href="libgcrypt-native.html">libgcrypt-native</a></td><td>1.10.3</td><td>meta</td><td>17</td><td>16</td><td>1</td><td>0</td><td>0</td><td>16</td><td>1</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libgpg-error-native.html">libgpg-error-native</a></td><td>1.48</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libidn2-native.html">libidn2-native</a></td><td>2.3.7</td><td>meta</td><td>4</td><td>4</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libjpeg-turbo.html">libjpeg-turbo</a></td><td>1_2.1.3</td><td>meta-ma35d1</td><td>18</td><td>18</td><td>0</td><td>0</td><td>0</td><td>18</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libmd-native.html">libmd-native</a></td><td>1.1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libmpc-native.html">libmpc-native</a></td><td>1.3.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libnsl2-native.html">libnsl2-native</a></td><td>2.0.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libnsl2.html">libnsl2</a></td><td>2.0.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libogg.html">libogg</a></td><td>1.3.5</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libpam.html">libpam</a></td><td>1.5.3</td><td>meta</td><td>19</td><td>17</td><td>0</td><td>2</td><td>0</td><td>19</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libpcre2-native.html">libpcre2-native</a></td><td>10.43</td><td>meta</td><td>17</td><td>12</td><td>5</td><td>0</td><td>0</td><td>12</td><td>5</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libpcre2.html">libpcre2</a></td><td>10.43</td><td>meta</td><td>17</td><td>12</td><td>5</td><td>0</td><td>0</td><td>12</td><td>5</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libpng.html">libpng</a></td><td>1.6.42</td><td>meta</td><td>68</td><td>58</td><td>10</td><td>0</td><td>0</td><td>58</td><td>10</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libsamplerate0.html">libsamplerate0</a></td><td>0.2.2</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libsndfile1.html">libsndfile1</a></td><td>1.2.2</td><td>meta</td><td>39</td><td>33</td><td>4</td><td>2</td><td>0</td><td>35</td><td>4</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libsolv-native.html">libsolv-native</a></td><td>0.7.28</td><td>meta</td><td>13</td><td>11</td><td>2</td><td>0</td><td>0</td><td>11</td><td>2</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libssh2-native.html">libssh2-native</a></td><td>1.11.0</td><td>meta</td><td>25</td><td>15</td><td>9</td><td>1</td><td>0</td><td>16</td><td>9</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libtasn1-native.html">libtasn1-native</a></td><td>4.19.0</td><td>meta</td><td>15</td><td>15</td><td>0</td><td>0</td><td>0</td><td>15</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libtirpc-native.html">libtirpc-native</a></td><td>1.3.4</td><td>meta</td><td>5</td><td>4</td><td>0</td><td>1</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libtirpc.html">libtirpc</a></td><td>1.3.4</td><td>meta</td><td>5</td><td>4</td><td>0</td><td>1</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libtool-cross.html">libtool-cross</a></td><td>2.4.7</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libtool-native.html">libtool-native</a></td><td>2.4.7</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libunistring-native.html">libunistring-native</a></td><td>1.2</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="libusb1-native.html">libusb1-native</a></td><td>1.0.27</td><td>meta</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libvorbis.html">libvorbis</a></td><td>1.3.7</td><td>meta</td><td>15</td><td>15</td><td>0</td><td>0</td><td>0</td><td>15</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="libxcrypt.html">libxcrypt</a></td><td>4.4.36</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open review"><td><a href="libxml2-native.html">libxml2-native</a></td><td>2.12.8</td><td>meta</td><td>115</td><td>93</td><td>21</td><td>0</td><td>1</td><td>93</td><td>21</td><td>1</td></tr>
+<tr data-filter="open review"><td><a href="libxml2.html">libxml2</a></td><td>2.12.8</td><td>meta</td><td>115</td><td>93</td><td>21</td><td>0</td><td>1</td><td>93</td><td>21</td><td>1</td></tr>
+<tr data-filter="open"><td><a href="libxslt-native.html">libxslt-native</a></td><td>1.1.39</td><td>meta</td><td>25</td><td>22</td><td>3</td><td>0</td><td>0</td><td>21</td><td>3</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="libyaml-native.html">libyaml-native</a></td><td>0.2.5</td><td>meta</td><td>3</td><td>3</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="linux-libc-headers.html">linux-libc-headers</a></td><td>6.6</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="linux-ma35d1.html">linux-ma35d1</a></td><td>6.12.y+git</td><td>meta-ma35d1</td><td>15,481</td><td>15,015</td><td>466</td><td>0</td><td>0</td><td>15,015</td><td>466</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="lua-native.html">lua-native</a></td><td>5.4.6</td><td>meta</td><td>15</td><td>15</td><td>0</td><td>0</td><td>0</td><td>15</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="lzlib-native.html">lzlib-native</a></td><td>1.14</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="lzo-native.html">lzo-native</a></td><td>2.10</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="lzo.html">lzo</a></td><td>2.10</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="m4-native.html">m4-native</a></td><td>1.4.19</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="m4proj.html">m4proj</a></td><td>M4-BSP+git</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="make-native.html">make-native</a></td><td>4.4.1</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="makedevs-native.html">makedevs-native</a></td><td>1.0.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="meson-native.html">meson-native</a></td><td>1.3.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="mpfr-native.html">mpfr-native</a></td><td>4.2.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="mtd-utils-native.html">mtd-utils-native</a></td><td>2.1.6</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="mtd-utils.html">mtd-utils</a></td><td>2.1.6</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="ncurses-native.html">ncurses-native</a></td><td>6.4</td><td>meta</td><td>31</td><td>28</td><td>1</td><td>2</td><td>0</td><td>30</td><td>1</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="ncurses.html">ncurses</a></td><td>6.4</td><td>meta</td><td>31</td><td>28</td><td>1</td><td>2</td><td>0</td><td>30</td><td>1</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="netbase.html">netbase</a></td><td>1_6.4</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="nettle-native.html">nettle-native</a></td><td>3.9.1</td><td>meta</td><td>8</td><td>8</td><td>0</td><td>0</td><td>0</td><td>8</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="ninja-native.html">ninja-native</a></td><td>1.11.1</td><td>meta</td><td>3</td><td>3</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="nu-eclipse-native.html">nu-eclipse-native</a></td><td>v1.01.017</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="onig-native.html">onig-native</a></td><td>6.9.9</td><td>meta-oe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="openssl-native.html">openssl-native</a></td><td>3.2.3</td><td>meta</td><td>321</td><td>314</td><td>6</td><td>1</td><td>0</td><td>315</td><td>6</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="openssl.html">openssl</a></td><td>3.2.3</td><td>meta</td><td>321</td><td>314</td><td>6</td><td>1</td><td>0</td><td>315</td><td>6</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="opkg-native.html">opkg-native</a></td><td>1_0.6.3</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="opkg-utils-native.html">opkg-utils-native</a></td><td>0.6.3</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="opkg-utils.html">opkg-utils</a></td><td>0.6.3</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="optee-client.html">optee-client</a></td><td>4.2.0</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="optee-examples.html">optee-examples</a></td><td>4.2.0</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="optee-os-ma35d1.html">optee-os-ma35d1</a></td><td>4.2.0+git</td><td>meta-ma35d1</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="optee-test.html">optee-test</a></td><td>4.2.0</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="os-release.html">os-release</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="parted-native.html">parted-native</a></td><td>3.6</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="parted.html">parted</a></td><td>3.6</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="patch-native.html">patch-native</a></td><td>2.7.6</td><td>meta</td><td>17</td><td>8</td><td>2</td><td>7</td><td>0</td><td>15</td><td>2</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="pbzip2-native.html">pbzip2-native</a></td><td>1.1.13</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="perl-native.html">perl-native</a></td><td>5.38.2</td><td>meta</td><td>58</td><td>53</td><td>5</td><td>0</td><td>0</td><td>53</td><td>5</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="perl.html">perl</a></td><td>5.38.2</td><td>meta</td><td>58</td><td>53</td><td>5</td><td>0</td><td>0</td><td>53</td><td>5</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="perlcross-native.html">perlcross-native</a></td><td>1.5.2</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="pigz-native.html">pigz-native</a></td><td>2.8</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="pkgconfig-native.html">pkgconfig-native</a></td><td>0.29.2+git</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="pointercal.html">pointercal</a></td><td>0.0</td><td>meta-oe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="popt-native.html">popt-native</a></td><td>1.19</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="pseudo-native.html">pseudo-native</a></td><td>1.9.0+git</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="pyinstaller-hooks-contrib-native.html">pyinstaller-hooks-contrib-native</a></td><td>202.10</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="pyinstaller-native.html">pyinstaller-native</a></td><td>4.00</td><td>meta-ma35d1</td><td>2</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-altgraph-native.html">python3-altgraph-native</a></td><td>0.17</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-asn1crypto-native.html">python3-asn1crypto-native</a></td><td>1.5.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-build-native.html">python3-build-native</a></td><td>1.1.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-cached-property-native.html">python3-cached-property-native</a></td><td>1.5.2</td><td>meta-python</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-cffi-native.html">python3-cffi-native</a></td><td>1.16.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-crcmod-native.html">python3-crcmod-native</a></td><td>1.7</td><td>meta-python</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-cryptography-native.html">python3-cryptography-native</a></td><td>42.0.5</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-cython-native.html">python3-cython-native</a></td><td>3.0.8</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-ecdsa-native.html">python3-ecdsa-native</a></td><td>0.16.0</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-flit-core-native.html">python3-flit-core-native</a></td><td>3.9.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-installer-native.html">python3-installer-native</a></td><td>0.7.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="python3-jinja2-native.html">python3-jinja2-native</a></td><td>3.1.4</td><td>meta</td><td>11</td><td>8</td><td>3</td><td>0</td><td>0</td><td>8</td><td>3</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-markupsafe-native.html">python3-markupsafe-native</a></td><td>2.1.5</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open review"><td><a href="python3-native.html">python3-native</a></td><td>3.12.6</td><td>meta</td><td>148</td><td>126</td><td>19</td><td>0</td><td>3</td><td>123</td><td>19</td><td>6</td></tr>
+<tr data-filter="clear"><td><a href="python3-nuwriter-native.html">python3-nuwriter-native</a></td><td>0.90.0</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-packaging-native.html">python3-packaging-native</a></td><td>23.2</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-packaging.html">python3-packaging</a></td><td>23.2</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-pip-native.html">python3-pip-native</a></td><td>24.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-pkcs11-native.html">python3-pkcs11-native</a></td><td>0.7.0</td><td>meta-python</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-py-native.html">python3-py-native</a></td><td>1.11.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-pycparser-native.html">python3-pycparser-native</a></td><td>2.21</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-pycryptodome-native.html">python3-pycryptodome-native</a></td><td>3.20.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-pyelftools-native.html">python3-pyelftools-native</a></td><td>0.30</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-pyparsing-native.html">python3-pyparsing-native</a></td><td>3.1.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-pyproject-hooks-native.html">python3-pyproject-hooks-native</a></td><td>1.0.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-pyusb-native.html">python3-pyusb-native</a></td><td>1.2.1</td><td>meta-python</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-semantic-version-native.html">python3-semantic-version-native</a></td><td>2.10.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="python3-setuptools-native.html">python3-setuptools-native</a></td><td>69.1.1</td><td>meta</td><td>5</td><td>2</td><td>2</td><td>1</td><td>0</td><td>3</td><td>2</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-setuptools-rust-native.html">python3-setuptools-rust-native</a></td><td>1.9.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-setuptools-scm-native.html">python3-setuptools-scm-native</a></td><td>8.0.4</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-six-native.html">python3-six-native</a></td><td>1.16.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-toml-native.html">python3-toml-native</a></td><td>0.10.2</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-tomli-native.html">python3-tomli-native</a></td><td>2.0.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-tqdm-native.html">python3-tqdm-native</a></td><td>4.66.2</td><td>meta-python</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-typing-extensions-native.html">python3-typing-extensions-native</a></td><td>4.10.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="python3-wheel-native.html">python3-wheel-native</a></td><td>0.42.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open review"><td><a href="python3.html">python3</a></td><td>3.12.6</td><td>meta</td><td>148</td><td>126</td><td>19</td><td>0</td><td>3</td><td>123</td><td>19</td><td>6</td></tr>
+<tr data-filter="open review"><td><a href="qemu-native.html">qemu-native</a></td><td>8.2.7</td><td>meta</td><td>420</td><td>409</td><td>8</td><td>2</td><td>1</td><td>404</td><td>8</td><td>8</td></tr>
+<tr data-filter="clear"><td><a href="qemuwrapper-cross.html">qemuwrapper-cross</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="quilt-native.html">quilt-native</a></td><td>0.67</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="re2c-native.html">re2c-native</a></td><td>3.1</td><td>meta</td><td>3</td><td>3</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="readline-native.html">readline-native</a></td><td>8.2</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="readline.html">readline</a></td><td>8.2</td><td>meta</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="rpm-native.html">rpm-native</a></td><td>1_4.19.1.1</td><td>meta</td><td>21</td><td>21</td><td>0</td><td>0</td><td>0</td><td>21</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="rsync-native.html">rsync-native</a></td><td>3.2.7</td><td>meta</td><td>66</td><td>22</td><td>44</td><td>0</td><td>0</td><td>22</td><td>44</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="run-postinsts.html">run-postinsts</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="rust-llvm-native.html">rust-llvm-native</a></td><td>1.75.0</td><td>meta</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="rust-native.html">rust-native</a></td><td>1.75.0</td><td>meta</td><td>24</td><td>23</td><td>1</td><td>0</td><td>0</td><td>21</td><td>1</td><td>2</td></tr>
+<tr data-filter="clear review"><td><a href="shadow-native.html">shadow-native</a></td><td>4.14.2</td><td>meta</td><td>15</td><td>14</td><td>0</td><td>0</td><td>1</td><td>14</td><td>0</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="shadow-securetty.html">shadow-securetty</a></td><td>4.6</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="shadow-sysroot.html">shadow-sysroot</a></td><td>4.6</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear review"><td><a href="shadow.html">shadow</a></td><td>4.14.2</td><td>meta</td><td>15</td><td>14</td><td>0</td><td>0</td><td>1</td><td>14</td><td>0</td><td>1</td></tr>
+<tr data-filter="clear"><td><a href="shared-mime-info-native.html">shared-mime-info-native</a></td><td>2.4</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="shared-mime-info.html">shared-mime-info</a></td><td>2.4</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="sqlite3-native.html">sqlite3-native</a></td><td>3_3.45.3</td><td>meta</td><td>76</td><td>59</td><td>17</td><td>0</td><td>0</td><td>59</td><td>17</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="sqlite3.html">sqlite3</a></td><td>3_3.45.3</td><td>meta</td><td>76</td><td>59</td><td>17</td><td>0</td><td>0</td><td>59</td><td>17</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="swig-native.html">swig-native</a></td><td>4.2.1</td><td>meta</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="sysfsutils.html">sysfsutils</a></td><td>2.1.1</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="systemd-compat-units.html">systemd-compat-units</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="systemd-conf.html">systemd-conf</a></td><td>1_1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="systemd-serialgetty.html">systemd-serialgetty</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="systemd-systemctl-native.html">systemd-systemctl-native</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="systemd.html">systemd</a></td><td>1_255.13</td><td>meta</td><td>56</td><td>52</td><td>4</td><td>0</td><td>0</td><td>52</td><td>4</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="tar.html">tar</a></td><td>1.35</td><td>meta</td><td>20</td><td>17</td><td>3</td><td>0</td><td>0</td><td>17</td><td>3</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="texinfo-dummy-native.html">texinfo-dummy-native</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="tf-a-ma35d1.html">tf-a-ma35d1</a></td><td>2.3+git</td><td>meta-ma35d1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="tslib.html">tslib</a></td><td>1.22</td><td>meta-oe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="u-boot-ma35d1.html">u-boot-ma35d1</a></td><td>2020.07+git</td><td>meta-ma35d1</td><td>49</td><td>44</td><td>5</td><td>0</td><td>0</td><td>33</td><td>5</td><td>11</td></tr>
+<tr data-filter="clear"><td><a href="u-boot-tools-native.html">u-boot-tools-native</a></td><td>1_2024.01</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="unifdef-native.html">unifdef-native</a></td><td>2.12</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="unzip-native.html">unzip-native</a></td><td>1_6.0</td><td>meta</td><td>27</td><td>11</td><td>0</td><td>16</td><td>0</td><td>27</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="update-rc.d-native.html">update-rc.d-native</a></td><td>0.8+git</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="update-rc.d.html">update-rc.d</a></td><td>0.8+git</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="util-linux-libuuid-native.html">util-linux-libuuid-native</a></td><td>2.39.3</td><td>meta</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="util-linux-libuuid.html">util-linux-libuuid</a></td><td>2.39.3</td><td>meta</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="util-linux-native.html">util-linux-native</a></td><td>2.39.3</td><td>meta</td><td>29</td><td>25</td><td>3</td><td>1</td><td>0</td><td>26</td><td>3</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="util-linux.html">util-linux</a></td><td>2.39.3</td><td>meta</td><td>29</td><td>25</td><td>3</td><td>1</td><td>0</td><td>26</td><td>3</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="volatile-binds.html">volatile-binds</a></td><td>1.0</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="xmlto-native.html">xmlto-native</a></td><td>0.0.28+0.0.29+git</td><td>meta</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="xz-native.html">xz-native</a></td><td>5.4.6</td><td>meta</td><td>6</td><td>5</td><td>1</td><td>0</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="xz.html">xz</a></td><td>5.4.6</td><td>meta</td><td>6</td><td>5</td><td>1</td><td>0</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+<tr data-filter="open"><td><a href="zlib-native.html">zlib-native</a></td><td>1.3.1</td><td>meta</td><td>16</td><td>13</td><td>3</td><td>0</td><td>0</td><td>11</td><td>3</td><td>2</td></tr>
+<tr data-filter="open"><td><a href="zlib.html">zlib</a></td><td>1.3.1</td><td>meta</td><td>16</td><td>13</td><td>3</td><td>0</td><td>0</td><td>11</td><td>3</td><td>2</td></tr>
+<tr data-filter="clear"><td><a href="zstd-native.html">zstd-native</a></td><td>1.5.5</td><td>meta</td><td>4</td><td>4</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr data-filter="clear"><td><a href="zstd.html">zstd</a></td><td>1.5.5</td><td>meta</td><td>4</td><td>4</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<p id="no-results" hidden>No matches for the current filters.</p>
+<footer>Counts are recipe/CVE entries, not deduplicated CVE IDs. All pages work offline; NVD links require a network connection.</footer>
+</main>
+<script>
+const search = document.querySelector('#search');
+const filter = document.querySelector('#filter');
+const vexFilter = document.querySelector('#vex-filter');
+const rows = [...document.querySelectorAll('tbody tr[data-filter]')];
+const count = document.querySelector('#count');
+const empty = document.querySelector('#no-results');
+const text = new WeakMap();
+function applyFilter() {
+  const query = search.value.trim().toLowerCase();
+  const selected = filter.value;
+  const assessment = vexFilter?.value;
+  let visible = 0;
+  for (const row of rows) {
+    let matches = !selected || row.dataset.filter.split(' ').includes(selected);
+    if (assessment) matches = matches && row.dataset.assessment === assessment;
+    if (matches && query) {
+      if (!text.has(row)) text.set(row, row.textContent.toLowerCase());
+      matches = text.get(row).includes(query);
+    }
+    if (row.hidden === matches) row.hidden = !matches;
+    if (matches) visible++;
+  }
+  count.textContent = `${visible.toLocaleString()} / ${rows.length.toLocaleString()} shown`;
+  empty.hidden = visible !== 0 || rows.length === 0;
+}
+let timer;
+search.addEventListener('input', () => {
+  clearTimeout(timer);
+  timer = setTimeout(applyFilter, 120);
+});
+filter.addEventListener('change', applyFilter);
+vexFilter?.addEventListener('change', applyFilter);
+applyFilter();
+</script>
+</body>
+</html>

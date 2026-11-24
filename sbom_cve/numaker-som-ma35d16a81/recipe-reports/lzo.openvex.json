@@ -1,0 +1,25 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:b33d1eef-86d0-4f0a-830c-151313c7c7dd",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-4607",
+        "name": "CVE-2014-4607"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/lzo@2.10?layer=meta&scan_sha256=bfccc468f8a70f4162eb46352979bca662d05568e6846414de68af69265a1398"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

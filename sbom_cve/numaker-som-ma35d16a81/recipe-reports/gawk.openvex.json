@@ -1,0 +1,81 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:353483c4-0462-4328-828f-e6695810a822",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-4156",
+        "name": "CVE-2023-4156"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/gawk@5.3.0?layer=meta&scan_sha256=d51b12363d05356d0be989646d58998699b88fdd99cbaade07a5f9147a3308d2"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-40467",
+        "name": "CVE-2026-40467"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/gawk@5.3.0?layer=meta&scan_sha256=d51b12363d05356d0be989646d58998699b88fdd99cbaade07a5f9147a3308d2"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-40468",
+        "name": "CVE-2026-40468"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/gawk@5.3.0?layer=meta&scan_sha256=d51b12363d05356d0be989646d58998699b88fdd99cbaade07a5f9147a3308d2"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-40469",
+        "name": "CVE-2026-40469"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/gawk@5.3.0?layer=meta&scan_sha256=d51b12363d05356d0be989646d58998699b88fdd99cbaade07a5f9147a3308d2"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-40553",
+        "name": "CVE-2026-40553"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/gawk@5.3.0?layer=meta&scan_sha256=d51b12363d05356d0be989646d58998699b88fdd99cbaade07a5f9147a3308d2"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    }
+  ]
+}

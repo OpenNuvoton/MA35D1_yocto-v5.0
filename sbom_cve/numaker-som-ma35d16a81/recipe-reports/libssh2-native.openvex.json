@@ -1,0 +1,360 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:1ecd6126-5686-416d-8688-11d39d4a8ae5",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-1782",
+        "name": "CVE-2015-1782"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-0787",
+        "name": "CVE-2016-0787"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-13115",
+        "name": "CVE-2019-13115"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-17498",
+        "name": "CVE-2019-17498"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3855",
+        "name": "CVE-2019-3855"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3856",
+        "name": "CVE-2019-3856"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3857",
+        "name": "CVE-2019-3857"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3858",
+        "name": "CVE-2019-3858"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3859",
+        "name": "CVE-2019-3859"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3860",
+        "name": "CVE-2019-3860"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3861",
+        "name": "CVE-2019-3861"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3862",
+        "name": "CVE-2019-3862"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-3863",
+        "name": "CVE-2019-3863"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-22218",
+        "name": "CVE-2020-22218"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-48795",
+        "name": "CVE-2023-48795"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-15661",
+        "name": "CVE-2025-15661"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-55199",
+        "name": "CVE-2026-55199"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-55200",
+        "name": "CVE-2026-55200"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-58050",
+        "name": "CVE-2026-58050"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-58051",
+        "name": "CVE-2026-58051"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-66032",
+        "name": "CVE-2026-66032"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-66033",
+        "name": "CVE-2026-66033"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-66034",
+        "name": "CVE-2026-66034"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-66035",
+        "name": "CVE-2026-66035"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-7598",
+        "name": "CVE-2026-7598"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libssh2-native@1.11.0?layer=meta&scan_sha256=b8faa000c13ac80b4a743c194ea5279997090bd76db425a65adb1dd51dcdcbbe"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    }
+  ]
+}

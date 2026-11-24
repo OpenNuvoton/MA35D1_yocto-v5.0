@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tar - Yocto CVE Check</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f6f8; color: #17202a; font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1800px; margin: auto; padding: 1.25rem; }
+header, .table-wrap { background: white; border: 1px solid #c9ced6; border-radius: 10px; }
+header { padding: 1rem 1.25rem; margin-bottom: 1rem; }
+h1 { margin: .25rem 0; font-size: 1.6rem; }
+a { color: #075985; }
+.meta, footer { color: #475569; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: .6rem; margin-top: 1rem; }
+.card { display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+        border: 1px solid #c9ced6; border-left: 5px solid #64748b; border-radius: 8px; padding: .6rem .8rem; }
+.card strong { font-size: 1.3rem; }
+.card.patched { border-left-color: #1565c0; }
+.card.unpatched { border-left-color: #c62828; }
+.card.ignored { border-left-color: #b45309; }
+.card.not-affected { border-left-color: #1f8a4c; }
+.card.affected { border-left-color: #c62828; }
+.card.fixed { border-left-color: #1565c0; }
+.card.under-investigation { border-left-color: #b45309; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .75rem 0; }
+input, select { font: inherit; padding: .45rem .6rem; border: 1px solid #94a3b8; border-radius: 6px; background: white; }
+input { flex: 1 1 16rem; min-width: 0; }
+.table-wrap { overflow: auto; max-height: 75vh; }
+table { width: 100%; border-spacing: 0; font-size: .9rem; }
+th { position: sticky; top: 0; background: #27364a; color: white; text-align: left; white-space: nowrap; }
+th, td { padding: .55rem .7rem; }
+td { vertical-align: top; border-top: 1px solid #e2e8f0; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eef4ff; }
+.cve { white-space: nowrap; font-family: monospace; font-weight: bold; }
+.cvss { white-space: nowrap; }
+.summary { min-width: 22rem; max-width: 58rem; white-space: pre-line; overflow-wrap: anywhere; }
+.notes { min-width: 12rem; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         font-weight: 600; background: #e2e8f0; color: #334155; }
+.badge.patched { background: #dbeafe; color: #1e40af; }
+.badge.fixed { background: #dbeafe; color: #1e40af; }
+.badge.not-affected { background: #dcfce7; color: #166534; }
+.badge.affected { background: #fee2e2; color: #991b1b; }
+.badge.under-investigation { background: #fef3c7; color: #92400e; }
+.badge.unpatched, .badge.high { background: #fee2e2; color: #991b1b; }
+.badge.ignored, .badge.medium { background: #fef3c7; color: #92400e; }
+.badge.critical { background: #7f1d1d; color: white; }
+.badge.low { background: #dcfce7; color: #166534; }
+footer { margin-top: .75rem; font-size: .85rem; }
+[hidden] { display: none !important; }
+@media print {
+  body { background: white; }
+  main { max-width: none; padding: 0; }
+  .toolbar { display: none; }
+  .table-wrap { max-height: none; overflow: visible; }
+  th { position: static; }
+  .summary, .notes { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<a href="index.html">All recipes</a>
+<h1>tar - Yocto CVE Check</h1>
+<div class="meta">Recipe version (PV): <strong>1.35</strong> &middot;
+Layer: meta<br>
+Products: tar (CVE records: Yes)<br>
+Source: <code>build/tmp-glibc/deploy/cve/tar_cve.json</code><br>
+Source file last modified: <time datetime="2026-11-23T11:01:48+08:00">2026-11-23T11:01:48+08:00</time><br>Evidence log: <code>build/tmp-glibc/work/cortexa35-poky-linux/tar/1.35/temp/log.do_cve_check</code></div>
+<h2>Vulnerability triage (VEX categories)</h2><p class="meta">Automated recipe-level triage based on Yocto evidence, not a verified product VEX. Under Investigation means evidence is insufficient; Affected is a conservative screening result.</p><div class="cards"><div class="card not-affected"><span>Not Affected</span><strong>17</strong></div><div class="card affected"><span>Affected</span><strong>3</strong></div><div class="card fixed"><span>Fixed</span><strong>0</strong></div><div class="card under-investigation"><span>Under Investigation</span><strong>0</strong></div></div>
+<h2>Yocto scan summary</h2>
+<div class="cards"><div class="card total"><span>Total</span><strong>20</strong></div><div class="card patched"><span>Patched</span><strong>17</strong></div><div class="card unpatched"><span>Unpatched</span><strong>3</strong></div><div class="card ignored"><span>Ignored</span><strong>0</strong></div></div>
+</header><div class="toolbar">
+<input id="search" type="search" placeholder="Search CVE ID, summary, or notes" aria-label="Search CVE ID, summary, or notes">
+<select id="filter" aria-label="Filter by Yocto status"><option value="">All Yocto statuses</option><option value="Patched">Patched</option><option value="Unpatched">Unpatched</option><option value="Ignored">Ignored</option></select>
+<select id="vex-filter" aria-label="Filter by VEX triage status"><option value="">All VEX categories</option><option value="Not Affected">Not Affected</option><option value="Affected">Affected</option><option value="Fixed">Fixed</option><option value="Under Investigation">Under Investigation</option></select>
+<span id="count" aria-live="polite">20 / 20 shown</span>
+</div><div class="table-wrap"><table><thead><tr><th scope="col">CVE ID</th><th scope="col">CVSS</th><th scope="col">Severity</th><th scope="col">VEX triage and reason</th><th scope="col">Yocto status</th><th scope="col">Summary</th><th scope="col">Yocto notes and vector</th></tr></thead><tbody>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2001-1267" target="_blank" rel="noopener noreferrer">CVE-2001-1267</a></td><td class="cvss">2.1 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Directory traversal vulnerability in GNU tar 1.13.19 and earlier allows local users to overwrite arbitrary files during archive extraction via a tar file whose filenames contain a .. (dot dot).</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:N/I:P/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2002-0399" target="_blank" rel="noopener noreferrer">CVE-2002-0399</a></td><td class="cvss">5.0 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Directory traversal vulnerability in GNU tar 1.13.19 through 1.13.25, and possibly later versions, allows attackers to overwrite arbitrary files during archive extraction via a (1) &quot;/..&quot; or (2) &quot;./..&quot; string, which removes the leading slash but leaves the &quot;..&quot;, a variant of CVE-2001-1267.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:N/I:P/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2002-1216" target="_blank" rel="noopener noreferrer">CVE-2002-1216</a></td><td class="cvss">5.0 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">GNU tar 1.13.19 and other versions before 1.13.25 allows remote attackers to overwrite arbitrary files via a symlink attack, as the result of a modification that effectively disabled the security check.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:N/I:P/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2005-1918" target="_blank" rel="noopener noreferrer">CVE-2005-1918</a></td><td class="cvss">2.6 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The original patch for a GNU tar directory traversal vulnerability (CVE-2002-0399) in Red Hat Enterprise Linux 3 and 2.1 uses an &quot;incorrect optimization&quot; that allows user-assisted attackers to overwrite arbitrary files via a crafted tar file, probably involving &quot;/../&quot; sequences with a leading &quot;/&quot;.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:H/Au:N/C:N/I:P/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2005-2541" target="_blank" rel="noopener noreferrer">CVE-2005-2541</a></td><td class="cvss">10.0 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:C/I:C/A:C</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2006-0300" target="_blank" rel="noopener noreferrer">CVE-2006-0300</a></td><td class="cvss">5.1 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Buffer overflow in tar 1.14 through 1.15.90 allows user-assisted attackers to cause a denial of service (application crash) and possibly execute code via unspecified vectors involving PAX extended headers.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:H/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2006-6097" target="_blank" rel="noopener noreferrer">CVE-2006-6097</a></td><td class="cvss">4.0 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">GNU tar 1.16 and 1.15.1, and possibly other versions, allows user-assisted attackers to overwrite arbitrary files via a tar file that contains a GNUTYPE_NAMES record with a symbolic link, which is not properly handled by the extract_archive function in extract.c and extract_mangle function in mangle.c, a variant of CVE-2002-1216.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:H/Au:N/C:N/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2007-4131" target="_blank" rel="noopener noreferrer">CVE-2007-4131</a></td><td class="cvss">6.8 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Directory traversal vulnerability in the contains_dot_dot function in src/names.c in GNU tar allows user-assisted remote attackers to overwrite arbitrary files via certain //.. (slash slash dot dot) sequences in directory symlinks in a TAR archive.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2007-4476" target="_blank" rel="noopener noreferrer">CVE-2007-4476</a></td><td class="cvss">7.5 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Buffer overflow in the safer_name_suffix function in GNU tar has unspecified attack vectors and impact, resulting in a &quot;crashing stack.&quot;</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2010-0624" target="_blank" rel="noopener noreferrer">CVE-2010-0624</a></td><td class="cvss">6.8 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Heap-based buffer overflow in the rmt_read__ function in lib/rtapelib.c in the rmt client functionality in GNU tar before 1.23 and GNU cpio before 2.11 allows remote rmt servers to cause a denial of service (memory corruption) or possibly execute arbitrary code by sending more data than was requested, related to archive filenames that contain a : (colon) character.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2016-6321" target="_blank" rel="noopener noreferrer">CVE-2016-6321</a></td><td class="cvss">7.5 (v3)<br>5.0 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Directory traversal vulnerability in the safer_name_suffix function in GNU tar 1.14 through 1.29 might allow remote attackers to bypass an intended protection mechanism and write to arbitrary files via vectors related to improper sanitization of the file_name parameter, aka POINTYFEATHER.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:N/I:P/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-20482" target="_blank" rel="noopener noreferrer">CVE-2018-20482</a></td><td class="cvss">4.7 (v3)<br>1.9 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">GNU Tar through 1.30, when --sparse is used, mishandles file shrinkage during read access, which allows local users to cause a denial of service (infinite read loop in sparse_dump_region in sparse.c) by modifying a file that is supposed to be archived by a different user&#x27;s process (e.g., a system backup running as root).</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-9923" target="_blank" rel="noopener noreferrer">CVE-2019-9923</a></td><td class="cvss">7.5 (v3)<br>5.0 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-20193" target="_blank" rel="noopener noreferrer">CVE-2021-20193</a></td><td class="cvss">3.3 (v3)<br>4.3 (v2)</td><td><span class="badge low">Low</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">A flaw was found in the src/list.c of tar 1.33 and earlier. This flaw allows an attacker who can submit a crafted input file to tar to cause uncontrolled consumption of memory. The highest threat from this vulnerability is to system availability.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-48303" target="_blank" rel="noopener noreferrer">CVE-2022-48303</a></td><td class="cvss">5.5 (v3)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">GNU Tar through 1.34 has a one-byte out-of-bounds read that results in use of uninitialized memory for a conditional jump. Exploitation to change the flow of control has not been demonstrated. The issue occurs in from_header in list.c via a V7 archive in which mtime has approximately 11 whitespace characters.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-39804" target="_blank" rel="noopener noreferrer">CVE-2023-39804</a></td><td class="cvss">6.2 (v3)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">In GNU tar before 1.35, mishandled extension attributes in a PAX archive can lead to an application crash in xheader.c.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-45582" target="_blank" rel="noopener noreferrer">CVE-2025-45582</a></td><td class="cvss">4.1 (v3)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file&#x27;s name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of &quot;Member name contains &#x27;..&#x27;&quot; that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain &quot;x -&gt; ../../../../../home/victim/.ssh&quot; and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which &quot;tar xf&quot; is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each &quot;tar xf&quot; in its Security Rules of Thumb; however, third-party advice leads users to run &quot;tar xf&quot; more than once into the same directory.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:L/A:L</td></tr>
+<tr data-filter="Unpatched" data-assessment="Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18477" target="_blank" rel="noopener noreferrer">CVE-2026-18477</a></td><td class="cvss">4.4 (v3)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge affected">Affected</span><br>Yocto reports Unpatched; treated as potentially affected pending validation.</td><td><span class="badge unpatched">Unpatched</span></td><td class="summary">A TOCTOU (Time-of-Check Time-of-Use) vulnerability in GNU tar&#x27;s incremental dumpdir &#x27;X&#x27; rename handling allows a local attacker with write access to a directory being backed up to influence the restore process if the attacker has access to the system where the restore is being performed. During restoration, files or directories may be created, renamed or overwritten outside the intended extraction directory. This could lead to unauthorized file modification or, in some cases, privilege escalation. Exploitation does not require the attacker to modify or craft the archive, and standard backup and restore workflows—including extracting into a newly created directory without using the -P option do not mitigate the issue.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N</td></tr>
+<tr data-filter="Unpatched" data-assessment="Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18508" target="_blank" rel="noopener noreferrer">CVE-2026-18508</a></td><td class="cvss">4.4 (v3)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge affected">Affected</span><br>Yocto reports Unpatched; treated as potentially affected pending validation.</td><td><span class="badge unpatched">Unpatched</span></td><td class="summary">A flaw was found in GNU tar. When extracting an archive with the --one-top-level option, hardlink targets are not confined to the designated top-level directory and may resolve relative to the extraction working directory. A crafted archive can create hardlinks that escape the intended boundary and, when combined with a preexisting symbolic link under the working directory, may allow writing outside that boundary during a single extraction.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N</td></tr>
+<tr data-filter="Unpatched" data-assessment="Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5704" target="_blank" rel="noopener noreferrer">CVE-2026-5704</a></td><td class="cvss">5.0 (v3)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge affected">Affected</span><br>Yocto reports Unpatched; treated as potentially affected pending validation.</td><td><span class="badge unpatched">Unpatched</span></td><td class="summary">A flaw was found in tar. A remote attacker could exploit this vulnerability by crafting a malicious archive, leading to hidden file injection with fully attacker-controlled content. This bypasses pre-extraction inspection mechanisms, potentially allowing an attacker to introduce malicious files onto a system without detection.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N</td></tr>
+</tbody></table></div>
+<p id="no-results" hidden>No matches for the current filters.</p>
+<footer>Automated Yocto cve-check output, not a manual product assessment. The source JSON does not provide publication dates, verified fixes, or the effective CVE_VERSION. Severity uses CVSS v4 when available, otherwise v3. Zero scores are omitted because Yocto can use zero for missing metrics; v2-only records have no severity label here.</footer>
+</main>
+<script>
+const search = document.querySelector('#search');
+const filter = document.querySelector('#filter');
+const vexFilter = document.querySelector('#vex-filter');
+const rows = [...document.querySelectorAll('tbody tr[data-filter]')];
+const count = document.querySelector('#count');
+const empty = document.querySelector('#no-results');
+const text = new WeakMap();
+function applyFilter() {
+  const query = search.value.trim().toLowerCase();
+  const selected = filter.value;
+  const assessment = vexFilter?.value;
+  let visible = 0;
+  for (const row of rows) {
+    let matches = !selected || row.dataset.filter.split(' ').includes(selected);
+    if (assessment) matches = matches && row.dataset.assessment === assessment;
+    if (matches && query) {
+      if (!text.has(row)) text.set(row, row.textContent.toLowerCase());
+      matches = text.get(row).includes(query);
+    }
+    if (row.hidden === matches) row.hidden = !matches;
+    if (matches) visible++;
+  }
+  count.textContent = `${visible.toLocaleString()} / ${rows.length.toLocaleString()} shown`;
+  empty.hidden = visible !== 0 || rows.length === 0;
+}
+let timer;
+search.addEventListener('input', () => {
+  clearTimeout(timer);
+  timer = setTimeout(applyFilter, 120);
+});
+filter.addEventListener('change', applyFilter);
+vexFilter?.addEventListener('change', applyFilter);
+applyFilter();
+</script>
+</body>
+</html>

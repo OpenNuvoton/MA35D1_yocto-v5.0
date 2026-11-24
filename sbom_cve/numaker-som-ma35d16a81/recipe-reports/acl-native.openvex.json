@@ -1,0 +1,25 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:34579136-dc33-4e7c-8679-a1f13138edc4",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2009-4411",
+        "name": "CVE-2009-4411"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/acl-native@2.3.2?layer=meta&scan_sha256=a83b6c1652e74b418eb9533b706d4a2d51dc7e0648a32d4e08810ae58e940f8b"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

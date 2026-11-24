@@ -1,0 +1,235 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:44567a5d-8ccf-4963-81ba-c1dc186765f0",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-36113",
+        "name": "CVE-2022-36113"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-36114",
+        "name": "CVE-2022-36114"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-46176",
+        "name": "CVE-2022-46176"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-38497",
+        "name": "CVE-2023-38497"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-47846",
+        "name": "CVE-2024-47846"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-47847",
+        "name": "CVE-2024-47847"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-47849",
+        "name": "CVE-2024-47849"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-14363",
+        "name": "CVE-2026-14363"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-39837",
+        "name": "CVE-2026-39837"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-39839",
+        "name": "CVE-2026-39839"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-39840",
+        "name": "CVE-2026-39840"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-39841",
+        "name": "CVE-2026-39841"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-5222",
+        "name": "CVE-2026-5222"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-5223",
+        "name": "CVE-2026-5223"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-58519",
+        "name": "CVE-2026-58519"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-58521",
+        "name": "CVE-2026-58521"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/cargo-native@1.75.0?layer=meta&scan_sha256=70b5199218f30ff361818847028e3084fd213145be71d76622992fddc5661900"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    }
+  ]
+}

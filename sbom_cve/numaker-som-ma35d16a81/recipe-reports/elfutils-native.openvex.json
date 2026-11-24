@@ -1,0 +1,473 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:02f9e642-e148-4da2-b809-ee9c9d4070dd",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-0172",
+        "name": "CVE-2014-0172"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-9447",
+        "name": "CVE-2014-9447"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-10254",
+        "name": "CVE-2016-10254"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-10255",
+        "name": "CVE-2016-10255"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7607",
+        "name": "CVE-2017-7607"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7608",
+        "name": "CVE-2017-7608"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7609",
+        "name": "CVE-2017-7609"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7610",
+        "name": "CVE-2017-7610"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7611",
+        "name": "CVE-2017-7611"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7612",
+        "name": "CVE-2017-7612"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7613",
+        "name": "CVE-2017-7613"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-16062",
+        "name": "CVE-2018-16062"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-16402",
+        "name": "CVE-2018-16402"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-16403",
+        "name": "CVE-2018-16403"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18310",
+        "name": "CVE-2018-18310"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18520",
+        "name": "CVE-2018-18520"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18521",
+        "name": "CVE-2018-18521"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-8769",
+        "name": "CVE-2018-8769"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-7146",
+        "name": "CVE-2019-7146"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-7148",
+        "name": "CVE-2019-7148"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-7149",
+        "name": "CVE-2019-7149"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-7150",
+        "name": "CVE-2019-7150"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-7664",
+        "name": "CVE-2019-7664"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-7665",
+        "name": "CVE-2019-7665"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-21047",
+        "name": "CVE-2020-21047"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-33294",
+        "name": "CVE-2021-33294"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-25260",
+        "name": "CVE-2024-25260"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1352",
+        "name": "CVE-2025-1352"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1365",
+        "name": "CVE-2025-1365"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1371",
+        "name": "CVE-2025-1371"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1372",
+        "name": "CVE-2025-1372"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1376",
+        "name": "CVE-2025-1376"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1377",
+        "name": "CVE-2025-1377"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/elfutils-native@0.191?layer=meta&scan_sha256=143972988f7c6b5d75472be4392ddf35072f90c31b951bc9d5fb9068affd8d48"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

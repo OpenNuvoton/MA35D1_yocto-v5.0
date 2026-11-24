@@ -1,0 +1,39 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:0da2afea-ae2d-4190-a8a0-fc7808805134",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-2090",
+        "name": "CVE-2016-2090"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libbsd-native@0.12.1?layer=meta&scan_sha256=3c6d6bb046d6f4aa6472e35a0ddca2e4f4ee3c96d99cdaf6d32ff2b69cbdaa4b"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-20367",
+        "name": "CVE-2019-20367"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/libbsd-native@0.12.1?layer=meta&scan_sha256=3c6d6bb046d6f4aa6472e35a0ddca2e4f4ee3c96d99cdaf6d32ff2b69cbdaa4b"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

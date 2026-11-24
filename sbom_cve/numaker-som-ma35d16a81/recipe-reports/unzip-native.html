@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>unzip-native - Yocto CVE Check</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f6f8; color: #17202a; font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1800px; margin: auto; padding: 1.25rem; }
+header, .table-wrap { background: white; border: 1px solid #c9ced6; border-radius: 10px; }
+header { padding: 1rem 1.25rem; margin-bottom: 1rem; }
+h1 { margin: .25rem 0; font-size: 1.6rem; }
+a { color: #075985; }
+.meta, footer { color: #475569; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: .6rem; margin-top: 1rem; }
+.card { display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+        border: 1px solid #c9ced6; border-left: 5px solid #64748b; border-radius: 8px; padding: .6rem .8rem; }
+.card strong { font-size: 1.3rem; }
+.card.patched { border-left-color: #1565c0; }
+.card.unpatched { border-left-color: #c62828; }
+.card.ignored { border-left-color: #b45309; }
+.card.not-affected { border-left-color: #1f8a4c; }
+.card.affected { border-left-color: #c62828; }
+.card.fixed { border-left-color: #1565c0; }
+.card.under-investigation { border-left-color: #b45309; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .75rem 0; }
+input, select { font: inherit; padding: .45rem .6rem; border: 1px solid #94a3b8; border-radius: 6px; background: white; }
+input { flex: 1 1 16rem; min-width: 0; }
+.table-wrap { overflow: auto; max-height: 75vh; }
+table { width: 100%; border-spacing: 0; font-size: .9rem; }
+th { position: sticky; top: 0; background: #27364a; color: white; text-align: left; white-space: nowrap; }
+th, td { padding: .55rem .7rem; }
+td { vertical-align: top; border-top: 1px solid #e2e8f0; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eef4ff; }
+.cve { white-space: nowrap; font-family: monospace; font-weight: bold; }
+.cvss { white-space: nowrap; }
+.summary { min-width: 22rem; max-width: 58rem; white-space: pre-line; overflow-wrap: anywhere; }
+.notes { min-width: 12rem; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         font-weight: 600; background: #e2e8f0; color: #334155; }
+.badge.patched { background: #dbeafe; color: #1e40af; }
+.badge.fixed { background: #dbeafe; color: #1e40af; }
+.badge.not-affected { background: #dcfce7; color: #166534; }
+.badge.affected { background: #fee2e2; color: #991b1b; }
+.badge.under-investigation { background: #fef3c7; color: #92400e; }
+.badge.unpatched, .badge.high { background: #fee2e2; color: #991b1b; }
+.badge.ignored, .badge.medium { background: #fef3c7; color: #92400e; }
+.badge.critical { background: #7f1d1d; color: white; }
+.badge.low { background: #dcfce7; color: #166534; }
+footer { margin-top: .75rem; font-size: .85rem; }
+[hidden] { display: none !important; }
+@media print {
+  body { background: white; }
+  main { max-width: none; padding: 0; }
+  .toolbar { display: none; }
+  .table-wrap { max-height: none; overflow: visible; }
+  th { position: static; }
+  .summary, .notes { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<a href="index.html">All recipes</a>
+<h1>unzip-native - Yocto CVE Check</h1>
+<div class="meta">Recipe version (PV): <strong>1_6.0</strong> &middot;
+Layer: meta<br>
+Products: unzip (CVE records: Yes)<br>
+Source: <code>build/tmp-glibc/deploy/cve/unzip-native_cve.json</code><br>
+Source file last modified: <time datetime="2026-11-23T11:01:40+08:00">2026-11-23T11:01:40+08:00</time><br>Evidence log: <code>build/tmp-glibc/work/x86_64-linux/unzip-native/6.0/temp/log.do_cve_check</code></div>
+<h2>Vulnerability triage (VEX categories)</h2><p class="meta">Automated recipe-level triage based on Yocto evidence, not a verified product VEX. Under Investigation means evidence is insufficient; Affected is a conservative screening result.</p><div class="cards"><div class="card not-affected"><span>Not Affected</span><strong>11</strong></div><div class="card affected"><span>Affected</span><strong>0</strong></div><div class="card fixed"><span>Fixed</span><strong>16</strong></div><div class="card under-investigation"><span>Under Investigation</span><strong>0</strong></div></div>
+<h2>Yocto scan summary</h2>
+<div class="cards"><div class="card total"><span>Total</span><strong>27</strong></div><div class="card patched"><span>Patched</span><strong>27</strong></div><div class="card unpatched"><span>Unpatched</span><strong>0</strong></div><div class="card ignored"><span>Ignored</span><strong>0</strong></div></div>
+</header><div class="toolbar">
+<input id="search" type="search" placeholder="Search CVE ID, summary, or notes" aria-label="Search CVE ID, summary, or notes">
+<select id="filter" aria-label="Filter by Yocto status"><option value="">All Yocto statuses</option><option value="Patched">Patched</option><option value="Unpatched">Unpatched</option><option value="Ignored">Ignored</option></select>
+<select id="vex-filter" aria-label="Filter by VEX triage status"><option value="">All VEX categories</option><option value="Not Affected">Not Affected</option><option value="Affected">Affected</option><option value="Fixed">Fixed</option><option value="Under Investigation">Under Investigation</option></select>
+<span id="count" aria-live="polite">27 / 27 shown</span>
+</div><div class="table-wrap"><table><thead><tr><th scope="col">CVE ID</th><th scope="col">CVSS</th><th scope="col">Severity</th><th scope="col">VEX triage and reason</th><th scope="col">Yocto status</th><th scope="col">Summary</th><th scope="col">Yocto notes and vector</th></tr></thead><tbody>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2001-1268" target="_blank" rel="noopener noreferrer">CVE-2001-1268</a></td><td class="cvss">2.1 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Directory traversal vulnerability in Info-ZIP UnZip 5.42 and earlier allows attackers to overwrite arbitrary files during archive extraction via a .. (dot dot) in an extracted filename.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:N/I:P/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2001-1269" target="_blank" rel="noopener noreferrer">CVE-2001-1269</a></td><td class="cvss">2.1 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Info-ZIP UnZip 5.42 and earlier allows attackers to overwrite arbitrary files during archive extraction via filenames in the archive that begin with the &#x27;/&#x27; (slash) character.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:N/I:P/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2003-0282" target="_blank" rel="noopener noreferrer">CVE-2003-0282</a></td><td class="cvss">2.6 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Directory traversal vulnerability in UnZip 5.50 allows attackers to overwrite arbitrary files via invalid characters between two . (dot) characters, which are filtered and result in a &quot;..&quot; sequence.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:H/Au:N/C:N/I:P/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2005-0602" target="_blank" rel="noopener noreferrer">CVE-2005-0602</a></td><td class="cvss">6.2 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Unzip 5.51 and earlier does not properly warn the user when extracting setuid or setgid files, which may allow local users to gain privileges.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:H/Au:N/C:C/I:C/A:C</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2005-2475" target="_blank" rel="noopener noreferrer">CVE-2005-2475</a></td><td class="cvss">1.2 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Race condition in Unzip 5.52 allows local users to modify permissions of arbitrary files via a hard link attack on a file while it is being decompressed, whose permissions are changed by Unzip after the decompression is complete.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:H/Au:N/C:P/I:N/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2005-4667" target="_blank" rel="noopener noreferrer">CVE-2005-4667</a></td><td class="cvss">3.7 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Buffer overflow in UnZip 5.50 and earlier allows user-assisted attackers to execute arbitrary code via a long filename command line argument.  NOTE: since the overflow occurs in a non-setuid program, there are not many scenarios under which it poses a vulnerability, unless unzip is passed long arguments when it is invoked from other programs.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:H/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2008-0888" target="_blank" rel="noopener noreferrer">CVE-2008-0888</a></td><td class="cvss">9.3 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>Yocto records a fixed version or backport; see its note.</td><td><span class="badge patched">Patched</span></td><td class="summary">The NEEDBITS macro in the inflate_dynamic function in inflate.c for unzip can be invoked using invalid buffers, which allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unknown vectors that trigger a free of uninitialized or previously-freed data.</td><td class="notes"><strong>Justification:</strong> fixed-version<br><strong>Yocto note:</strong> Patch from https://bugzilla.redhat.com/attachment.cgi?id=293893&amp;action=diff applied to 6.0 source<br><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:C/I:C/A:C</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2014-8139" target="_blank" rel="noopener noreferrer">CVE-2014-8139</a></td><td class="cvss">7.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Heap-based buffer overflow in the CRC32 verification in Info-ZIP UnZip 6.0 and earlier allows remote attackers to execute arbitrary code via a crafted zip file in the -t command argument to the unzip command.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2014-8140" target="_blank" rel="noopener noreferrer">CVE-2014-8140</a></td><td class="cvss">7.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Heap-based buffer overflow in the test_compr_eb function in Info-ZIP UnZip 6.0 and earlier allows remote attackers to execute arbitrary code via a crafted zip file in the -t command argument to the unzip command.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2014-8141" target="_blank" rel="noopener noreferrer">CVE-2014-8141</a></td><td class="cvss">7.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Heap-based buffer overflow in the getZip64Data function in Info-ZIP UnZip 6.0 and earlier allows remote attackers to execute arbitrary code via a crafted zip file in the -t command argument to the unzip command.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2014-9636" target="_blank" rel="noopener noreferrer">CVE-2014-9636</a></td><td class="cvss">5.0 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">unzip 6.0 allows remote attackers to cause a denial of service (out-of-bounds read or write and crash) via an extra field with an uncompressed size smaller than the compressed field size in a zip archive that advertises STORED method compression.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2014-9913" target="_blank" rel="noopener noreferrer">CVE-2014-9913</a></td><td class="cvss">4.0 (v3)<br>2.1 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Buffer overflow in the list_files function in list.c in Info-Zip UnZip 6.0 allows remote attackers to cause a denial of service (crash) via vectors related to the compression method.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2015-1315" target="_blank" rel="noopener noreferrer">CVE-2015-1315</a></td><td class="cvss">7.5 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Buffer overflow in the charset_to_intern function in unix/unix.c in Info-Zip UnZip 6.10b allows remote attackers to execute arbitrary code via a crafted string, as demonstrated by converting a string from CP866 to UTF-8.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2015-7696" target="_blank" rel="noopener noreferrer">CVE-2015-7696</a></td><td class="cvss">6.8 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Info-ZIP UnZip 6.0 allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) or possibly execute arbitrary code via a crafted password-protected ZIP archive, possibly related to an Extra-Field size value.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2015-7697" target="_blank" rel="noopener noreferrer">CVE-2015-7697</a></td><td class="cvss">4.3 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Info-ZIP UnZip 6.0 allows remote attackers to cause a denial of service (infinite loop) via empty bzip2 data in a ZIP archive.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2016-9844" target="_blank" rel="noopener noreferrer">CVE-2016-9844</a></td><td class="cvss">4.0 (v3)<br>2.1 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Buffer overflow in the zi_short function in zipinfo.c in Info-Zip UnZip 6.0 allows remote attackers to cause a denial of service (crash) via a large compression method value in the central directory file header.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1000031" target="_blank" rel="noopener noreferrer">CVE-2018-1000031</a></td><td class="cvss">7.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">A heap-based buffer overflow exists in Info-Zip UnZip version 6.10c22 that allows an attacker to perform a denial of service or to possibly achieve code execution.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1000032" target="_blank" rel="noopener noreferrer">CVE-2018-1000032</a></td><td class="cvss">7.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">A heap-based buffer overflow exists in Info-Zip UnZip version 6.10c22 that allows an attacker to perform a denial of service or to possibly achieve code execution.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1000033" target="_blank" rel="noopener noreferrer">CVE-2018-1000033</a></td><td class="cvss">9.1 (v3)<br>6.4 (v2)</td><td><span class="badge critical">Critical</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">An out-of-bounds read exists in Info-Zip UnZip version 6.10c22 that allows an attacker to perform a denial of service and read sensitive memory.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:P/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1000034" target="_blank" rel="noopener noreferrer">CVE-2018-1000034</a></td><td class="cvss">9.1 (v3)<br>6.4 (v2)</td><td><span class="badge critical">Critical</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">An out-of-bounds read exists in Info-Zip UnZip version 6.10c22 that allows an attacker to perform a denial of service and read sensitive memory.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:P/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1000035" target="_blank" rel="noopener noreferrer">CVE-2018-1000035</a></td><td class="cvss">7.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">A heap-based buffer overflow exists in Info-Zip UnZip version &lt;= 6.00 in the processing of password-protected archives that allows an attacker to perform a denial of service or to possibly achieve code execution.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-18384" target="_blank" rel="noopener noreferrer">CVE-2018-18384</a></td><td class="cvss">5.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Info-ZIP UnZip 6.0 has a buffer overflow in list.c, when a ZIP archive has a crafted relationship between the compressed-size value and the uncompressed-size value, because a buffer size is 10 and is supposed to be 12.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-13232" target="_blank" rel="noopener noreferrer">CVE-2019-13232</a></td><td class="cvss">3.3 (v3)<br>2.1 (v2)</td><td><span class="badge low">Low</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">Info-ZIP UnZip 6.0 mishandles the overlapping of files inside a ZIP container, leading to denial of service (resource consumption), aka a &quot;better zip bomb&quot; issue.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-36561" target="_blank" rel="noopener noreferrer">CVE-2020-36561</a></td><td class="cvss">9.1 (v3)</td><td><span class="badge critical">Critical</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Due to improper path sanitization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-4217" target="_blank" rel="noopener noreferrer">CVE-2021-4217</a></td><td class="cvss">3.3 (v3)</td><td><span class="badge low">Low</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">A flaw was found in unzip. The vulnerability occurs due to improper handling of Unicode strings, which can lead to a null pointer dereference. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-0529" target="_blank" rel="noopener noreferrer">CVE-2022-0529</a></td><td class="cvss">5.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">A flaw was found in Unzip. The vulnerability occurs during the conversion of a wide string to a local string that leads to a heap of out-of-bound write. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Fixed"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-0530" target="_blank" rel="noopener noreferrer">CVE-2022-0530</a></td><td class="cvss">5.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge fixed">Fixed</span><br>The matching Yocto task log records a recipe patch or explicit fix metadata.</td><td><span class="badge patched">Patched</span></td><td class="summary">A flaw was found in Unzip. The vulnerability occurs during the conversion of a wide string to a local string that leads to a heap of out-of-bound write. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+</tbody></table></div>
+<p id="no-results" hidden>No matches for the current filters.</p>
+<footer>Automated Yocto cve-check output, not a manual product assessment. The source JSON does not provide publication dates, verified fixes, or the effective CVE_VERSION. Severity uses CVSS v4 when available, otherwise v3. Zero scores are omitted because Yocto can use zero for missing metrics; v2-only records have no severity label here.</footer>
+</main>
+<script>
+const search = document.querySelector('#search');
+const filter = document.querySelector('#filter');
+const vexFilter = document.querySelector('#vex-filter');
+const rows = [...document.querySelectorAll('tbody tr[data-filter]')];
+const count = document.querySelector('#count');
+const empty = document.querySelector('#no-results');
+const text = new WeakMap();
+function applyFilter() {
+  const query = search.value.trim().toLowerCase();
+  const selected = filter.value;
+  const assessment = vexFilter?.value;
+  let visible = 0;
+  for (const row of rows) {
+    let matches = !selected || row.dataset.filter.split(' ').includes(selected);
+    if (assessment) matches = matches && row.dataset.assessment === assessment;
+    if (matches && query) {
+      if (!text.has(row)) text.set(row, row.textContent.toLowerCase());
+      matches = text.get(row).includes(query);
+    }
+    if (row.hidden === matches) row.hidden = !matches;
+    if (matches) visible++;
+  }
+  count.textContent = `${visible.toLocaleString()} / ${rows.length.toLocaleString()} shown`;
+  empty.hidden = visible !== 0 || rows.length === 0;
+}
+let timer;
+search.addEventListener('input', () => {
+  clearTimeout(timer);
+  timer = setTimeout(applyFilter, 120);
+});
+filter.addEventListener('change', applyFilter);
+vexFilter?.addEventListener('change', applyFilter);
+applyFilter();
+</script>
+</body>
+</html>

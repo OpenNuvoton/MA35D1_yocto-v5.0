@@ -1,0 +1,443 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:706bf1e3-c88c-49dd-bc1d-a90acc6191b9",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2000-0963",
+        "name": "CVE-2000-0963"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2002-0062",
+        "name": "CVE-2002-0062"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-10684",
+        "name": "CVE-2017-10684"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-10685",
+        "name": "CVE-2017-10685"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-11112",
+        "name": "CVE-2017-11112"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-11113",
+        "name": "CVE-2017-11113"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13728",
+        "name": "CVE-2017-13728"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13729",
+        "name": "CVE-2017-13729"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13730",
+        "name": "CVE-2017-13730"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13731",
+        "name": "CVE-2017-13731"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13732",
+        "name": "CVE-2017-13732"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13733",
+        "name": "CVE-2017-13733"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13734",
+        "name": "CVE-2017-13734"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16879",
+        "name": "CVE-2017-16879"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-19211",
+        "name": "CVE-2018-19211"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-19217",
+        "name": "CVE-2018-19217"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-15547",
+        "name": "CVE-2019-15547"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-15548",
+        "name": "CVE-2019-15548"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-17594",
+        "name": "CVE-2019-17594"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-17595",
+        "name": "CVE-2019-17595"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-19185",
+        "name": "CVE-2020-19185"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-19186",
+        "name": "CVE-2020-19186"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-19187",
+        "name": "CVE-2020-19187"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-19188",
+        "name": "CVE-2020-19188"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-19189",
+        "name": "CVE-2020-19189"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-19190",
+        "name": "CVE-2020-19190"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-39537",
+        "name": "CVE-2021-39537"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+        "name": "CVE-2022-29458"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-29491",
+        "name": "CVE-2023-29491"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+        "name": "CVE-2023-50495"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69720",
+        "name": "CVE-2025-69720"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ncurses-native@6.4?layer=meta&scan_sha256=21d2fd54d8d977a3b445e71a659f11bb751edc57ca7cd70ba16a14a608cfb068"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    }
+  ]
+}

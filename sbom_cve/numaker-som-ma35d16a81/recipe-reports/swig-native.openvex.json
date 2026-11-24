@@ -1,0 +1,39 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:ab84a856-d746-46ab-9267-c9ebcc476d47",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-25344",
+        "name": "CVE-2023-25344"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/swig-native@4.2.1?layer=meta&scan_sha256=16cf0e5c685284c7001e06597bbdcfb6cfb7ff6e568e22f04c16bb28405f8b1b"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-25345",
+        "name": "CVE-2023-25345"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/swig-native@4.2.1?layer=meta&scan_sha256=16cf0e5c685284c7001e06597bbdcfb6cfb7ff6e568e22f04c16bb28405f8b1b"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

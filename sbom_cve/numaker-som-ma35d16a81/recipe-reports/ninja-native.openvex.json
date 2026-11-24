@@ -1,0 +1,53 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:340f993c-493d-4eb0-923a-932843da8442",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-4550",
+        "name": "CVE-2014-4550"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ninja-native@1.11.1?layer=meta&scan_sha256=27f61a889bb6a35c51a6b482146adfcd6e2e5449cda53f5fb91a38a75251bfc0"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-4336",
+        "name": "CVE-2021-4336"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ninja-native@1.11.1?layer=meta&scan_sha256=27f61a889bb6a35c51a6b482146adfcd6e2e5449cda53f5fb91a38a75251bfc0"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "Yocto records an explicit applicability exclusion; see its note. Yocto cve-check: Ignored (cpe-incorrect). This is a different Ninja",
+      "impact_statement": "For this scanned recipe only: Yocto records an explicit applicability exclusion; see its note. Yocto cve-check: Ignored (cpe-incorrect). This is a different Ninja"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-36823",
+        "name": "CVE-2024-36823"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/ninja-native@1.11.1?layer=meta&scan_sha256=27f61a889bb6a35c51a6b482146adfcd6e2e5449cda53f5fb91a38a75251bfc0"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

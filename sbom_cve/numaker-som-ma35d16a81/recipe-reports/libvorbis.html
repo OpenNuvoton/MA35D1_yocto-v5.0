@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>libvorbis - Yocto CVE Check</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f6f8; color: #17202a; font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1800px; margin: auto; padding: 1.25rem; }
+header, .table-wrap { background: white; border: 1px solid #c9ced6; border-radius: 10px; }
+header { padding: 1rem 1.25rem; margin-bottom: 1rem; }
+h1 { margin: .25rem 0; font-size: 1.6rem; }
+a { color: #075985; }
+.meta, footer { color: #475569; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: .6rem; margin-top: 1rem; }
+.card { display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+        border: 1px solid #c9ced6; border-left: 5px solid #64748b; border-radius: 8px; padding: .6rem .8rem; }
+.card strong { font-size: 1.3rem; }
+.card.patched { border-left-color: #1565c0; }
+.card.unpatched { border-left-color: #c62828; }
+.card.ignored { border-left-color: #b45309; }
+.card.not-affected { border-left-color: #1f8a4c; }
+.card.affected { border-left-color: #c62828; }
+.card.fixed { border-left-color: #1565c0; }
+.card.under-investigation { border-left-color: #b45309; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .75rem 0; }
+input, select { font: inherit; padding: .45rem .6rem; border: 1px solid #94a3b8; border-radius: 6px; background: white; }
+input { flex: 1 1 16rem; min-width: 0; }
+.table-wrap { overflow: auto; max-height: 75vh; }
+table { width: 100%; border-spacing: 0; font-size: .9rem; }
+th { position: sticky; top: 0; background: #27364a; color: white; text-align: left; white-space: nowrap; }
+th, td { padding: .55rem .7rem; }
+td { vertical-align: top; border-top: 1px solid #e2e8f0; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eef4ff; }
+.cve { white-space: nowrap; font-family: monospace; font-weight: bold; }
+.cvss { white-space: nowrap; }
+.summary { min-width: 22rem; max-width: 58rem; white-space: pre-line; overflow-wrap: anywhere; }
+.notes { min-width: 12rem; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         font-weight: 600; background: #e2e8f0; color: #334155; }
+.badge.patched { background: #dbeafe; color: #1e40af; }
+.badge.fixed { background: #dbeafe; color: #1e40af; }
+.badge.not-affected { background: #dcfce7; color: #166534; }
+.badge.affected { background: #fee2e2; color: #991b1b; }
+.badge.under-investigation { background: #fef3c7; color: #92400e; }
+.badge.unpatched, .badge.high { background: #fee2e2; color: #991b1b; }
+.badge.ignored, .badge.medium { background: #fef3c7; color: #92400e; }
+.badge.critical { background: #7f1d1d; color: white; }
+.badge.low { background: #dcfce7; color: #166534; }
+footer { margin-top: .75rem; font-size: .85rem; }
+[hidden] { display: none !important; }
+@media print {
+  body { background: white; }
+  main { max-width: none; padding: 0; }
+  .toolbar { display: none; }
+  .table-wrap { max-height: none; overflow: visible; }
+  th { position: static; }
+  .summary, .notes { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<a href="index.html">All recipes</a>
+<h1>libvorbis - Yocto CVE Check</h1>
+<div class="meta">Recipe version (PV): <strong>1.3.7</strong> &middot;
+Layer: meta<br>
+Products: libvorbis (CVE records: Yes)<br>
+Source: <code>build/tmp-glibc/deploy/cve/libvorbis_cve.json</code><br>
+Source file last modified: <time datetime="2026-11-23T11:01:32+08:00">2026-11-23T11:01:32+08:00</time><br>Evidence log: <code>build/tmp-glibc/work/cortexa35-poky-linux/libvorbis/1.3.7/temp/log.do_cve_check</code></div>
+<h2>Vulnerability triage (VEX categories)</h2><p class="meta">Automated recipe-level triage based on Yocto evidence, not a verified product VEX. Under Investigation means evidence is insufficient; Affected is a conservative screening result.</p><div class="cards"><div class="card not-affected"><span>Not Affected</span><strong>15</strong></div><div class="card affected"><span>Affected</span><strong>0</strong></div><div class="card fixed"><span>Fixed</span><strong>0</strong></div><div class="card under-investigation"><span>Under Investigation</span><strong>0</strong></div></div>
+<h2>Yocto scan summary</h2>
+<div class="cards"><div class="card total"><span>Total</span><strong>15</strong></div><div class="card patched"><span>Patched</span><strong>15</strong></div><div class="card unpatched"><span>Unpatched</span><strong>0</strong></div><div class="card ignored"><span>Ignored</span><strong>0</strong></div></div>
+</header><div class="toolbar">
+<input id="search" type="search" placeholder="Search CVE ID, summary, or notes" aria-label="Search CVE ID, summary, or notes">
+<select id="filter" aria-label="Filter by Yocto status"><option value="">All Yocto statuses</option><option value="Patched">Patched</option><option value="Unpatched">Unpatched</option><option value="Ignored">Ignored</option></select>
+<select id="vex-filter" aria-label="Filter by VEX triage status"><option value="">All VEX categories</option><option value="Not Affected">Not Affected</option><option value="Affected">Affected</option><option value="Fixed">Fixed</option><option value="Under Investigation">Under Investigation</option></select>
+<span id="count" aria-live="polite">15 / 15 shown</span>
+</div><div class="table-wrap"><table><thead><tr><th scope="col">CVE ID</th><th scope="col">CVSS</th><th scope="col">Severity</th><th scope="col">VEX triage and reason</th><th scope="col">Yocto status</th><th scope="col">Summary</th><th scope="col">Yocto notes and vector</th></tr></thead><tbody>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2007-3106" target="_blank" rel="noopener noreferrer">CVE-2007-3106</a></td><td class="cvss">6.8 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">lib/info.c in libvorbis 1.1.2, and possibly other versions before 1.2.0, allows context-dependent attackers to cause a denial of service and possibly execute arbitrary code via invalid (1) blocksize_0 and (2) blocksize_1 values, which trigger a &quot;heap overwrite&quot; in the _01inverse function in res0.c.  NOTE: this issue has been RECAST so that CVE-2007-4029 handles additional vectors.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2007-4029" target="_blank" rel="noopener noreferrer">CVE-2007-4029</a></td><td class="cvss">6.8 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">libvorbis 1.1.2, and possibly other versions before 1.2.0, allows context-dependent attackers to cause a denial of service via (1) an invalid mapping type, which triggers an out-of-bounds read in the vorbis_info_clear function in info.c, and (2) invalid blocksize values that trigger a segmentation fault in the read function in block.c.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2007-4065" target="_blank" rel="noopener noreferrer">CVE-2007-4065</a></td><td class="cvss">4.3 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">lib/vorbisfile.c in libvorbisfile in Xiph.Org libvorbis before 1.2.0 allows context-dependent attackers to cause a denial of service (infinite loop) via a crafted OGG file, aka trac Changeset 13217.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2007-4066" target="_blank" rel="noopener noreferrer">CVE-2007-4066</a></td><td class="cvss">4.3 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Multiple buffer overflows in Xiph.Org libvorbis before 1.2.0 allow context-dependent attackers to cause a denial of service or have other unspecified impact via a crafted OGG file, aka trac Changesets 13162, 13168, 13169, 13170, 13172, 13211, and 13215, as demonstrated by an overflow in oggenc.exe related to the _psy_noiseguards_8 array.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2008-1419" target="_blank" rel="noopener noreferrer">CVE-2008-1419</a></td><td class="cvss">4.3 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Xiph.org libvorbis 1.2.0 and earlier does not properly handle a zero value for codebook.dim, which allows remote attackers to cause a denial of service (crash or infinite loop) or trigger an integer overflow.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2008-1420" target="_blank" rel="noopener noreferrer">CVE-2008-1420</a></td><td class="cvss">6.8 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Integer overflow in residue partition value (aka partvals) evaluation in Xiph.org libvorbis 1.2.0 and earlier allows remote attackers to execute arbitrary code via a crafted OGG file, which triggers a heap overflow.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2008-1423" target="_blank" rel="noopener noreferrer">CVE-2008-1423</a></td><td class="cvss">9.3 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Integer overflow in a certain quantvals and quantlist calculation in Xiph.org libvorbis 1.2.0 and earlier allows remote attackers to cause a denial of service (crash) or execute arbitrary code via a crafted OGG file with a large virtual space for its codebook, which triggers a heap overflow.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:C/I:C/A:C</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2008-2009" target="_blank" rel="noopener noreferrer">CVE-2008-2009</a></td><td class="cvss">4.3 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Xiph.org libvorbis before 1.0 does not properly check for underpopulated Huffman trees, which allows remote attackers to cause a denial of service (crash) via a crafted OGG file that triggers memory corruption during execution of the _make_decode_tree function.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-11333" target="_blank" rel="noopener noreferrer">CVE-2017-11333</a></td><td class="cvss">5.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The vorbis_analysis_wrote function in lib/block.c in Xiph.Org libvorbis 1.3.5 allows remote attackers to cause a denial of service (OOM) via a crafted wav file.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-14160" target="_blank" rel="noopener noreferrer">CVE-2017-14160</a></td><td class="cvss">8.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The bark_noise_hybridmp function in psy.c in Xiph.Org libvorbis 1.3.5 allows remote attackers to cause a denial of service (out-of-bounds access and application crash) or possibly have unspecified other impact via a crafted mp4 file.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-14632" target="_blank" rel="noopener noreferrer">CVE-2017-14632</a></td><td class="cvss">9.8 (v3)<br>7.5 (v2)</td><td><span class="badge critical">Critical</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Xiph.Org libvorbis 1.3.5 allows Remote Code Execution upon freeing uninitialized memory in the function vorbis_analysis_headerout() in info.c when vi-&gt;channels&lt;=0, a similar issue to Mozilla bug 550184.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-14633" target="_blank" rel="noopener noreferrer">CVE-2017-14633</a></td><td class="cvss">6.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">In Xiph.Org libvorbis 1.3.5, an out-of-bounds array read vulnerability exists in the function mapping0_forward() in mapping0.c, which may lead to DoS when operating on a crafted audio file with vorbis_analysis().</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-10392" target="_blank" rel="noopener noreferrer">CVE-2018-10392</a></td><td class="cvss">8.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">mapping0_forward in mapping0.c in Xiph.Org libvorbis 1.3.6 does not validate the number of channels, which allows remote attackers to cause a denial of service (heap-based buffer overflow or over-read) or possibly have unspecified other impact via a crafted file.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-10393" target="_blank" rel="noopener noreferrer">CVE-2018-10393</a></td><td class="cvss">7.5 (v3)<br>5.0 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">bark_noise_hybridmp in psy.c in Xiph.Org libvorbis 1.3.6 has a stack-based buffer over-read.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-20412" target="_blank" rel="noopener noreferrer">CVE-2020-20412</a></td><td class="cvss">6.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">lib/codebook.c in libvorbis before 1.3.6, as used in StepMania 5.0.12 and other products, has insufficient array bounds checking via a crafted OGG file. NOTE: this may overlap CVE-2018-5146.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+</tbody></table></div>
+<p id="no-results" hidden>No matches for the current filters.</p>
+<footer>Automated Yocto cve-check output, not a manual product assessment. The source JSON does not provide publication dates, verified fixes, or the effective CVE_VERSION. Severity uses CVSS v4 when available, otherwise v3. Zero scores are omitted because Yocto can use zero for missing metrics; v2-only records have no severity label here.</footer>
+</main>
+<script>
+const search = document.querySelector('#search');
+const filter = document.querySelector('#filter');
+const vexFilter = document.querySelector('#vex-filter');
+const rows = [...document.querySelectorAll('tbody tr[data-filter]')];
+const count = document.querySelector('#count');
+const empty = document.querySelector('#no-results');
+const text = new WeakMap();
+function applyFilter() {
+  const query = search.value.trim().toLowerCase();
+  const selected = filter.value;
+  const assessment = vexFilter?.value;
+  let visible = 0;
+  for (const row of rows) {
+    let matches = !selected || row.dataset.filter.split(' ').includes(selected);
+    if (assessment) matches = matches && row.dataset.assessment === assessment;
+    if (matches && query) {
+      if (!text.has(row)) text.set(row, row.textContent.toLowerCase());
+      matches = text.get(row).includes(query);
+    }
+    if (row.hidden === matches) row.hidden = !matches;
+    if (matches) visible++;
+  }
+  count.textContent = `${visible.toLocaleString()} / ${rows.length.toLocaleString()} shown`;
+  empty.hidden = visible !== 0 || rows.length === 0;
+}
+let timer;
+search.addEventListener('input', () => {
+  clearTimeout(timer);
+  timer = setTimeout(applyFilter, 120);
+});
+filter.addEventListener('change', applyFilter);
+vexFilter?.addEventListener('change', applyFilter);
+applyFilter();
+</script>
+</body>
+</html>

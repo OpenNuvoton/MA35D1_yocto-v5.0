@@ -1,0 +1,1075 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:3b0c08b2-36da-4a5c-855d-d6acf737322c",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2008-6589",
+        "name": "CVE-2008-6589"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2008-6590",
+        "name": "CVE-2008-6590"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2008-6592",
+        "name": "CVE-2008-6592"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2008-6593",
+        "name": "CVE-2008-6593"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-7443",
+        "name": "CVE-2013-7443"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-3414",
+        "name": "CVE-2015-3414"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-3415",
+        "name": "CVE-2015-3415"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-3416",
+        "name": "CVE-2015-3416"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-3717",
+        "name": "CVE-2015-3717"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-5895",
+        "name": "CVE-2015-5895"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-6607",
+        "name": "CVE-2015-6607"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-6153",
+        "name": "CVE-2016-6153"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-10989",
+        "name": "CVE-2017-10989"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13685",
+        "name": "CVE-2017-13685"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15286",
+        "name": "CVE-2017-15286"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20346",
+        "name": "CVE-2018-20346"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20505",
+        "name": "CVE-2018-20505"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20506",
+        "name": "CVE-2018-20506"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-8740",
+        "name": "CVE-2018-8740"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-16168",
+        "name": "CVE-2019-16168"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19242",
+        "name": "CVE-2019-19242"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19244",
+        "name": "CVE-2019-19244"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19317",
+        "name": "CVE-2019-19317"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19603",
+        "name": "CVE-2019-19603"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19645",
+        "name": "CVE-2019-19645"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19646",
+        "name": "CVE-2019-19646"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19880",
+        "name": "CVE-2019-19880"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19923",
+        "name": "CVE-2019-19923"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19924",
+        "name": "CVE-2019-19924"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19925",
+        "name": "CVE-2019-19925"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19926",
+        "name": "CVE-2019-19926"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19959",
+        "name": "CVE-2019-19959"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-20218",
+        "name": "CVE-2019-20218"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-5018",
+        "name": "CVE-2019-5018"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-8457",
+        "name": "CVE-2019-8457"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9936",
+        "name": "CVE-2019-9936"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9937",
+        "name": "CVE-2019-9937"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-11655",
+        "name": "CVE-2020-11655"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-11656",
+        "name": "CVE-2020-11656"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-13434",
+        "name": "CVE-2020-13434"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-13435",
+        "name": "CVE-2020-13435"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-13630",
+        "name": "CVE-2020-13630"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-13631",
+        "name": "CVE-2020-13631"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-13632",
+        "name": "CVE-2020-13632"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-13871",
+        "name": "CVE-2020-13871"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-15358",
+        "name": "CVE-2020-15358"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35525",
+        "name": "CVE-2020-35525"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35527",
+        "name": "CVE-2020-35527"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-9327",
+        "name": "CVE-2020-9327"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-20227",
+        "name": "CVE-2021-20227"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-31239",
+        "name": "CVE-2021-31239"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-36690",
+        "name": "CVE-2021-36690"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-45346",
+        "name": "CVE-2021-45346"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-35737",
+        "name": "CVE-2022-35737"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-46908",
+        "name": "CVE-2022-46908"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-7104",
+        "name": "CVE-2023-7104"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-0232",
+        "name": "CVE-2024-0232"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-29087",
+        "name": "CVE-2025-29087"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-29088",
+        "name": "CVE-2025-29088"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-3277",
+        "name": "CVE-2025-3277"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-6965",
+        "name": "CVE-2025-6965"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-70873",
+        "name": "CVE-2025-70873"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-7458",
+        "name": "CVE-2025-7458"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-11822",
+        "name": "CVE-2026-11822"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-11824",
+        "name": "CVE-2026-11824"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119371",
+        "name": "CVE-2026-119371"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119372",
+        "name": "CVE-2026-119372"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119373",
+        "name": "CVE-2026-119373"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119374",
+        "name": "CVE-2026-119374"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119375",
+        "name": "CVE-2026-119375"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119376",
+        "name": "CVE-2026-119376"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119377",
+        "name": "CVE-2026-119377"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119378",
+        "name": "CVE-2026-119378"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119379",
+        "name": "CVE-2026-119379"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119586",
+        "name": "CVE-2026-119586"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-119591",
+        "name": "CVE-2026-119591"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/sqlite3-native@3_3.45.3?layer=meta&scan_sha256=f0af435a38a3c6545c4c66ba4ac2e40dd520a463e4f77f038f0fc1de44dbffaa"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    }
+  ]
+}

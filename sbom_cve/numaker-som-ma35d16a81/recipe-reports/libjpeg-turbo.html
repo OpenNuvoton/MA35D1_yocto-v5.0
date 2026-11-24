@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>libjpeg-turbo - Yocto CVE Check</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f6f8; color: #17202a; font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1800px; margin: auto; padding: 1.25rem; }
+header, .table-wrap { background: white; border: 1px solid #c9ced6; border-radius: 10px; }
+header { padding: 1rem 1.25rem; margin-bottom: 1rem; }
+h1 { margin: .25rem 0; font-size: 1.6rem; }
+a { color: #075985; }
+.meta, footer { color: #475569; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: .6rem; margin-top: 1rem; }
+.card { display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+        border: 1px solid #c9ced6; border-left: 5px solid #64748b; border-radius: 8px; padding: .6rem .8rem; }
+.card strong { font-size: 1.3rem; }
+.card.patched { border-left-color: #1565c0; }
+.card.unpatched { border-left-color: #c62828; }
+.card.ignored { border-left-color: #b45309; }
+.card.not-affected { border-left-color: #1f8a4c; }
+.card.affected { border-left-color: #c62828; }
+.card.fixed { border-left-color: #1565c0; }
+.card.under-investigation { border-left-color: #b45309; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .75rem 0; }
+input, select { font: inherit; padding: .45rem .6rem; border: 1px solid #94a3b8; border-radius: 6px; background: white; }
+input { flex: 1 1 16rem; min-width: 0; }
+.table-wrap { overflow: auto; max-height: 75vh; }
+table { width: 100%; border-spacing: 0; font-size: .9rem; }
+th { position: sticky; top: 0; background: #27364a; color: white; text-align: left; white-space: nowrap; }
+th, td { padding: .55rem .7rem; }
+td { vertical-align: top; border-top: 1px solid #e2e8f0; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eef4ff; }
+.cve { white-space: nowrap; font-family: monospace; font-weight: bold; }
+.cvss { white-space: nowrap; }
+.summary { min-width: 22rem; max-width: 58rem; white-space: pre-line; overflow-wrap: anywhere; }
+.notes { min-width: 12rem; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         font-weight: 600; background: #e2e8f0; color: #334155; }
+.badge.patched { background: #dbeafe; color: #1e40af; }
+.badge.fixed { background: #dbeafe; color: #1e40af; }
+.badge.not-affected { background: #dcfce7; color: #166534; }
+.badge.affected { background: #fee2e2; color: #991b1b; }
+.badge.under-investigation { background: #fef3c7; color: #92400e; }
+.badge.unpatched, .badge.high { background: #fee2e2; color: #991b1b; }
+.badge.ignored, .badge.medium { background: #fef3c7; color: #92400e; }
+.badge.critical { background: #7f1d1d; color: white; }
+.badge.low { background: #dcfce7; color: #166534; }
+footer { margin-top: .75rem; font-size: .85rem; }
+[hidden] { display: none !important; }
+@media print {
+  body { background: white; }
+  main { max-width: none; padding: 0; }
+  .toolbar { display: none; }
+  .table-wrap { max-height: none; overflow: visible; }
+  th { position: static; }
+  .summary, .notes { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<a href="index.html">All recipes</a>
+<h1>libjpeg-turbo - Yocto CVE Check</h1>
+<div class="meta">Recipe version (PV): <strong>1_2.1.3</strong> &middot;
+Layer: meta-ma35d1<br>
+Products: libjpeg-turbo (CVE records: Yes)<br>
+Source: <code>build/tmp-glibc/deploy/cve/libjpeg-turbo_cve.json</code><br>
+Source file last modified: <time datetime="2026-11-23T11:01:54+08:00">2026-11-23T11:01:54+08:00</time><br>Evidence log: <code>build/tmp-glibc/work/cortexa35-poky-linux/libjpeg-turbo/2.1.3/temp/log.do_cve_check</code></div>
+<h2>Vulnerability triage (VEX categories)</h2><p class="meta">Automated recipe-level triage based on Yocto evidence, not a verified product VEX. Under Investigation means evidence is insufficient; Affected is a conservative screening result.</p><div class="cards"><div class="card not-affected"><span>Not Affected</span><strong>18</strong></div><div class="card affected"><span>Affected</span><strong>0</strong></div><div class="card fixed"><span>Fixed</span><strong>0</strong></div><div class="card under-investigation"><span>Under Investigation</span><strong>0</strong></div></div>
+<h2>Yocto scan summary</h2>
+<div class="cards"><div class="card total"><span>Total</span><strong>18</strong></div><div class="card patched"><span>Patched</span><strong>18</strong></div><div class="card unpatched"><span>Unpatched</span><strong>0</strong></div><div class="card ignored"><span>Ignored</span><strong>0</strong></div></div>
+</header><div class="toolbar">
+<input id="search" type="search" placeholder="Search CVE ID, summary, or notes" aria-label="Search CVE ID, summary, or notes">
+<select id="filter" aria-label="Filter by Yocto status"><option value="">All Yocto statuses</option><option value="Patched">Patched</option><option value="Unpatched">Unpatched</option><option value="Ignored">Ignored</option></select>
+<select id="vex-filter" aria-label="Filter by VEX triage status"><option value="">All VEX categories</option><option value="Not Affected">Not Affected</option><option value="Affected">Affected</option><option value="Fixed">Fixed</option><option value="Under Investigation">Under Investigation</option></select>
+<span id="count" aria-live="polite">18 / 18 shown</span>
+</div><div class="table-wrap"><table><thead><tr><th scope="col">CVE ID</th><th scope="col">CVSS</th><th scope="col">Severity</th><th scope="col">VEX triage and reason</th><th scope="col">Yocto status</th><th scope="col">Summary</th><th scope="col">Yocto notes and vector</th></tr></thead><tbody>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2012-2806" target="_blank" rel="noopener noreferrer">CVE-2012-2806</a></td><td class="cvss">8.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Heap-based buffer overflow in the get_sos function in jdmarker.c in libjpeg-turbo 1.2.0 allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a large component count in the header of a JPEG image.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2013-6629" target="_blank" rel="noopener noreferrer">CVE-2013-6629</a></td><td class="cvss">5.0 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The get_sos function in jdmarker.c in (1) libjpeg 6b and (2) libjpeg-turbo through 1.3.0, as used in Google Chrome before 31.0.1650.48, Ghostscript, and other products, does not check for certain duplications of component data during the reading of segments that follow Start Of Scan (SOS) JPEG markers, which allows remote attackers to obtain sensitive information from uninitialized memory locations via a crafted JPEG image.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:P/I:N/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2014-9092" target="_blank" rel="noopener noreferrer">CVE-2014-9092</a></td><td class="cvss">6.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">libjpeg-turbo before 1.3.1 allows remote attackers to cause a denial of service (crash) via a crafted JPEG file, related to the Exif marker.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2016-3616" target="_blank" rel="noopener noreferrer">CVE-2016-3616</a></td><td class="cvss">8.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The cjpeg utility in libjpeg allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) or execute arbitrary code via a crafted file.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-15232" target="_blank" rel="noopener noreferrer">CVE-2017-15232</a></td><td class="cvss">6.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">libjpeg-turbo 1.5.2 has a NULL Pointer Dereference in jdpostct.c and jquant1.c via a crafted JPEG file.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-9614" target="_blank" rel="noopener noreferrer">CVE-2017-9614</a></td><td class="cvss">8.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The fill_input_buffer function in jdatasrc.c in libjpeg-turbo 1.5.1 allows remote attackers to cause a denial of service (invalid memory access and application crash) or possibly have unspecified other impact via a crafted jpg file. NOTE: Maintainer asserts the issue is due to a bug in downstream code caused by misuse of the libjpeg API</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1152" target="_blank" rel="noopener noreferrer">CVE-2018-1152</a></td><td class="cvss">6.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">libjpeg-turbo 1.5.90 is vulnerable to a denial of service vulnerability caused by a divide by zero when processing a crafted BMP image.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-14498" target="_blank" rel="noopener noreferrer">CVE-2018-14498</a></td><td class="cvss">6.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">get_8bit_row in rdbmp.c in libjpeg-turbo through 1.5.90 and MozJPEG through 3.3.1 allows attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted 8-bit BMP in which one or more of the color indices is out of range for the number of palette entries.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-19664" target="_blank" rel="noopener noreferrer">CVE-2018-19664</a></td><td class="cvss">6.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">libjpeg-turbo 2.0.1 has a heap-based buffer over-read in the put_pixel_rows function in wrbmp.c, as demonstrated by djpeg.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-20330" target="_blank" rel="noopener noreferrer">CVE-2018-20330</a></td><td class="cvss">8.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The tjLoadImage function in libjpeg-turbo 2.0.1 has an integer overflow with a resultant heap-based buffer overflow via a BMP image because multiplication of pitch and height is mishandled, as demonstrated by tjbench.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-13960" target="_blank" rel="noopener noreferrer">CVE-2019-13960</a></td><td class="cvss">5.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">In libjpeg-turbo 2.0.2, a large amount of memory can be used during processing of an invalid progressive JPEG image containing incorrect width and height values in the image header. NOTE: the vendor&#x27;s expectation, for use cases in which this memory usage would be a denial of service, is that the application should interpret libjpeg warnings as fatal errors (aborting decompression) and/or set limits on resource consumption or image sizes</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-13790" target="_blank" rel="noopener noreferrer">CVE-2020-13790</a></td><td class="cvss">8.1 (v3)<br>5.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">libjpeg-turbo 2.0.4, and mozjpeg 4.0.0, has a heap-based buffer over-read in get_rgb_row() in rdppm.c via a malformed PPM input file.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-17541" target="_blank" rel="noopener noreferrer">CVE-2020-17541</a></td><td class="cvss">8.8 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Libjpeg-turbo all version have a stack-based buffer overflow in the &quot;transform&quot; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-35538" target="_blank" rel="noopener noreferrer">CVE-2020-35538</a></td><td class="cvss">5.5 (v3)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">A crafted input file could cause a null pointer dereference in jcopy_sample_rows() when processed by libjpeg-turbo.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-20205" target="_blank" rel="noopener noreferrer">CVE-2021-20205</a></td><td class="cvss">6.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Libjpeg-turbo versions 2.0.91 and 2.0.90 is vulnerable to a denial of service vulnerability caused by a divide by zero when processing a crafted GIF image.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-29390" target="_blank" rel="noopener noreferrer">CVE-2021-29390</a></td><td class="cvss">7.1 (v3)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">libjpeg-turbo version 2.0.90 has a heap-based buffer over-read (2 bytes) in decompress_smooth_data in jdcoefct.c.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-46822" target="_blank" rel="noopener noreferrer">CVE-2021-46822</a></td><td class="cvss">5.5 (v3)<br>4.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The PPM reader in libjpeg-turbo through 2.0.90 mishandles use of tjLoadImage for loading a 16-bit binary PPM file into a grayscale buffer and loading a 16-bit binary PGM file into an RGB buffer. This is related to a heap-based buffer overflow in the get_word_rgb_row function in rdppm.c.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:N/I:N/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2804" target="_blank" rel="noopener noreferrer">CVE-2023-2804</a></td><td class="cvss">6.5 (v3)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">A heap-based buffer overflow issue was discovered in libjpeg-turbo in h2v2_merged_upsample_internal() function of jdmrgext.c file. The vulnerability can only be exploited with 12-bit data precision for which the range of the sample data type exceeds the valid sample range, hence, an attacker could craft a 12-bit lossless JPEG image that contains out-of-range 12-bit samples. An application attempting to decompress such image using merged upsampling would lead to segmentation fault or buffer overflows, causing an application to crash.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H</td></tr>
+</tbody></table></div>
+<p id="no-results" hidden>No matches for the current filters.</p>
+<footer>Automated Yocto cve-check output, not a manual product assessment. The source JSON does not provide publication dates, verified fixes, or the effective CVE_VERSION. Severity uses CVSS v4 when available, otherwise v3. Zero scores are omitted because Yocto can use zero for missing metrics; v2-only records have no severity label here.</footer>
+</main>
+<script>
+const search = document.querySelector('#search');
+const filter = document.querySelector('#filter');
+const vexFilter = document.querySelector('#vex-filter');
+const rows = [...document.querySelectorAll('tbody tr[data-filter]')];
+const count = document.querySelector('#count');
+const empty = document.querySelector('#no-results');
+const text = new WeakMap();
+function applyFilter() {
+  const query = search.value.trim().toLowerCase();
+  const selected = filter.value;
+  const assessment = vexFilter?.value;
+  let visible = 0;
+  for (const row of rows) {
+    let matches = !selected || row.dataset.filter.split(' ').includes(selected);
+    if (assessment) matches = matches && row.dataset.assessment === assessment;
+    if (matches && query) {
+      if (!text.has(row)) text.set(row, row.textContent.toLowerCase());
+      matches = text.get(row).includes(query);
+    }
+    if (row.hidden === matches) row.hidden = !matches;
+    if (matches) visible++;
+  }
+  count.textContent = `${visible.toLocaleString()} / ${rows.length.toLocaleString()} shown`;
+  empty.hidden = visible !== 0 || rows.length === 0;
+}
+let timer;
+search.addEventListener('input', () => {
+  clearTimeout(timer);
+  timer = setTimeout(applyFilter, 120);
+});
+filter.addEventListener('change', applyFilter);
+vexFilter?.addEventListener('change', applyFilter);
+applyFilter();
+</script>
+</body>
+</html>

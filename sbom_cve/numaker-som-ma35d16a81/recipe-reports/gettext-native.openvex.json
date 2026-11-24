@@ -1,0 +1,39 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:681c699f-8301-4b1b-b8f9-75f4950a3869",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2004-0966",
+        "name": "CVE-2004-0966"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/gettext-native@0.22.5?layer=meta&scan_sha256=7f25ef0e79aa36f0477c039de888d2687b7a9459d378ffe9e658d4efee015562"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18751",
+        "name": "CVE-2018-18751"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/gettext-native@0.22.5?layer=meta&scan_sha256=7f25ef0e79aa36f0477c039de888d2687b7a9459d378ffe9e658d4efee015562"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

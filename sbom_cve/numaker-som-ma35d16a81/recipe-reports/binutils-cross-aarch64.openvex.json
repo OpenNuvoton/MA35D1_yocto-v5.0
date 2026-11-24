@@ -1,0 +1,4043 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:5e6c1d15-98f4-4d03-9d8f-3a83bb166524",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2005-4807",
+        "name": "CVE-2005-4807"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2005-4808",
+        "name": "CVE-2005-4808"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2006-2362",
+        "name": "CVE-2006-2362"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-3509",
+        "name": "CVE-2012-3509"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8484",
+        "name": "CVE-2014-8484"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8485",
+        "name": "CVE-2014-8485"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8501",
+        "name": "CVE-2014-8501"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8502",
+        "name": "CVE-2014-8502"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8503",
+        "name": "CVE-2014-8503"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8504",
+        "name": "CVE-2014-8504"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8737",
+        "name": "CVE-2014-8737"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8738",
+        "name": "CVE-2014-8738"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-9939",
+        "name": "CVE-2014-9939"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12448",
+        "name": "CVE-2017-12448"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12449",
+        "name": "CVE-2017-12449"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12450",
+        "name": "CVE-2017-12450"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12451",
+        "name": "CVE-2017-12451"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12452",
+        "name": "CVE-2017-12452"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12453",
+        "name": "CVE-2017-12453"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12454",
+        "name": "CVE-2017-12454"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12455",
+        "name": "CVE-2017-12455"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12456",
+        "name": "CVE-2017-12456"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12457",
+        "name": "CVE-2017-12457"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12458",
+        "name": "CVE-2017-12458"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12459",
+        "name": "CVE-2017-12459"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12799",
+        "name": "CVE-2017-12799"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12967",
+        "name": "CVE-2017-12967"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13710",
+        "name": "CVE-2017-13710"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13716",
+        "name": "CVE-2017-13716"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-13757",
+        "name": "CVE-2017-13757"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14128",
+        "name": "CVE-2017-14128"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14129",
+        "name": "CVE-2017-14129"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14130",
+        "name": "CVE-2017-14130"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14333",
+        "name": "CVE-2017-14333"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14529",
+        "name": "CVE-2017-14529"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14729",
+        "name": "CVE-2017-14729"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14745",
+        "name": "CVE-2017-14745"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14930",
+        "name": "CVE-2017-14930"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14932",
+        "name": "CVE-2017-14932"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14933",
+        "name": "CVE-2017-14933"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14934",
+        "name": "CVE-2017-14934"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14938",
+        "name": "CVE-2017-14938"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14939",
+        "name": "CVE-2017-14939"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14940",
+        "name": "CVE-2017-14940"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-14974",
+        "name": "CVE-2017-14974"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15020",
+        "name": "CVE-2017-15020"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15021",
+        "name": "CVE-2017-15021"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15022",
+        "name": "CVE-2017-15022"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15023",
+        "name": "CVE-2017-15023"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15024",
+        "name": "CVE-2017-15024"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15025",
+        "name": "CVE-2017-15025"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15225",
+        "name": "CVE-2017-15225"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15938",
+        "name": "CVE-2017-15938"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15939",
+        "name": "CVE-2017-15939"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15996",
+        "name": "CVE-2017-15996"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16826",
+        "name": "CVE-2017-16826"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16827",
+        "name": "CVE-2017-16827"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16828",
+        "name": "CVE-2017-16828"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16829",
+        "name": "CVE-2017-16829"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16830",
+        "name": "CVE-2017-16830"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16831",
+        "name": "CVE-2017-16831"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16832",
+        "name": "CVE-2017-16832"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-17080",
+        "name": "CVE-2017-17080"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-17121",
+        "name": "CVE-2017-17121"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-17122",
+        "name": "CVE-2017-17122"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-17123",
+        "name": "CVE-2017-17123"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-17124",
+        "name": "CVE-2017-17124"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-17125",
+        "name": "CVE-2017-17125"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-17126",
+        "name": "CVE-2017-17126"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-6965",
+        "name": "CVE-2017-6965"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-6966",
+        "name": "CVE-2017-6966"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-6969",
+        "name": "CVE-2017-6969"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7209",
+        "name": "CVE-2017-7209"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7210",
+        "name": "CVE-2017-7210"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7223",
+        "name": "CVE-2017-7223"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7224",
+        "name": "CVE-2017-7224"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7225",
+        "name": "CVE-2017-7225"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7226",
+        "name": "CVE-2017-7226"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7227",
+        "name": "CVE-2017-7227"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7299",
+        "name": "CVE-2017-7299"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7300",
+        "name": "CVE-2017-7300"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7301",
+        "name": "CVE-2017-7301"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7302",
+        "name": "CVE-2017-7302"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7303",
+        "name": "CVE-2017-7303"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7304",
+        "name": "CVE-2017-7304"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-7614",
+        "name": "CVE-2017-7614"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8392",
+        "name": "CVE-2017-8392"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8393",
+        "name": "CVE-2017-8393"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8394",
+        "name": "CVE-2017-8394"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8395",
+        "name": "CVE-2017-8395"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8396",
+        "name": "CVE-2017-8396"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8397",
+        "name": "CVE-2017-8397"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8398",
+        "name": "CVE-2017-8398"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8421",
+        "name": "CVE-2017-8421"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9038",
+        "name": "CVE-2017-9038"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9039",
+        "name": "CVE-2017-9039"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9040",
+        "name": "CVE-2017-9040"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9041",
+        "name": "CVE-2017-9041"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9042",
+        "name": "CVE-2017-9042"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9043",
+        "name": "CVE-2017-9043"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9044",
+        "name": "CVE-2017-9044"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9742",
+        "name": "CVE-2017-9742"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9743",
+        "name": "CVE-2017-9743"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9744",
+        "name": "CVE-2017-9744"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9745",
+        "name": "CVE-2017-9745"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9746",
+        "name": "CVE-2017-9746"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9747",
+        "name": "CVE-2017-9747"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9748",
+        "name": "CVE-2017-9748"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9749",
+        "name": "CVE-2017-9749"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9750",
+        "name": "CVE-2017-9750"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9751",
+        "name": "CVE-2017-9751"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9752",
+        "name": "CVE-2017-9752"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9753",
+        "name": "CVE-2017-9753"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9754",
+        "name": "CVE-2017-9754"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9755",
+        "name": "CVE-2017-9755"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9756",
+        "name": "CVE-2017-9756"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9954",
+        "name": "CVE-2017-9954"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-9955",
+        "name": "CVE-2017-9955"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000876",
+        "name": "CVE-2018-1000876"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-10372",
+        "name": "CVE-2018-10372"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-10373",
+        "name": "CVE-2018-10373"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-10534",
+        "name": "CVE-2018-10534"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-10535",
+        "name": "CVE-2018-10535"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-12641",
+        "name": "CVE-2018-12641"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-12697",
+        "name": "CVE-2018-12697"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-12698",
+        "name": "CVE-2018-12698"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-12699",
+        "name": "CVE-2018-12699"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-12934",
+        "name": "CVE-2018-12934"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-13033",
+        "name": "CVE-2018-13033"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-17358",
+        "name": "CVE-2018-17358"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-17359",
+        "name": "CVE-2018-17359"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-17360",
+        "name": "CVE-2018-17360"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-17794",
+        "name": "CVE-2018-17794"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-17985",
+        "name": "CVE-2018-17985"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18309",
+        "name": "CVE-2018-18309"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18483",
+        "name": "CVE-2018-18483"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18484",
+        "name": "CVE-2018-18484"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18605",
+        "name": "CVE-2018-18605"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18606",
+        "name": "CVE-2018-18606"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18607",
+        "name": "CVE-2018-18607"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18700",
+        "name": "CVE-2018-18700"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-18701",
+        "name": "CVE-2018-18701"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-19931",
+        "name": "CVE-2018-19931"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-19932",
+        "name": "CVE-2018-19932"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20002",
+        "name": "CVE-2018-20002"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20623",
+        "name": "CVE-2018-20623"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20651",
+        "name": "CVE-2018-20651"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20657",
+        "name": "CVE-2018-20657"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20671",
+        "name": "CVE-2018-20671"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20673",
+        "name": "CVE-2018-20673"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20712",
+        "name": "CVE-2018-20712"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-6323",
+        "name": "CVE-2018-6323"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-6543",
+        "name": "CVE-2018-6543"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-6759",
+        "name": "CVE-2018-6759"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-6872",
+        "name": "CVE-2018-6872"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-7208",
+        "name": "CVE-2018-7208"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-7568",
+        "name": "CVE-2018-7568"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-7569",
+        "name": "CVE-2018-7569"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-7570",
+        "name": "CVE-2018-7570"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-7642",
+        "name": "CVE-2018-7642"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-7643",
+        "name": "CVE-2018-7643"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-8945",
+        "name": "CVE-2018-8945"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-9138",
+        "name": "CVE-2018-9138"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-9996",
+        "name": "CVE-2018-9996"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010204",
+        "name": "CVE-2019-1010204"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-12972",
+        "name": "CVE-2019-12972"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-14250",
+        "name": "CVE-2019-14250"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-14444",
+        "name": "CVE-2019-14444"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-17450",
+        "name": "CVE-2019-17450"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-17451",
+        "name": "CVE-2019-17451"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9070",
+        "name": "CVE-2019-9070"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9071",
+        "name": "CVE-2019-9071"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9072",
+        "name": "CVE-2019-9072"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9073",
+        "name": "CVE-2019-9073"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9074",
+        "name": "CVE-2019-9074"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9075",
+        "name": "CVE-2019-9075"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9076",
+        "name": "CVE-2019-9076"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9077",
+        "name": "CVE-2019-9077"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-16590",
+        "name": "CVE-2020-16590"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-16591",
+        "name": "CVE-2020-16591"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-16592",
+        "name": "CVE-2020-16592"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-16593",
+        "name": "CVE-2020-16593"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-16599",
+        "name": "CVE-2020-16599"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-19724",
+        "name": "CVE-2020-19724"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-19726",
+        "name": "CVE-2020-19726"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-21490",
+        "name": "CVE-2020-21490"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35342",
+        "name": "CVE-2020-35342"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35448",
+        "name": "CVE-2020-35448"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35493",
+        "name": "CVE-2020-35493"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35494",
+        "name": "CVE-2020-35494"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35495",
+        "name": "CVE-2020-35495"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35496",
+        "name": "CVE-2020-35496"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-35507",
+        "name": "CVE-2020-35507"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-20197",
+        "name": "CVE-2021-20197"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-20284",
+        "name": "CVE-2021-20284"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-20294",
+        "name": "CVE-2021-20294"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-32256",
+        "name": "CVE-2021-32256"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-3530",
+        "name": "CVE-2021-3530"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-3549",
+        "name": "CVE-2021-3549"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-37322",
+        "name": "CVE-2021-37322"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-45078",
+        "name": "CVE-2021-45078"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-46174",
+        "name": "CVE-2021-46174"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-35205",
+        "name": "CVE-2022-35205"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-35206",
+        "name": "CVE-2022-35206"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-38533",
+        "name": "CVE-2022-38533"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-4285",
+        "name": "CVE-2022-4285"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-44840",
+        "name": "CVE-2022-44840"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-45703",
+        "name": "CVE-2022-45703"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-47007",
+        "name": "CVE-2022-47007"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-47008",
+        "name": "CVE-2022-47008"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-47010",
+        "name": "CVE-2022-47010"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-47011",
+        "name": "CVE-2022-47011"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-47673",
+        "name": "CVE-2022-47673"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-47695",
+        "name": "CVE-2022-47695"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-47696",
+        "name": "CVE-2022-47696"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-48063",
+        "name": "CVE-2022-48063"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-48064",
+        "name": "CVE-2022-48064"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-48065",
+        "name": "CVE-2022-48065"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-1579",
+        "name": "CVE-2023-1579"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-1972",
+        "name": "CVE-2023-1972"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-25584",
+        "name": "CVE-2023-25584"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "Yocto records an explicit applicability exclusion; see its note. Yocto cve-check: Ignored (cpe-incorrect). Applies only for version 2.40 and earlier",
+      "impact_statement": "For this scanned recipe only: Yocto records an explicit applicability exclusion; see its note. Yocto cve-check: Ignored (cpe-incorrect). Applies only for version 2.40 and earlier"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-25585",
+        "name": "CVE-2023-25585"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-25586",
+        "name": "CVE-2023-25586"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-25588",
+        "name": "CVE-2023-25588"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-0840",
+        "name": "CVE-2025-0840"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11081",
+        "name": "CVE-2025-11081"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11082",
+        "name": "CVE-2025-11082"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11083",
+        "name": "CVE-2025-11083"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11412",
+        "name": "CVE-2025-11412"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11413",
+        "name": "CVE-2025-11413"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11414",
+        "name": "CVE-2025-11414"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1147",
+        "name": "CVE-2025-1147"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1148",
+        "name": "CVE-2025-1148"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1149",
+        "name": "CVE-2025-1149"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11494",
+        "name": "CVE-2025-11494"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11495",
+        "name": "CVE-2025-11495"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1150",
+        "name": "CVE-2025-1150"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1151",
+        "name": "CVE-2025-1151"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1152",
+        "name": "CVE-2025-1152"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1153",
+        "name": "CVE-2025-1153"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1176",
+        "name": "CVE-2025-1176"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1178",
+        "name": "CVE-2025-1178"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1179",
+        "name": "CVE-2025-1179"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1180",
+        "name": "CVE-2025-1180"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1181",
+        "name": "CVE-2025-1181"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-1182",
+        "name": "CVE-2025-1182"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11839",
+        "name": "CVE-2025-11839"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-11840",
+        "name": "CVE-2025-11840"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-3198",
+        "name": "CVE-2025-3198"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-5244",
+        "name": "CVE-2025-5244"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-5245",
+        "name": "CVE-2025-5245"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-66861",
+        "name": "CVE-2025-66861"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-66862",
+        "name": "CVE-2025-66862"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-66863",
+        "name": "CVE-2025-66863"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-66864",
+        "name": "CVE-2025-66864"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-66865",
+        "name": "CVE-2025-66865"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-66866",
+        "name": "CVE-2025-66866"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69644",
+        "name": "CVE-2025-69644"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69645",
+        "name": "CVE-2025-69645"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69646",
+        "name": "CVE-2025-69646"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69647",
+        "name": "CVE-2025-69647"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69648",
+        "name": "CVE-2025-69648"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69649",
+        "name": "CVE-2025-69649"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69650",
+        "name": "CVE-2025-69650"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69651",
+        "name": "CVE-2025-69651"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-69652",
+        "name": "CVE-2025-69652"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-7545",
+        "name": "CVE-2025-7545"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-7546",
+        "name": "CVE-2025-7546"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-8224",
+        "name": "CVE-2025-8224"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-8225",
+        "name": "CVE-2025-8225"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-3441",
+        "name": "CVE-2026-3441"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-3442",
+        "name": "CVE-2026-3442"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-4647",
+        "name": "CVE-2026-4647"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-6844",
+        "name": "CVE-2026-6844"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-6845",
+        "name": "CVE-2026-6845"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-6846",
+        "name": "CVE-2026-6846"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-90801",
+        "name": "CVE-2026-90801"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-90802",
+        "name": "CVE-2026-90802"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-90803",
+        "name": "CVE-2026-90803"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-90804",
+        "name": "CVE-2026-90804"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-90828",
+        "name": "CVE-2026-90828"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-90829",
+        "name": "CVE-2026-90829"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-90830",
+        "name": "CVE-2026-90830"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-90831",
+        "name": "CVE-2026-90831"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-91779",
+        "name": "CVE-2026-91779"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-91780",
+        "name": "CVE-2026-91780"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-91781",
+        "name": "CVE-2026-91781"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-91782",
+        "name": "CVE-2026-91782"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/binutils-cross-aarch64@2.42?layer=meta&scan_sha256=5f62e88bf89f4f92b2f84176dae92f07dfb08be5bec3cdfb3cbc1293f28ae346"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

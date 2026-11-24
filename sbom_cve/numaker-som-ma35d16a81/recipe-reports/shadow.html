@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shadow - Yocto CVE Check</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f6f8; color: #17202a; font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1800px; margin: auto; padding: 1.25rem; }
+header, .table-wrap { background: white; border: 1px solid #c9ced6; border-radius: 10px; }
+header { padding: 1rem 1.25rem; margin-bottom: 1rem; }
+h1 { margin: .25rem 0; font-size: 1.6rem; }
+a { color: #075985; }
+.meta, footer { color: #475569; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: .6rem; margin-top: 1rem; }
+.card { display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+        border: 1px solid #c9ced6; border-left: 5px solid #64748b; border-radius: 8px; padding: .6rem .8rem; }
+.card strong { font-size: 1.3rem; }
+.card.patched { border-left-color: #1565c0; }
+.card.unpatched { border-left-color: #c62828; }
+.card.ignored { border-left-color: #b45309; }
+.card.not-affected { border-left-color: #1f8a4c; }
+.card.affected { border-left-color: #c62828; }
+.card.fixed { border-left-color: #1565c0; }
+.card.under-investigation { border-left-color: #b45309; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .75rem 0; }
+input, select { font: inherit; padding: .45rem .6rem; border: 1px solid #94a3b8; border-radius: 6px; background: white; }
+input { flex: 1 1 16rem; min-width: 0; }
+.table-wrap { overflow: auto; max-height: 75vh; }
+table { width: 100%; border-spacing: 0; font-size: .9rem; }
+th { position: sticky; top: 0; background: #27364a; color: white; text-align: left; white-space: nowrap; }
+th, td { padding: .55rem .7rem; }
+td { vertical-align: top; border-top: 1px solid #e2e8f0; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eef4ff; }
+.cve { white-space: nowrap; font-family: monospace; font-weight: bold; }
+.cvss { white-space: nowrap; }
+.summary { min-width: 22rem; max-width: 58rem; white-space: pre-line; overflow-wrap: anywhere; }
+.notes { min-width: 12rem; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         font-weight: 600; background: #e2e8f0; color: #334155; }
+.badge.patched { background: #dbeafe; color: #1e40af; }
+.badge.fixed { background: #dbeafe; color: #1e40af; }
+.badge.not-affected { background: #dcfce7; color: #166534; }
+.badge.affected { background: #fee2e2; color: #991b1b; }
+.badge.under-investigation { background: #fef3c7; color: #92400e; }
+.badge.unpatched, .badge.high { background: #fee2e2; color: #991b1b; }
+.badge.ignored, .badge.medium { background: #fef3c7; color: #92400e; }
+.badge.critical { background: #7f1d1d; color: white; }
+.badge.low { background: #dcfce7; color: #166534; }
+footer { margin-top: .75rem; font-size: .85rem; }
+[hidden] { display: none !important; }
+@media print {
+  body { background: white; }
+  main { max-width: none; padding: 0; }
+  .toolbar { display: none; }
+  .table-wrap { max-height: none; overflow: visible; }
+  th { position: static; }
+  .summary, .notes { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<a href="index.html">All recipes</a>
+<h1>shadow - Yocto CVE Check</h1>
+<div class="meta">Recipe version (PV): <strong>4.14.2</strong> &middot;
+Layer: meta<br>
+Products: shadow (CVE records: Yes)<br>
+Source: <code>build/tmp-glibc/deploy/cve/shadow_cve.json</code><br>
+Source file last modified: <time datetime="2026-11-23T11:01:52+08:00">2026-11-23T11:01:52+08:00</time><br>Evidence log: <code>build/tmp-glibc/work/cortexa35-poky-linux/shadow/4.14.2/temp/log.do_cve_check</code></div>
+<h2>Vulnerability triage (VEX categories)</h2><p class="meta">Automated recipe-level triage based on Yocto evidence, not a verified product VEX. Under Investigation means evidence is insufficient; Affected is a conservative screening result.</p><div class="cards"><div class="card not-affected"><span>Not Affected</span><strong>14</strong></div><div class="card affected"><span>Affected</span><strong>0</strong></div><div class="card fixed"><span>Fixed</span><strong>0</strong></div><div class="card under-investigation"><span>Under Investigation</span><strong>1</strong></div></div>
+<h2>Yocto scan summary</h2>
+<div class="cards"><div class="card total"><span>Total</span><strong>15</strong></div><div class="card patched"><span>Patched</span><strong>14</strong></div><div class="card unpatched"><span>Unpatched</span><strong>0</strong></div><div class="card ignored"><span>Ignored</span><strong>1</strong></div></div>
+</header><div class="toolbar">
+<input id="search" type="search" placeholder="Search CVE ID, summary, or notes" aria-label="Search CVE ID, summary, or notes">
+<select id="filter" aria-label="Filter by Yocto status"><option value="">All Yocto statuses</option><option value="Patched">Patched</option><option value="Unpatched">Unpatched</option><option value="Ignored">Ignored</option></select>
+<select id="vex-filter" aria-label="Filter by VEX triage status"><option value="">All VEX categories</option><option value="Not Affected">Not Affected</option><option value="Affected">Affected</option><option value="Fixed">Fixed</option><option value="Under Investigation">Under Investigation</option></select>
+<span id="count" aria-live="polite">15 / 15 shown</span>
+</div><div class="table-wrap"><table><thead><tr><th scope="col">CVE ID</th><th scope="col">CVSS</th><th scope="col">Severity</th><th scope="col">VEX triage and reason</th><th scope="col">Yocto status</th><th scope="col">Summary</th><th scope="col">Yocto notes and vector</th></tr></thead><tbody>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2004-1001" target="_blank" rel="noopener noreferrer">CVE-2004-1001</a></td><td class="cvss">4.6 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Unknown vulnerability in the passwd_check function in Shadow 4.0.4.1, and possibly other versions before 4.0.5, allows local users to conduct unauthorized activities when an error from a pam_chauthtok function call is not properly handled.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2005-4890" target="_blank" rel="noopener noreferrer">CVE-2005-4890</a></td><td class="cvss">7.8 (v3)<br>7.2 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">There is a possible tty hijacking in shadow 4.x before 4.1.5 and sudo 1.x before 1.7.4 via &quot;su - user -c program&quot;. The user session can be escaped to the parent session by using the TIOCSTI ioctl to push characters into the input buffer to be read by the next process.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:C/I:C/A:C</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2006-1174" target="_blank" rel="noopener noreferrer">CVE-2006-1174</a></td><td class="cvss">3.7 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">useradd in shadow-utils before 4.0.3, and possibly other versions before 4.0.8, does not provide a required argument to the open function when creating a new user mailbox, which causes the mailbox to be created with unpredictable permissions and possibly allows attackers to read or modify the mailbox.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:H/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2006-1844" target="_blank" rel="noopener noreferrer">CVE-2006-1844</a></td><td class="cvss">2.1 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The Debian installer for the (1) shadow 4.0.14 and (2) base-config 2.53.10 packages includes sensitive information in world-readable log files, including preseeded passwords and pppoeconf passwords, which might allow local users to gain privileges.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:P/I:N/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2008-5394" target="_blank" rel="noopener noreferrer">CVE-2008-5394</a></td><td class="cvss">7.2 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">/bin/login in shadow 4.0.18.1 in Debian GNU/Linux, and probably other Linux distributions, allows local users in the utmp group to overwrite arbitrary files via a symlink attack on a temporary file referenced in a line (aka ut_line) field in a utmp entry.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:C/I:C/A:C</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2011-0721" target="_blank" rel="noopener noreferrer">CVE-2011-0721</a></td><td class="cvss">6.4 (v2)</td><td><span class="badge n/a">N/A</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Multiple CRLF injection vulnerabilities in (1) chfn and (2) chsh in shadow 1:4.1.4 allow local users to add new users or groups to /etc/passwd via the GECOS field.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:N/I:P/A:P</td></tr>
+<tr data-filter="Ignored" data-assessment="Under Investigation"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2013-4235" target="_blank" rel="noopener noreferrer">CVE-2013-4235</a></td><td class="cvss">4.7 (v3)<br>3.3 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge under-investigation">Under Investigation</span><br>The Yocto ignore reason does not establish that the issue is inapplicable.</td><td><span class="badge ignored">Ignored</span></td><td class="summary">shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees</td><td class="notes"><strong>Justification:</strong> upstream-wontfix<br><strong>Yocto note:</strong> Severity is low and marked as closed and won&#x27;t fix.<br><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:M/Au:N/C:N/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2016-6252" target="_blank" rel="noopener noreferrer">CVE-2016-6252</a></td><td class="cvss">7.8 (v3)<br>4.6 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Integer overflow in shadow 4.2.1 allows local users to gain privileges via crafted input to newuidmap.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-12424" target="_blank" rel="noopener noreferrer">CVE-2017-12424</a></td><td class="cvss">9.8 (v3)<br>7.5 (v2)</td><td><span class="badge critical">Critical</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">In shadow before 4.5, the newusers tool could be made to manipulate internal data structures in ways unintended by the authors. Malformed input may lead to crashes (with a buffer overflow or other memory corruption) or other unspecified behaviors. This crosses a privilege boundary in, for example, certain web-hosting environments in which a Control Panel allows an unprivileged user account to create subaccounts.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-20002" target="_blank" rel="noopener noreferrer">CVE-2017-20002</a></td><td class="cvss">7.8 (v3)<br>4.6 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The Debian shadow package before 1:4.5-1 for Shadow incorrectly lists pts/0 and pts/1 as physical terminals in /etc/securetty. This allows local users to login as password-less users even if they are connected by non-physical means such as SSH (hence bypassing PAM&#x27;s nullok_secure configuration). This notably affects environments such as virtual machines automatically generated with a default blank root password, allowing all local users to escalate privileges.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-16588" target="_blank" rel="noopener noreferrer">CVE-2018-16588</a></td><td class="cvss">7.8 (v3)<br>4.6 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">Privilege escalation can occur in the SUSE useradd.c code in useradd, as distributed in the SUSE shadow package through 4.2.1-27.9.1 for SUSE Linux Enterprise 12 (SLE-12) and through 4.5-5.39 for SUSE Linux Enterprise 15 (SLE-15). Non-existing intermediate directories are created with mode 0777 during user creation. Given that they are world-writable, local attackers might use this for privilege escalation and other unspecified attacks.  NOTE: this would affect non-SUSE users who took useradd.c code from a 2014-04-02 upstream pull request; however, no non-SUSE distribution is known to be affected.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:L/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-7169" target="_blank" rel="noopener noreferrer">CVE-2018-7169</a></td><td class="cvss">5.3 (v3)<br>5.0 (v2)</td><td><span class="badge medium">Medium</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">An issue was discovered in shadow 4.5. newgidmap (in shadow-utils) is setuid and allows an unprivileged user to be placed in a user namespace where setgroups(2) is permitted. This allows an attacker to remove themselves from a supplementary group, which may allow access to certain filesystem paths if the administrator has used &quot;group blacklisting&quot; (e.g., chmod g-rwx) to restrict access to paths. This flaw effectively reverts a security feature in the kernel (in particular, the /proc/self/setgroups knob) to prevent this sort of privilege escalation.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:L/Au:N/C:P/I:N/A:N</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-16110" target="_blank" rel="noopener noreferrer">CVE-2019-16110</a></td><td class="cvss">8.1 (v3)<br>6.8 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">The network protocol of Blade Shadow though 2.13.3 allows remote attackers to take control of a Shadow instance and execute arbitrary code by only knowing the victim&#x27;s IP address, because packet data can be injected into the unencrypted UDP packet stream.</td><td class="notes"><strong>Vector:</strong> NETWORK<br><strong>Vector string:</strong> AV:N/AC:M/Au:N/C:P/I:P/A:P</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-19882" target="_blank" rel="noopener noreferrer">CVE-2019-19882</a></td><td class="cvss">7.8 (v3)<br>6.9 (v2)</td><td><span class="badge high">High</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">shadow 4.8, in certain circumstances affecting at least Gentoo, Arch Linux, and Void Linux, allows local users to obtain root access because setuid programs are misconfigured. Specifically, this affects shadow 4.8 when compiled using --with-libpam but without explicitly passing --disable-account-tools-setuid, and without a PAM configuration suitable for use with setuid account management tools. This combination leads to account management tools (groupadd, groupdel, groupmod, useradd, userdel, usermod) that can easily be used by unprivileged local users to escalate privileges to root in multiple ways. This issue became much more relevant in approximately December 2019 when an unrelated bug was fixed (i.e., the chmod calls to suidusbins were fixed in the upstream Makefile which is now included in the release version 4.8).</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> AV:L/AC:M/Au:N/C:C/I:C/A:C</td></tr>
+<tr data-filter="Patched" data-assessment="Not Affected"><td class="cve"><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-29383" target="_blank" rel="noopener noreferrer">CVE-2023-29383</a></td><td class="cvss">3.3 (v3)</td><td><span class="badge low">Low</span></td><td class="notes"><span class="badge not-affected">Not Affected</span><br>The matching Yocto task log records a version-range exclusion.</td><td><span class="badge patched">Patched</span></td><td class="summary">In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that &quot;cat /etc/passwd&quot; shows a rogue user account.</td><td class="notes"><strong>Vector:</strong> LOCAL<br><strong>Vector string:</strong> CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N</td></tr>
+</tbody></table></div>
+<p id="no-results" hidden>No matches for the current filters.</p>
+<footer>Automated Yocto cve-check output, not a manual product assessment. The source JSON does not provide publication dates, verified fixes, or the effective CVE_VERSION. Severity uses CVSS v4 when available, otherwise v3. Zero scores are omitted because Yocto can use zero for missing metrics; v2-only records have no severity label here.</footer>
+</main>
+<script>
+const search = document.querySelector('#search');
+const filter = document.querySelector('#filter');
+const vexFilter = document.querySelector('#vex-filter');
+const rows = [...document.querySelectorAll('tbody tr[data-filter]')];
+const count = document.querySelector('#count');
+const empty = document.querySelector('#no-results');
+const text = new WeakMap();
+function applyFilter() {
+  const query = search.value.trim().toLowerCase();
+  const selected = filter.value;
+  const assessment = vexFilter?.value;
+  let visible = 0;
+  for (const row of rows) {
+    let matches = !selected || row.dataset.filter.split(' ').includes(selected);
+    if (assessment) matches = matches && row.dataset.assessment === assessment;
+    if (matches && query) {
+      if (!text.has(row)) text.set(row, row.textContent.toLowerCase());
+      matches = text.get(row).includes(query);
+    }
+    if (row.hidden === matches) row.hidden = !matches;
+    if (matches) visible++;
+  }
+  count.textContent = `${visible.toLocaleString()} / ${rows.length.toLocaleString()} shown`;
+  empty.hidden = visible !== 0 || rows.length === 0;
+}
+let timer;
+search.addEventListener('input', () => {
+  clearTimeout(timer);
+  timer = setTimeout(applyFilter, 120);
+});
+filter.addEventListener('change', applyFilter);
+vexFilter?.addEventListener('change', applyFilter);
+applyFilter();
+</script>
+</body>
+</html>

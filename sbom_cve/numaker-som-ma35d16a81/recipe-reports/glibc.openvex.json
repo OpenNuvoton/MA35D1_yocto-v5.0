@@ -1,0 +1,2298 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:1e188d6b-37c3-4588-a176-99304de6bb55",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-1999-0199",
+        "name": "CVE-1999-0199"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2000-0335",
+        "name": "CVE-2000-0335"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2000-0824",
+        "name": "CVE-2000-0824"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2000-0959",
+        "name": "CVE-2000-0959"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2002-0684",
+        "name": "CVE-2002-0684"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2002-1146",
+        "name": "CVE-2002-1146"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2002-1265",
+        "name": "CVE-2002-1265"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2003-0028",
+        "name": "CVE-2003-0028"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2003-0859",
+        "name": "CVE-2003-0859"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2004-0968",
+        "name": "CVE-2004-0968"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2004-1382",
+        "name": "CVE-2004-1382"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2004-1453",
+        "name": "CVE-2004-1453"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2005-3590",
+        "name": "CVE-2005-3590"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2006-7254",
+        "name": "CVE-2006-7254"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2007-3508",
+        "name": "CVE-2007-3508"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2009-4880",
+        "name": "CVE-2009-4880"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2009-4881",
+        "name": "CVE-2009-4881"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2009-5029",
+        "name": "CVE-2009-5029"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2009-5064",
+        "name": "CVE-2009-5064"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2009-5155",
+        "name": "CVE-2009-5155"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-0015",
+        "name": "CVE-2010-0015"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-0296",
+        "name": "CVE-2010-0296"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-0830",
+        "name": "CVE-2010-0830"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-3192",
+        "name": "CVE-2010-3192"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-3847",
+        "name": "CVE-2010-3847"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-3856",
+        "name": "CVE-2010-3856"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-4051",
+        "name": "CVE-2010-4051"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-4052",
+        "name": "CVE-2010-4052"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2010-4756",
+        "name": "CVE-2010-4756"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-0536",
+        "name": "CVE-2011-0536"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-1071",
+        "name": "CVE-2011-1071"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-1089",
+        "name": "CVE-2011-1089"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-1095",
+        "name": "CVE-2011-1095"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-1658",
+        "name": "CVE-2011-1658"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-1659",
+        "name": "CVE-2011-1659"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-2702",
+        "name": "CVE-2011-2702"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-4609",
+        "name": "CVE-2011-4609"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2011-5320",
+        "name": "CVE-2011-5320"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-0864",
+        "name": "CVE-2012-0864"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-3404",
+        "name": "CVE-2012-3404"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-3405",
+        "name": "CVE-2012-3405"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-3406",
+        "name": "CVE-2012-3406"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-3480",
+        "name": "CVE-2012-3480"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-4412",
+        "name": "CVE-2012-4412"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-4424",
+        "name": "CVE-2012-4424"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2012-6656",
+        "name": "CVE-2012-6656"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-0242",
+        "name": "CVE-2013-0242"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-1914",
+        "name": "CVE-2013-1914"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-2207",
+        "name": "CVE-2013-2207"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-4237",
+        "name": "CVE-2013-4237"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-4332",
+        "name": "CVE-2013-4332"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-4458",
+        "name": "CVE-2013-4458"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-4788",
+        "name": "CVE-2013-4788"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-7423",
+        "name": "CVE-2013-7423"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2013-7424",
+        "name": "CVE-2013-7424"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-0475",
+        "name": "CVE-2014-0475"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-4043",
+        "name": "CVE-2014-4043"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-5119",
+        "name": "CVE-2014-5119"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-6040",
+        "name": "CVE-2014-6040"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-7817",
+        "name": "CVE-2014-7817"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-8121",
+        "name": "CVE-2014-8121"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-9402",
+        "name": "CVE-2014-9402"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-9761",
+        "name": "CVE-2014-9761"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2014-9984",
+        "name": "CVE-2014-9984"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-0235",
+        "name": "CVE-2015-0235"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-1472",
+        "name": "CVE-2015-1472"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-1473",
+        "name": "CVE-2015-1473"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-1781",
+        "name": "CVE-2015-1781"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-20109",
+        "name": "CVE-2015-20109"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-5180",
+        "name": "CVE-2015-5180"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-5277",
+        "name": "CVE-2015-5277"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-7547",
+        "name": "CVE-2015-7547"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-8776",
+        "name": "CVE-2015-8776"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-8777",
+        "name": "CVE-2015-8777"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-8778",
+        "name": "CVE-2015-8778"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-8779",
+        "name": "CVE-2015-8779"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-8982",
+        "name": "CVE-2015-8982"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-8983",
+        "name": "CVE-2015-8983"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-8984",
+        "name": "CVE-2015-8984"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2015-8985",
+        "name": "CVE-2015-8985"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-10228",
+        "name": "CVE-2016-10228"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-10739",
+        "name": "CVE-2016-10739"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-1234",
+        "name": "CVE-2016-1234"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-3075",
+        "name": "CVE-2016-3075"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-3706",
+        "name": "CVE-2016-3706"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-4429",
+        "name": "CVE-2016-4429"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-5417",
+        "name": "CVE-2016-5417"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2016-6323",
+        "name": "CVE-2016-6323"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000366",
+        "name": "CVE-2017-1000366"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000408",
+        "name": "CVE-2017-1000408"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000409",
+        "name": "CVE-2017-1000409"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12132",
+        "name": "CVE-2017-12132"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-12133",
+        "name": "CVE-2017-12133"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15670",
+        "name": "CVE-2017-15670"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15671",
+        "name": "CVE-2017-15671"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-15804",
+        "name": "CVE-2017-15804"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-16997",
+        "name": "CVE-2017-16997"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-17426",
+        "name": "CVE-2017-17426"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-18269",
+        "name": "CVE-2017-18269"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2017-8804",
+        "name": "CVE-2017-8804"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000001",
+        "name": "CVE-2018-1000001"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-11236",
+        "name": "CVE-2018-11236"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-11237",
+        "name": "CVE-2018-11237"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-19591",
+        "name": "CVE-2018-19591"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-20796",
+        "name": "CVE-2018-20796"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-6485",
+        "name": "CVE-2018-6485"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-6551",
+        "name": "CVE-2018-6551"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010022",
+        "name": "CVE-2019-1010022"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "The Yocto ignore reason does not establish that the issue is inapplicable. Yocto cve-check: Ignored (disputed). Upstream glibc maintainers dispute there is any issue and have no plans to address it further. this is being treated as a non-security bug and no real threat."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010023",
+        "name": "CVE-2019-1010023"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "The Yocto ignore reason does not establish that the issue is inapplicable. Yocto cve-check: Ignored (disputed). Upstream glibc maintainers dispute there is any issue and have no plans to address it further. this is being treated as a non-security bug and no real threat."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010024",
+        "name": "CVE-2019-1010024"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "The Yocto ignore reason does not establish that the issue is inapplicable. Yocto cve-check: Ignored (disputed). Upstream glibc maintainers dispute there is any issue and have no plans to address it further. this is being treated as a non-security bug and no real threat."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010025",
+        "name": "CVE-2019-1010025"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "The Yocto ignore reason does not establish that the issue is inapplicable. Yocto cve-check: Ignored (disputed). Allows for ASLR bypass so can bypass some hardening, not an exploit in itself, may allow easier access for another. 'ASLR bypass itself is not a vulnerability.'"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-19126",
+        "name": "CVE-2019-19126"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-25013",
+        "name": "CVE-2019-25013"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-6488",
+        "name": "CVE-2019-6488"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-7309",
+        "name": "CVE-2019-7309"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9169",
+        "name": "CVE-2019-9169"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-9192",
+        "name": "CVE-2019-9192"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-10029",
+        "name": "CVE-2020-10029"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-1751",
+        "name": "CVE-2020-1751"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-1752",
+        "name": "CVE-2020-1752"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-27618",
+        "name": "CVE-2020-27618"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-29562",
+        "name": "CVE-2020-29562"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-29573",
+        "name": "CVE-2020-29573"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-6096",
+        "name": "CVE-2020-6096"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-27645",
+        "name": "CVE-2021-27645"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-3326",
+        "name": "CVE-2021-3326"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-33574",
+        "name": "CVE-2021-33574"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-35942",
+        "name": "CVE-2021-35942"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-38604",
+        "name": "CVE-2021-38604"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-3998",
+        "name": "CVE-2021-3998"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-3999",
+        "name": "CVE-2021-3999"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-43396",
+        "name": "CVE-2021-43396"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-23218",
+        "name": "CVE-2022-23218"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-23219",
+        "name": "CVE-2022-23219"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-39046",
+        "name": "CVE-2022-39046"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-0687",
+        "name": "CVE-2023-0687"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-25139",
+        "name": "CVE-2023-25139"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-4527",
+        "name": "CVE-2023-4527"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-4806",
+        "name": "CVE-2023-4806"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-4813",
+        "name": "CVE-2023-4813"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-4911",
+        "name": "CVE-2023-4911"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-5156",
+        "name": "CVE-2023-5156"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-6246",
+        "name": "CVE-2023-6246"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-6779",
+        "name": "CVE-2023-6779"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2023-6780",
+        "name": "CVE-2023-6780"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-2961",
+        "name": "CVE-2024-2961"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "Yocto records a fixed version or backport; see its note. Yocto cve-check: Patched (cpe-stable-backport). fix available in used git hash"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-33599",
+        "name": "CVE-2024-33599"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "Yocto records a fixed version or backport; see its note. Yocto cve-check: Patched (cpe-stable-backport). fix available in used git hash"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-33600",
+        "name": "CVE-2024-33600"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "Yocto records a fixed version or backport; see its note. Yocto cve-check: Patched (cpe-stable-backport). fix available in used git hash"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-33601",
+        "name": "CVE-2024-33601"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "Yocto records a fixed version or backport; see its note. Yocto cve-check: Patched (cpe-stable-backport). fix available in used git hash"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-33602",
+        "name": "CVE-2024-33602"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "Yocto records a fixed version or backport; see its note. Yocto cve-check: Patched (cpe-stable-backport). fix available in used git hash"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-15281",
+        "name": "CVE-2025-15281"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-4802",
+        "name": "CVE-2025-4802"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-5702",
+        "name": "CVE-2025-5702"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2025-5745",
+        "name": "CVE-2025-5745"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
+        "name": "CVE-2026-0861"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-0915",
+        "name": "CVE-2026-0915"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-3904",
+        "name": "CVE-2026-3904"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-4046",
+        "name": "CVE-2026-4046"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-4437",
+        "name": "CVE-2026-4437"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-4438",
+        "name": "CVE-2026-4438"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-5435",
+        "name": "CVE-2026-5435"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-5450",
+        "name": "CVE-2026-5450"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-5928",
+        "name": "CVE-2026-5928"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2026-6238",
+        "name": "CVE-2026-6238"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/glibc@2.39%2Bgit?layer=meta&scan_sha256=3b53011c00c630b5dc8c5dbb6700c0be419c8f00a96849eb1aed2d7d6c561055"
+        }
+      ],
+      "status": "affected",
+      "status_notes": "Yocto reports Unpatched; treated as potentially affected pending validation. Yocto cve-check: Unpatched.",
+      "action_statement": "Review whether this CVE applies to the scanned recipe and build configuration. If confirmed, update to a fixed version, apply a verified backport, or document a mitigation."
+    }
+  ]
+}

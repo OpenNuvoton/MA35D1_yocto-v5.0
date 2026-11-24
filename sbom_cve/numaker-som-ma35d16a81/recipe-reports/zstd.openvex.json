@@ -1,0 +1,67 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:a918f9c0-1973-4bc1-949a-19c1062c876c",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2019-11922",
+        "name": "CVE-2019-11922"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/zstd@1.5.5?layer=meta&scan_sha256=1847e8201e859e073411bf58a469a52ef3414e810c7cf5badec23499498dc762"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-24031",
+        "name": "CVE-2021-24031"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/zstd@1.5.5?layer=meta&scan_sha256=1847e8201e859e073411bf58a469a52ef3414e810c7cf5badec23499498dc762"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2021-24032",
+        "name": "CVE-2021-24032"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/zstd@1.5.5?layer=meta&scan_sha256=1847e8201e859e073411bf58a469a52ef3414e810c7cf5badec23499498dc762"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-4899",
+        "name": "CVE-2022-4899"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/zstd@1.5.5?layer=meta&scan_sha256=1847e8201e859e073411bf58a469a52ef3414e810c7cf5badec23499498dc762"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

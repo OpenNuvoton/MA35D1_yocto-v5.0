@@ -1,0 +1,53 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:0f52d8c7-a668-473c-9eb0-14e0be9d4c61",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2018-21232",
+        "name": "CVE-2018-21232"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/re2c-native@3.1?layer=meta&scan_sha256=00473a08418dca91c15f5f4c6c361e6dec89018f4e351fa7f39985b3b081b79d"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2020-11958",
+        "name": "CVE-2020-11958"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/re2c-native@3.1?layer=meta&scan_sha256=00473a08418dca91c15f5f4c6c361e6dec89018f4e351fa7f39985b3b081b79d"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2022-23901",
+        "name": "CVE-2022-23901"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/re2c-native@3.1?layer=meta&scan_sha256=00473a08418dca91c15f5f4c6c361e6dec89018f4e351fa7f39985b3b081b79d"
+        }
+      ],
+      "status": "not_affected",
+      "status_notes": "The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched.",
+      "impact_statement": "For this scanned recipe only: The matching Yocto task log records a version-range exclusion. Yocto cve-check: Patched."
+    }
+  ]
+}

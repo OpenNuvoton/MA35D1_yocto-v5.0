@@ -1,0 +1,24 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:e1d03e15-5c3b-43a7-812e-eaa7ea3cc093",
+  "author": "Yocto recipe CVE triage",
+  "role": "Automated recipe-level scan triage, not a product assessment",
+  "timestamp": "2026-11-24T05:53:41+00:00",
+  "version": 1,
+  "tooling": "generate_recipe_openvex.py (Yocto cve-check)",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-2024-0151",
+        "name": "CVE-2024-0151"
+      },
+      "products": [
+        {
+          "@id": "pkg:generic/yocto/rust-llvm-native@1.75.0?layer=meta&scan_sha256=e4273ffa1426f37327b3d3cf389956be008bfe819cfb782eba6187277781a61c"
+        }
+      ],
+      "status": "fixed",
+      "status_notes": "The matching Yocto task log records a recipe patch or explicit fix metadata. Yocto cve-check: Patched."
+    }
+  ]
+}
